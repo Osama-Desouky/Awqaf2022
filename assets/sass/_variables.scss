@@ -1,0 +1,46 @@
+$font-ar: "URWDIN";
+$font-en: "montserrat";
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors
+
+
+
+$light-orange:#DCB853;
+
+
+// bg
+$dark-bg:#0F2837;
+$light-grey-bg:#F8F8F8;
+
+$green-bg1:#0C592E;
+$green-bg2:#3AA877;
+$green-color3:#052614;
+$black-color:#1D1D1B;
+
+$theme-colors: (
+  // "primary": $primary-color,
+  // "warning": $orange-color,
+  // "success": $green-color,
+  // "gray": $gray-color,
+  // "red": $red-color
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 400; // (Regular)
+$w-medium: 500;
+$w-demi: 600; // (Semi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
+
+
+
+//more 
+
+$raduis-normal : 8px;

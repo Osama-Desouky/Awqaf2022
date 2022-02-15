@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="printer" d="M6,19H4a2,2,0,0,1-2-2V9A2,2,0,0,1,4,7H6V2H18V7h2a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H18v3H6Zm0-2V15H18v2h2V9H4v8ZM8,7h8V4H8Zm8,10H8v3h8Zm2-7a1,1,0,1,1-1,1A1,1,0,0,1,18,10Z" transform="translate(-2 -2)" fill="#fff" fill-rule="evenodd"/>
+</svg>

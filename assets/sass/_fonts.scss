@@ -1,0 +1,111 @@
+// montserrat
+@font-face {
+  font-family: "montserrat";
+  src: url($font-path + "Montserrat-Regular.woff") format("woff"),
+    url($font-path + "Montserrat-Regular.ttf");
+  font-weight: $w-normal;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url($font-path + "Montserrat-Medium.woff") format("woff"),
+    url($font-path + "Montserrat-Medium.ttf");
+  font-weight: $w-medium;
+  //medium
+}
+@font-face {
+  font-family: "montserrat";
+  src: url($font-path + "Montserrat-SemiBold.woff") format("woff"),
+    url($font-path + "Montserrat-SemiBold.ttf");
+  font-weight: $w-demi;
+  // semi bold
+}
+@font-face {
+  font-family: "montserrat";
+  src: url($font-path + "Montserrat-Bold.woff") format("woff"),
+    url($font-path + "Montserrat-Bold.ttf");
+  font-weight: $w-bold;
+  // bold
+}
+@font-face {
+  font-family: "montserrat";
+  src: url($font-path + "Montserrat-Black.woff") format("woff"),
+    url($font-path + "Montserrat-Black.ttf");
+  font-weight: $w-black;
+  // black
+}
+// URWDIN
+@font-face {
+  font-family: "URWDIN";
+  src: url($font-path + "URWDINArabic-Regular.woff") format("woff"),
+    url($font-path + "URWDINArabic-Regular.ttf");
+  font-weight: $w-light;
+}
+@font-face {
+  font-family: "URWDIN";
+  src: url($font-path + "URWDINArabic-Regular.woff") format("woff"),
+    url($font-path + "URWDINArabic-Regular.ttf");
+  font-weight: $w-normal;
+}
+@font-face {
+  font-family: "URWDIN";
+  src: url($font-path + "URWDINArabic-Medium.woff") format("woff"),
+    url($font-path +"URWDINArabic-Medium.ttf");
+  font-weight: $w-medium;
+}
+@font-face {
+  font-family: "URWDIN";
+  src: url($font-path + "URWDINArabic-Demi.woff") format("woff"),
+    url($font-path + "URWDINArabic-Demi.ttf");
+  font-weight: $w-demi;
+}
+
+@font-face {
+  font-family: "URWDIN";
+  src: url($font-path + "URWDINArabic-Bold.woff") format("woff"),
+    url($font-path + "URWDINArabic-Bold.ttf");
+  font-weight: $w-bold;
+}
+@font-face {
+  font-family: "URWDIN";
+  src: url($font-path + "URWDINArabic-Bold.woff") format("woff"),
+    url($font-path + "URWDINArabic-Bold.ttf");
+  font-weight: $w-black;
+}
+
+// FrutigerLTArabic-55Roman
+@font-face {
+  font-family: "FrutigerLTArabic-55Roman";
+  src: url($font-path + "FrutigerLTArabic-55Roman.woff") format("woff"),
+    url($font-path + "FrutigerLTArabic-55Roman.ttf");
+  font-weight: $w-normal;
+}
+
+
+// Roboto
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Regular.woff") format("woff"),
+    url($font-path + "Roboto-Regular.ttf") format("truetype");
+  font-weight: $w-normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Medium.woff") format("woff"),
+    url($font-path + "Roboto-Medium.ttf");
+  font-weight: $w-medium;
+  //medium
+}
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Bold.woff") format("woff"),
+    url($font-path + "Roboto-Bold.ttf");
+  font-weight: $w-bold;
+  // bold
+}
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Black.woff") format("woff"),
+    url($font-path + "Roboto-Black.ttf");
+  font-weight: $w-black;
+  // black
+}
