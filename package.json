@@ -1,0 +1,25 @@
+{
+  "name": "moc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass  -w  assets/sass/styles-rtl.scss assets/css/styles-rtl.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {},
+  "homepage": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.5.1",
+    "owl.carousel": "^2.3.4"
+  }
+}
