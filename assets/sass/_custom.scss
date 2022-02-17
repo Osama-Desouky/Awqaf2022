@@ -12,9 +12,9 @@ body {
 .top-nav{
   background-color: $green-bg1;
   position: relative;
-  background-image: url(../images/bg-shape-1.svg) , url(../images/bg-shape-1.svg);
-  background-position: left center , right center;
-  background-repeat: no-repeat;
+  // background-image: url(../images/bg-shape-1.svg) , url(../images/bg-shape-1.svg);
+  // background-position: left center , right center;
+  // background-repeat: no-repeat;
   padding: 4px 0;
   
   .top-links{
@@ -309,7 +309,7 @@ body {
         width: 10px;
         height: 6px;
         #{$end-direction}:0;
-        top: 50%;
+        top: 45%;
         margin: 0;
       }
       // &:hover{
@@ -346,6 +346,7 @@ body {
         height: 48px;
         background-image: url(../images/green-shapez.svg);
         background-size: contain;
+        z-index: -1;
 
       }
 
@@ -456,7 +457,7 @@ body {
 footer{
   margin-top: auto;
   .footer-slider{
-    background-color: #0F6D39;
+    background-color: $green-bg4;
 
     .item{
       .caption{
@@ -550,13 +551,13 @@ footer{
         }
         img{
           // max-width: 22px;
-          filter: opacity(.4);
+          // filter: opacity(.4);
           transition: 300ms;
         }
         &:hover{
           // background-color: #fff;
           img{
-            filter: none;
+            filter: contrast(1) brightness(1.7);
           }
         }
       }
@@ -620,6 +621,13 @@ footer{
       .android{
         margin-#{$start-direction}: auto;
       }
+      div{
+        filter: brightness(2);
+        transition: 300ms;
+        &:hover{
+          filter: brightness(1);
+        }
+      }
     }
     .whatsapp{
       font-size: 16px;
@@ -628,12 +636,26 @@ footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      transition: 300ms;
       span{
         direction: ltr;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+      }
+      a{
+        filter: brightness(1.3);
+        transition: 300ms;
+      }
+      &:hover{
+        color: $color2;
+        a{
+          filter: brightness(1);
+        }
       }
     }
     .form-control{
-      background-color: #1C774E;
+      background-color: $green-bg3;
       border-radius: 12px !important;
       font-size: 16px;
       font-weight: $w-normal;
@@ -975,8 +997,7 @@ index
   padding-bottom: 85px;
   background-image: url(../images/ArtShape-colored.svg);
   background-repeat: no-repeat;
-  background-position: 98% center;
-  background-size: 110px;
+  background-position: #{$start-direction} center;
   .main-h2{
     margin-bottom: 65px;
   }
@@ -1000,11 +1021,15 @@ index
     a{
       font-size: 17px;
       font-weight: $w-normal;
-      color: #3AA877;
+      color: $green-bg2;
       img{
         margin-#{$start-direction}: 15px ;
       }
     }
+  }
+  .img-box{
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -1138,7 +1163,7 @@ index
     &:hover{
       background-color: $green-bg2;
       img{
-        filter: brightness(20);
+        filter: contrast(0) brightness(2);
       }
     }
   }
@@ -1208,7 +1233,7 @@ index
           p{
             font-size: 17px;
             font-weight: $w-normal;
-            color: #1B3330;
+            color: $color1;
             margin-bottom: 0;
           }
         }
@@ -1220,7 +1245,7 @@ index
         align-self: center;
         justify-content: flex-end;
         a{
-          border-radius: 16px;
+          border-radius: 12px;
           overflow: hidden;
           display: inline-block;
         }
@@ -1231,11 +1256,11 @@ index
   // Birth-and-founding
   
   .Birth-and-founding{
-    background-color: rgba($color: #8FA498, $alpha: 0.10);
+    background-color: rgba($color: $color2, $alpha: 0.60);
     background-image: url(../images/leaf.svg);
     background-repeat: no-repeat;
-    background-position: 80px 80%;
-    border-radius: 20px;
+    background-position: center #{$end-direction};
+    border-radius: 12px;
     padding: 40px;
     h2.main-h2{
       font-size: 25px;
@@ -1282,7 +1307,7 @@ index
             position: absolute;
             width: 2px;
             height: 100%;
-            background-color: $light-orange;
+            background-color: $golden-color;
             #{$start-direction}:50%;
             top: 80%;
             transform: translateX(50%);
@@ -1343,7 +1368,7 @@ index
       p{
         font-size: 17px;
         font-weight: $w-normal;
-        color: #1B3330;
+        color: $color1;
         margin-bottom: 0;
         line-height: 28px;
         max-height: calc(28px * 3);
@@ -1369,6 +1394,10 @@ index
   }
   .list-cards{
     margin-top: 70px;
+    .col-lg-3 {
+      padding-#{$start-direction}: 22.5px;
+      padding-#{$end-direction}: 22.5px;
+  }
     .list-card{
       margin-bottom: 70px;
     }
@@ -1405,7 +1434,7 @@ index
       p{
         font-size: 16px;
         font-weight: $w-normal;
-        color: #3AA877;
+        color: $green-bg2;
         margin-bottom: 0;
         line-height: 21px;
         height: calc(21px * 2);
@@ -1414,7 +1443,7 @@ index
       .hidden-details {
         font-size: 16px;
         font-weight: $w-normal;
-        color: #8FA498;
+        color: $color4;
         line-height: 32px;
         max-height: calc(32px * 6);
         opacity: 0;
@@ -1428,7 +1457,7 @@ index
         display: inline-block;
         font-size: 16px;
         font-weight: $w-normal;
-        color: #3AA877;
+        color: $green-bg2;
         img{
           margin-#{$start-direction}: 10px;
           max-width: 30px;
