@@ -12689,6 +12689,339 @@ index
   display: none;
 }
 
+/* AO start global fields */
+.main-navbar.fixed {
+  display: none;
+}
+
+.breadcrumb-area {
+  background-color: rgba(217, 217, 217, 0.25);
+}
+
+.label, select, label {
+  color: #052614;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.font20bold, .cardNews .cardText .heading20 {
+  color: #0C592E;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  min-width: 110px;
+  min-height: 36px;
+  border: 3px solid #3AA877;
+  padding: 0 15px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/news/ArrowSelect.svg) no-repeat 13px 12px;
+}
+
+/* AO end global fields */
+/* AO start news page */
+.forDirction {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: left;
+  padding: 36px 0;
+}
+
+.forDirction .col-md-3 {
+  max-width: 265px;
+}
+
+.forDirction .displayComponent {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.filterDate label {
+  padding-left: 16px;
+  line-height: 36px;
+}
+
+.searchNews input {
+  min-width: 195px;
+  min-height: 36px;
+  border: 3px solid #3AA877;
+  padding: 0 15px;
+  border-radius: 6px;
+  background: url(../images/news/searchIcon.svg) no-repeat 13px 7px;
+  font-size: 16px;
+  color: #05261487;
+}
+
+.displayComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.displayComponent .boxText .label, .displayComponent .boxText select, .displayComponent .boxText label {
+  padding-left: 16px;
+  margin-bottom: 0;
+  line-height: 36px;
+}
+
+.displayComponent .boxGridDS {
+  background: #e9edea;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 36px;
+}
+
+.displayComponent .boxGridDS a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 48px;
+  height: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.displayComponent .boxGridDS a.active {
+  background: #3AA877;
+}
+
+.displayComponent .boxGridDS a.active img {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+.displayRow .col-md-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.bgNews {
+  background-color: #F7F7F7;
+}
+
+.cardNews {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 515px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cardNews:hover .CardImg {
+  height: 228px;
+}
+
+.cardNews:hover .cardText {
+  height: 286px;
+}
+
+.cardNews:hover .cardText .heading20 {
+  margin-bottom: 32px;
+}
+
+.cardNews .CardImg {
+  height: 247px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardNews .CardImg img {
+  height: 100%;
+  max-width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.cardNews .cardText {
+  background-color: #fff;
+  padding: 14px 16px 19px;
+  height: 268px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardNews .cardText .date {
+  margin-bottom: 6px;
+  background: #DCB853;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 11px;
+  height: 34px;
+  border-radius: 2px;
+}
+
+.cardNews .cardText .date span {
+  color: #fff;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.cardNews .cardText .date img {
+  max-width: 16px;
+}
+
+.cardNews .cardText .heading20 {
+  margin-bottom: 12px;
+  max-height: 140px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardNews .cardText .praghCard {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8FA498;
+  display: none;
+}
+
+.cardNews .cardText .redMoreNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.cardNews .cardText .redMoreNews span {
+  font-size: 16px;
+  padding-left: 11px;
+  color: #3aa877;
+}
+
+.cardNews .cardText .redMoreNews img {
+  max-width: 43px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardNews .cardText .redMoreNews:hover img {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+.displayRow .cardNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 287px;
+  background: white;
+}
+
+.displayRow .cardNews .CardImg {
+  height: 100%;
+  overflow: hidden;
+  margin: 15px;
+  max-height: 257px;
+  background: white;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 343px;
+}
+
+.displayRow .cardNews .cardText {
+  height: 100%;
+  padding-right: 8px;
+}
+
+.displayRow .cardNews .cardText .praghCard {
+  display: block;
+}
+
+.displayRow .cardNews .cardText .heading20 {
+  margin-bottom: 26px;
+}
+
+.displayRow .cardNews:hover {
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+}
+
+.displayRow .cardNews:hover .CardImg img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.displayRow .cardNews:hover .cardText .heading20 {
+  margin-bottom: 26px;
+}
+
+.pagination {
+  padding: 25px 0 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin: 0 7px;
+  font-size: 16px;
+  color: #0C592E;
+}
+
+.pagination a.current {
+  background-color: #3AA877;
+  color: #fff;
+  cursor: unset;
+}
+
+.pagination a.aspNetDisabled {
+  cursor: unset;
+  opacity: .5;
+}
+
+.sliderNews {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* AO end news page */
 /*
 this UI is made desktop first.
 */
