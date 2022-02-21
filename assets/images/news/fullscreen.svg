@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <filter id="bg" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="fullscreen" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#bg)">
+      <rect id="bg-2" data-name="bg" width="40" height="40" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="FullScreen-2" data-name="FullScreen" transform="translate(8.722 9.386)">
+      <path id="Union_16" data-name="Union 16" d="M-1366.467,1432.841v-3h6.3v-5.606h3v8.607Zm-13.254,0v-8.607h3v5.606h6.3v3Zm19.557-12.621v-5.607h-6.3v-3h9.3v8.607Zm-19.557,0v-8.607h9.3v3h-6.3v5.607Z" transform="translate(1379.722 -1411.614)" fill="#00ab7a"/>
+    </g>
+  </g>
+</svg>

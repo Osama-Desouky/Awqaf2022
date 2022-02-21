@@ -2,8 +2,16 @@
 .main-navbar.fixed {
   display: none;
 }
+.fancybox-prev span,
+.fancybox-next span,
+.fancybox-close {
+  background-size: 44px;
+}
+.fancybox-lock .fancybox-overlay {
+  overflow-y: auto;
+}
 .breadcrumb-area {
-    background-color: rgba(217, 217, 217, 0.25);
+  background-color: rgba(217, 217, 217, 0.35);
 }
 .label {
   color: $green-color3;
@@ -15,6 +23,56 @@
   line-height: 35px;
   font-size: 20px;
   font-weight: bold;
+}
+.font30bold {
+  font-size: 30px;
+  font-weight: bold;
+  color: $green-bg1;
+  line-height: 55px;
+}
+.pragh17regular {
+  color: $color3;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.pragh17regular2{
+  font-size: 17px;
+  font-weight: 400;
+  color: $color1;
+  margin-bottom: 0;
+  line-height: 32px;
+}
+.customTitle {
+  font-size: 25px;
+  font-weight: 700;
+  color: $green-bg1;
+  margin-bottom: 15px;
+  padding-#{$start-direction}: 40px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(../images/endowment/titleArrow.svg) no-repeat 0 0;
+    background-size: contain;
+  }
+}
+.readMoreBtn {
+  padding: 15px 32px;
+  background: rgba(203, 221, 214, 0.3);
+  border-radius: 28px;
+  font-size: 18px;
+  color: $green-bg1;
+  span {
+    font-size: 18px;
+    margin-#{$end-direction}: 13px;
+  }
+  &:hover {
+    color: $green-bg1;
+  }
 }
 select::-ms-expand {
   display: none;
@@ -112,13 +170,19 @@ label {
   }
 }
 .bgNews {
-    background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .cardNews {
   transition: 0.3s;
   height: 515px;
   margin-bottom: 40px;
   box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  .forClick {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
   &:hover {
     .CardImg {
       height: 228px;
@@ -128,7 +192,7 @@ label {
     }
     .cardText {
       height: 286px;
-    //   transform: translateY(-20px);
+      //   transform: translateY(-20px);
       .heading20 {
         margin-bottom: 32px;
       }
@@ -147,7 +211,7 @@ label {
   .cardText {
     background-color: #fff;
     padding: 14px 16px 19px;
-    
+
     height: 268px;
     transition: 0.3s;
     .date {
@@ -175,15 +239,17 @@ label {
       transition: 0.3s;
     }
     .praghCard {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #8FA498;
-        display: none;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #8fa498;
+      display: none;
     }
     .redMoreNews {
       display: flex;
       align-items: center;
       justify-content: #{$end-direction};
+      position: relative;
+      z-index: 9;
       span {
         font-size: 16px;
         padding-#{$end-direction}: 11px;
@@ -207,74 +273,468 @@ label {
     height: 287px;
     background: white;
     .CardImg {
-        height: 100%;
-        overflow: hidden;
-        margin: 15px;
-        max-height: 257px;
-        background: white;
-        flex-shrink: 0;
-        max-width: 343px;
+      height: 100%;
+      overflow: hidden;
+      margin: 15px;
+      max-height: 257px;
+      background: white;
+      flex-shrink: 0;
+      max-width: 343px;
     }
     .cardText {
-        height: 100%;
-        padding-#{$start-direction}: 8px;
-        .praghCard {
-            display: block;
-        }
-        .heading20 {
-            margin-bottom: 26px;
-        }
+      height: 100%;
+      padding-#{$start-direction}: 8px;
+      .praghCard {
+        display: block;
+      }
+      .heading20 {
+        margin-bottom: 26px;
+      }
     }
     &:hover {
-        box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
-        .CardImg {
-            // height: 228px;
-            img {
-                transform: scale(1.2);
-            }
-          }
-        .cardText {
-            // height: 288px;
-            // transform: translateY(-20px);
-            .heading20 {
-                margin-bottom: 26px;
-            }
-          }
+      box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+      .CardImg {
+        // height: 228px;
+        img {
+          transform: scale(1.2);
+        }
+      }
+      .cardText {
+        // height: 288px;
+        // transform: translateY(-20px);
+        .heading20 {
+          margin-bottom: 26px;
+        }
+      }
     }
   }
 }
 .pagination {
-    padding: 25px 0 35px;
+  padding: 25px 0 35px;
+  justify-content: center;
+  a {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    a {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 0 7px;
+    font-size: 16px;
+    color: $green-bg1;
+    // &:first-of-type {
+    //     transform: rotate(180deg);
+    // }
+    &.current {
+      background-color: $green-bg2;
+      color: #fff;
+      cursor: unset;
+    }
+    &.aspNetDisabled {
+      cursor: unset;
+      opacity: 0.5;
+    }
+  }
+}
+.BGInnerNew {
+  padding-bottom: 205px;
+  .font30bold {
+    padding: 44px 0 78px;
+  }
+  .dateOfNews {
+    display: flex;
+    margin-bottom: 26px;
+    .dateNS {
+      padding-#{$end-direction}: 30px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 14px;
+        color: #96a78c;
+        padding-#{$start-direction}: 5px;
+      }
+    }
+  }
+  .contentNews {
+    padding: 33px 0 4px;
+    p {
+      @extend .pragh17regular;
+      margin-bottom: 33px;
+    }
+  }
+}
+.sliderNews {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  .fancybox {
+    &::after {
+      width: 50px;
+      height: 50px;
+      background: url(../images/news/fullscreen.svg) no-repeat center center;
+      background-size: cover;
+      content: "";
+      position: absolute;
+      bottom: 22px;
+      right: 29px;
+    }
+  }
+  img {
+    max-height: 560px;
+    border-radius: 12px;
+  }
+}
+.arrowNews {
+  position: relative;
+  .owl-carousel {
+    .owl-nav {
+      button {
+        width: 44px;
+        height: 44px;
+        border: 1px solid #00ab7a !important;
+        border-radius: 4px;
+        background: url(../images/news/arrowSlider.svg) no-repeat 13px 9px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        span {
+          visibility: hidden;
+        }
+        &.owl-prev {
+          #{$end-direction}: -96px;
+        }
+        &.owl-next {
+          #{$start-direction}: -96px;
+          transform: scaleX(-1);
+        }
+        &.disabled {
+          opacity: 0.5;
+          cursor: auto;
+        }
+      }
+    }
+  }
+}
+body {
+  .dotsCustom {
+    .owl-dot {
+      &.active {
+        background-color: $green-bg1;
+      }
+      border: 2px solid $green-bg1;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin: 0 7px;
+      background: transparent;
+    }
+  }
+}
+/* AO end news page */
+/* AO start endowment page */
+.endowmentHeader {
+  padding: 55px 0 0;
+  .owl-item {
+    img {
+      height: 560px;
+      object-fit: cover;
+    }
+  }
+  .sliderNews {
+    .owl-dots {
+      position: absolute;
+      bottom: 32px;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .owl-carousel {
+    .owl-nav {
+      button {
+        background-color: #fff;
+        border: unset !important;
+
+        &.owl-prev {
+          #{$end-direction}: 5px;
+        }
+        &.owl-next {
+          #{$start-direction}: 5px;
+        }
+      }
+    }
+  }
+
+  .endowmentBox {
+    // background-color:#B4DDC0 ;
+    height: 560px;
+    border-radius: 12px;
+    padding: 92px 45px;
+    text-align: center;
+    list-style: none;
+    background:  url(../images/endowment/Pattern01.svg) no-repeat 50% 0px;
+    background-color:rgba(180,221,192,.5) ;
+    li {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #fff;
+      &:last-of-type {
+        margin-bottom: 0px;
+        border-bottom: 0px solid #fff;
+      }
+      h3 {
+        @extend .font30bold;
+        margin-bottom: 0;
+        line-height: normal;
+      }
+      p {
+        margin-bottom: 15px;
+        color: $green-bg2;
+      }
+    }
+  }
+}
+.endowmentContent  {
+  .contentBox {
+    .customTitle {
+      margin: 33px 0;
+    }
+    p {
+      @extend .pragh17regular2;
+    }
+    .row {
+      justify-content: center;
+    }
+    .boxServices {
+      .customTitle {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+.boxServices {
+  text-align: center;
+  margin-bottom: 50px;
+  .iconServ {
+    margin-bottom: 20px;
+  }
+}
+.downloadBook {
+  padding: 90px 0 89px;
+  a {
+    background: #B4DDC0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    strong {
+      @extend .font30bold;
+      padding-#{$start-direction}: 76px;
+      line-height: normal;
+      span {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+    }
+    .bgQwqaf {
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        background: url(../images/endowment/awqafBG.png) no-repeat 0 0;
+        height: 100%;
+        width: 240px;
+        right: 0;
+      }
+    }
+  }
+}
+.chartDevEndowment {
+  ul {
+    display: flex;
+    text-align: center;
+    justify-self: flex-start;
+    justify-content: #{$end-direction};
+    flex-wrap: wrap;
+    // direction: ltr;
+    li {
+      list-style: none;
+      // max-width: 206px;
+      max-width: 306px;
+      position: relative;
+      margin-bottom: 44px;
+      padding: 0 30px;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 25px;
+        height: 2px;
+        width: 75%;
+        background-color: #00ab7aa3;
+        right: 191px;
+      }
+      span {
+        width: 52px;
+        height: 52px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: #FFFFFF;
-        border-radius: 5px;
-        margin: 0 7px;
-        font-size: 16px;
+        background: rgba(76, 192, 173, 0.5);
+        border-radius: 50%;
+        font-size: 30px;
+        font-weight: bold;
         color: $green-bg1;
-        // &:first-of-type {
-        //     transform: rotate(180deg);
-        // }
-        &.current  {
-            background-color: $green-bg2;
-            color:#fff;
-            cursor: unset;
-        }
-        &.aspNetDisabled  {
-            cursor: unset;
-            opacity: .5;
-        }
+        margin: 0 auto;
+      }
+      p {
+        @extend .pragh17regular2;
+      }
     }
+  }
 }
-
-.sliderNews {
-    max-width: 1200px;
-    margin: 0 auto;
+.chartDevEndowment {
+	ul {
+		li {
+			&:nth-of-type(4n) {
+				&::after {
+					width: 45%;
+				}
+			}
+			&:last-of-type {
+				&::after {
+					width: 45%;
+				}
+				&::before {
+					position: absolute;
+					content: '';
+					height: 163px;
+					width: 29px;
+					#{$end-direction}: -26px;
+					top: -135px;
+					border-radius: 7px;
+					display: flex;
+					border-#{$end-direction}: 3px solid #00ab7aa3;
+				}
+			}
+		}
+	}
 }
+/* AO End endowment page */
 
-/* AO end news page */
+.FAQParent {
+  background-color: #f7f7f7;
+  .accordion {
+    margin-bottom: 68px;
+  }
+  .tabsBtns {
+    margin: 50px 0 42px;
+    justify-content: center;
+    .nav-item {
+      button {
+        min-width: 224px;
+        background: #fff;
+        height: 62px;
+        margin: 0 10px;
+        border-radius: 8px;
+        color: $color4;
+        font-size: 16px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        &.active {
+          background: $green-bg1;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin: 30px 0 0;
+    .accordion-item {
+      border: unset;
+      background: transparent;
+
+      .accordion-header {
+        button {
+          background: #FFFFFF;
+          border: unset;
+          height: 68px;
+          padding: 0 44px;
+          font-size: 17px;
+          color: $color3;
+          position: relative;
+          box-shadow: unset;
+          border-radius: 8px;
+          margin-bottom: 15px;
+          &::after {
+            background-image: url(../images/news/faqsArrow.svg);
+            #{$start-direction}: 20px;
+            position: absolute;
+            width: 13px;
+            height: 12px;
+            background-size: contain;
+            top: 30px;
+            filter: brightness(0);
+            transform: rotate(-93deg);
+          }
+          &:not(.collapsed) {
+            color: $green-bg3;
+            &::after {
+              filter: unset;
+              transform: unset;
+            }
+          }
+        }
+      }
+      .accordion-body {
+        padding: 11px 20px 40px 20px;
+        background: transparent;
+        .contentFaq {
+          p {
+            font-size: 16px;
+            line-height: 2;
+            color: $color3;
+          }
+          .actionFaqs {
+            margin-top: 25px;
+            text-align: center;
+            h2 {
+              font-size: 16px;
+              font-weight: bold;
+              color: $green-bg1;
+              margin-bottom: 18px;
+            }
+            .ActionBtn {
+              button {
+                border: unset;
+                min-width: 62px;
+                height: 40px;
+                border-radius: 6px;
+                background: #fff;
+                font-size: 18px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+                &.yesFaq {
+                  color: $green-bg3;
+                  margin-#{$end-direction}: 18px;
+                }
+                &.noFaq {
+                  color: $golden-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .redMoreCenter {
+    padding-bottom: 124px;
+    text-align: center;
+  }
+}

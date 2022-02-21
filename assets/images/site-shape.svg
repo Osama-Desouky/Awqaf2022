@@ -1,3 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="25.337" height="20" viewBox="0 0 25.337 20">
-  <path id="site-shape" d="M19.588,3.447A30.055,30.055,0,0,1,12.675,0,28.912,28.912,0,0,1,5.749,3.447C2.021,4.831,0,6.571,0,11.786V20c0-5.215,2.021-6.955,5.749-8.339a28.912,28.912,0,0,0,6.926-3.447,30.055,30.055,0,0,0,6.912,3.447c3.728,1.384,5.749,3.124,5.749,8.339V11.786c0-5.215-2.021-6.955-5.749-8.339" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.889" height="21.765" viewBox="0 0 28.889 21.765">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_14080" data-name="Rectangle 14080" width="28.889" height="21.765" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="site-shape" clip-path="url(#clip-path)">
+    <path id="site-shape-2" data-name="site-shape" d="M28.889,0c-1.983,2.885-8.041,6.133-15.4,8.865C6.909,11.31,1.995,14.659,0,21.765H28.889Z" transform="translate(0 0)" fill="#fff"/>
+  </g>
 </svg>

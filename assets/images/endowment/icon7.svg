@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="73" viewBox="0 0 71 73">
+  <g id="icon7" transform="translate(1 1)">
+    <rect id="base" width="69" height="71" rx="6" transform="translate(0 0)" fill="none" stroke="#c48145" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="Group_56286" data-name="Group 56286" transform="translate(19070.797 4963.507)">
+      <path id="Path_122992" data-name="Path 122992" d="M1419.463,105.639l-.683,2.2-1.328-1.878-2.3.03,1.375-1.844" transform="translate(-20449.393 -5055.854)" fill="none" stroke="#c48145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_122993" data-name="Path 122993" d="M1415.92,101.381l2.179.739,1.842-1.376-.029,2.3,1.878,1.328" transform="translate(-20449.521 -5055.271)" fill="none" stroke="#c48145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_122994" data-name="Path 122994" d="M1419.94,108.446a6.281,6.281,0,0,1-8.881-8.883c.142-.142.288-.274.439-.4a7.948,7.948,0,1,0,8.84,8.843Q1420.152,108.233,1419.94,108.446Z" transform="translate(-20447.566 -5055)" fill="none" stroke="#c48145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_122995" data-name="Path 122995" d="M1392.46,139.274l-.525,3.629,13.1,3.811L1392.077,160.1h6.739l11.605-11.77,11.445,11.77h6.738l-12.974-13.372,13.009-3.823-.452-3.629" transform="translate(-20445.408 -5061.881)" fill="none" stroke="#c48145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_122996" data-name="Path 122996" d="M1422.961,121.355c3.634-.539,5.288.26,5.288.26l1.965,13.105a1.421,1.421,0,0,1-1.6,1.531,27.9,27.9,0,0,0-14.131,2.324,3.989,3.989,0,0,1-.212.509,4.839,4.839,0,0,1-4.415,2.74h.054a4.837,4.837,0,0,1-4.414-2.74,4.012,4.012,0,0,1-.212-.509,27.9,27.9,0,0,0-14.132-2.324,1.42,1.42,0,0,1-1.595-1.531l1.964-13.105s1.749-.855,5.383-.316" transform="translate(-20445 -5058.767)" fill="none" stroke="#c48145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_122997" data-name="Path 122997" d="M1411.23,136.591c5.131-5.676,14.175-5.709,14.175-5.709l-1.4-11.887c-9.315.431-12.777,5.64-12.777,5.64h-.035s-3.462-5.209-12.777-5.64l-1.4,11.887s9.044.032,14.175,5.709Z" transform="translate(-20446.279 -5058.402)" fill="none" stroke="#c48145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
