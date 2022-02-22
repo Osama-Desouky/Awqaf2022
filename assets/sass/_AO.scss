@@ -1,4 +1,11 @@
 /* AO start global fields */
+$bgf7f7f7: #f7f7f7;
+.fancybox-skin {
+  padding: 0px!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+  background: transparent;
+}
 .main-navbar.fixed {
   display: none;
 }
@@ -35,7 +42,7 @@
   font-size: 17px;
   line-height: 1.6;
 }
-.pragh17regular2{
+.pragh17regular2 {
   font-size: 17px;
   font-weight: 400;
   color: $color1;
@@ -170,7 +177,7 @@ label {
   }
 }
 .bgNews {
-  background-color: #f7f7f7;
+  background-color: $bgf7f7f7;
 }
 .cardNews {
   transition: 0.3s;
@@ -475,8 +482,8 @@ body {
     padding: 92px 45px;
     text-align: center;
     list-style: none;
-    background:  url(../images/endowment/Pattern01.svg) no-repeat 50% 0px;
-    background-color:rgba(180,221,192,.5) ;
+    background: url(../images/endowment/Pattern01.svg) no-repeat 50% 0px;
+    background-color: rgba(180, 221, 192, 0.5);
     li {
       margin-bottom: 20px;
       border-bottom: 1px solid #fff;
@@ -496,7 +503,7 @@ body {
     }
   }
 }
-.endowmentContent  {
+.endowmentContent {
   .contentBox {
     .customTitle {
       margin: 33px 0;
@@ -524,7 +531,7 @@ body {
 .downloadBook {
   padding: 90px 0 89px;
   a {
-    background: #B4DDC0;
+    background: #b4ddc0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -542,7 +549,7 @@ body {
     }
     .bgQwqaf {
       position: relative;
-      &::after{
+      &::after {
         position: absolute;
         content: "";
         top: 0;
@@ -571,7 +578,7 @@ body {
       padding: 0 30px;
       &::after {
         position: absolute;
-        content: '';
+        content: "";
         top: 25px;
         height: 2px;
         width: 75%;
@@ -598,36 +605,36 @@ body {
   }
 }
 .chartDevEndowment {
-	ul {
-		li {
-			&:nth-of-type(4n) {
-				&::after {
-					width: 45%;
-				}
-			}
-			&:last-of-type {
-				&::after {
-					width: 45%;
-				}
-				&::before {
-					position: absolute;
-					content: '';
-					height: 163px;
-					width: 29px;
-					#{$end-direction}: -26px;
-					top: -135px;
-					border-radius: 7px;
-					display: flex;
-					border-#{$end-direction}: 3px solid #00ab7aa3;
-				}
-			}
-		}
-	}
+  ul {
+    li {
+      &:nth-of-type(4n) {
+        &::after {
+          width: 45%;
+        }
+      }
+      &:last-of-type {
+        &::after {
+          width: 45%;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          height: 163px;
+          width: 29px;
+          #{$end-direction}: -26px;
+          top: -135px;
+          border-radius: 7px;
+          display: flex;
+          border-#{$end-direction}: 3px solid #00ab7aa3;
+        }
+      }
+    }
+  }
 }
 /* AO End endowment page */
 
 .FAQParent {
-  background-color: #f7f7f7;
+  background-color: $bgf7f7f7;
   .accordion {
     margin-bottom: 68px;
   }
@@ -659,7 +666,7 @@ body {
 
       .accordion-header {
         button {
-          background: #FFFFFF;
+          background: #ffffff;
           border: unset;
           height: 68px;
           padding: 0 44px;
@@ -738,3 +745,82 @@ body {
     text-align: center;
   }
 }
+
+/* ao start gallery page */
+.bgGallery {
+  background-color: $bgf7f7f7;
+
+  .galleryBox {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin-bottom: 40px;
+    .forClick {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+
+    .GLimg {
+      height: 247px;
+      overflow: hidden;
+      position: relative;
+      img {
+        height: 100%;
+        transition: 0.4s;
+      }
+    }
+    &:hover {
+      .GLimg {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .GLtitle {
+      height: 113px;
+      background: #fff;
+      position: relative;
+      padding: 25px 10px 15px;
+      a {
+        font-size: 14px;
+        color: $green-bg2;
+        min-width: 156px;
+        display: inline-flex;
+        height: 40px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 10px;
+        border-radius: 20px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: -25px;
+        #{$start-direction}: 20px;
+        background: #fff;
+      }
+      h2 {
+        @extend .font20bold;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+  .pagination {
+    padding: 0;
+  }
+}
+.videoBox .forClick::before{
+    position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: url(../images/gallery/playIcon.svg) no-repeat center center;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, -50%);;
+}
+
+/* ao end gallery page */
