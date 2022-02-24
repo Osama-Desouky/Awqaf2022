@@ -590,81 +590,74 @@
     <footer>
 
         <div class="footer-slider">
-            <div class="slider-wrapper">
-
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="container">
-                            <div class="row row-center">
-                                <div class="col-lg-6">
-                                    <div class="caption">
-                                        <p>
-                                            يمكنك تسجيل وقف جديد عن طريق
-                                        </p>
-                                        <a href="#" class="sign-waqf">
-                                            خدمة تسجيل وقف
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
+            <div class="container">
+              <div class="row row-center">
+                <div class="col-lg-6" >
+            
+                  <div class="slider-wrapper">
+      
+            
+                    <div class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="caption">
+                          <p>
+                            يمكنك تسجيل وقف جديد عن طريق 
+                          </p>
+                          <a href="#" class="sign-waqf">
+                            خدمة تسجيل وقف
+                          </a>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="container">
-                            <div class="row row-center">
-                                <div class="col-lg-6">
-                                    <div class="caption">
-                                        <p>
-                                            يمكنك تسجيل وقف جديد عن طريق
-                                        </p>
-                                        <a href="#" class="sign-waqf">
-                                            خدمة تسجيل وقف
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
+                      </div>
+                      <div class="item">
+                        <div class="caption">
+                          <p>
+                            يمكنك تسجيل وقف جديد عن طريق 
+                          </p>
+                          <a href="#" class="sign-waqf">
+                            خدمة تسجيل وقف
+                          </a>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="container">
-                            <div class="row row-center">
-                                <div class="col-lg-6">
-                                    <div class="caption">
-                                        <p>
-                                            يمكنك تسجيل وقف جديد عن طريق
-                                        </p>
-                                        <a href="#" class="sign-waqf">
-                                            خدمة تسجيل وقف
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
+                      </div>
+                      <div class="item">
+                        <div class="caption">
+                          <p>
+                            يمكنك تسجيل وقف جديد عن طريق 
+                          </p>
+                          <a href="#" class="sign-waqf">
+                            خدمة تسجيل وقف
+                          </a>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="container">
-                            <div class="row row-center">
-                                <div class="col-lg-6">
-                                    <div class="caption">
-                                        <p>
-                                            يمكنك تسجيل وقف جديد عن طريق
-                                        </p>
-                                        <a href="#" class="sign-waqf">
-                                            خدمة تسجيل وقف
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
+                      </div>
+                      <div class="item">
+                        <div class="caption">
+                          <p>
+                            يمكنك تسجيل وقف جديد عن طريق 
+                          </p>
+                          <a href="#" class="sign-waqf">
+                            خدمة تسجيل وقف
+                          </a>
                         </div>
+                      </div>
+                      <div class="item">
+                        <div class="caption">
+                          <p>
+                            يمكنك تسجيل وقف جديد عن طريق 
+                          </p>
+                          <a href="#" class="sign-waqf">
+                            خدمة تسجيل وقف
+                          </a>
+                        </div>
+                      </div>
+                      
+                   
                     </div>
-
+                  </div>
                 </div>
+               
+        
+              </div>
             </div>
-        </div>
+          </div>
 
         <div class="top-footer">
 
@@ -894,6 +887,17 @@
                 e.preventDefault()
                 $(this).addClass("active").siblings().not($(this)).removeClass("active")
                 $(".displayHandlerCompenet").toggleClass("displayRow")
+            });
+            var footerSlider = $('.footer-slider .owl-carousel');
+            footerSlider.owlCarousel({
+                // loop: true,
+                nav: true,
+                items: 1,
+                autoplay: false,
+                rtl: true,
+                dots: false,
+                // autoplayTimeout: 7500,
+                // autoplayHoverPause:true
             });
         });
     </script>

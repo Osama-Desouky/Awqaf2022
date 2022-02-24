@@ -11776,12 +11776,12 @@ footer .footer-slider .owl-nav button span {
 }
 
 footer .footer-slider .owl-nav button.owl-prev {
-  left: 30%;
+  left: -5%;
   background-image: url(../images/footer-slider-right-arr.svg) !important;
 }
 
 footer .footer-slider .owl-nav button.owl-next {
-  right: 30%;
+  right: -5%;
   background-image: url(../images/footer-slider-left-arr.svg) !important;
 }
 

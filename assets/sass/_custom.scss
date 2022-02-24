@@ -505,11 +505,11 @@ footer{
           display: none;
         }
         &.owl-prev{
-          #{$start-direction}:30%;
+          #{$start-direction}:-5%;
           background-image: url(../images/footer-slider-right-arr.svg) !important;
         }
         &.owl-next{
-          #{$end-direction}:30%;
+          #{$end-direction}:-5%;
           background-image: url(../images/footer-slider-left-arr.svg) !important;
         }
       }
