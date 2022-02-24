@@ -1,15 +1,15 @@
 "use strict";
 
-var scrollTo = function (sectionEl = "", callback = function () {}) {
-  $("html, body").animate(
-    {
-      scrollTop: sectionEl ? calculateOffset(sectionEl) : 0,
-    },
-    800,
-    "swing",
-    callback()
-  );
-};
+// var scrollTo = function (sectionEl = "", callback = function () {}) {
+//   $("html, body").animate(
+//     {
+//       scrollTop: sectionEl ? calculateOffset(sectionEl) : 0,
+//     },
+//     800,
+//     "swing",
+//     callback()
+//   );
+// };
 var calculateOffset = function (el) {
   if ($(el).length == 0) return;
   if ($(window).width() >= 980) return Math.floor($(el).offset().top - 69);
@@ -58,7 +58,7 @@ $(function () {
   $(document).scroll(function () {
     var scroll = $(this).scrollTop();
     var navbar = $(".main-navbar");
-    var scrollUpBtn = $(".scroll-up");
+    // var scrollUpBtn = $(".scroll-up");
     // if (scroll > 0) {
     //   scrollUpBtn.fadeIn();
     // } else {
@@ -124,9 +124,9 @@ $(function () {
 }
   });
 
-  $(".scroll-down").on("click", function () {
-    scrollTo(".our-partners");
-  });
+  // $(".scroll-down").on("click", function () {
+  //   scrollTo(".home-about");
+  // });
   // $(".scroll-up").on("click", function () {
   //   scrollTo();
   // });
@@ -138,10 +138,10 @@ $(function () {
 
 
 
-$( "a.collapse-btn" ).click(function() {
-  $( this ).parent("div").toggleClass("show-collapse");
-  console.log("hello");
-});
+// $( "a.collapse-btn" ).click(function() {
+//   $( this ).parent("div").toggleClass("show-collapse");
+//   console.log("hello");
+// });
 
 
 
