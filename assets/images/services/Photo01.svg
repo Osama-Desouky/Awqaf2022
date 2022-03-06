@@ -1,0 +1,9 @@
+<svg id="Photo01" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect id="base" width="36" height="36" rx="6" fill="#00ab7a" opacity="0"/>
+  <g id="people-outline" transform="translate(-30.712 -89.975)">
+    <path id="Path_124989" data-name="Path 124989" d="M279.684,101.389c-.219,3.044-2.477,5.389-4.94,5.389s-4.724-2.344-4.94-5.389a4.958,4.958,0,1,1,9.879,0Z" transform="translate(-220.001 0)" fill="none" stroke="#00846c" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_124990" data-name="Path 124990" d="M202.781,304c-4.878,0-9.568,2.423-10.743,7.141a.951.951,0,0,0,.877,1.242h19.733a.952.952,0,0,0,.877-1.242C212.35,306.347,207.66,304,202.781,304Z" transform="translate(-148.038 -192.432)" fill="none" stroke="#00846c" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_124991" data-name="Path 124991" d="M101.78,132.336c-.175,2.431-2,4.345-3.967,4.345s-3.795-1.914-3.967-4.345a3.983,3.983,0,1,1,7.933,0Z" transform="translate(-57.215 -29.605)" fill="none" stroke="#00846c" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_124992" data-name="Path 124992" d="M45.014,295.407a10.484,10.484,0,0,0-4.416-.857c-3.892,0-7.642,1.935-8.581,5.7a.761.761,0,0,0,.7.992h8.4" transform="translate(0 -183.69)" fill="none" stroke="#00846c" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

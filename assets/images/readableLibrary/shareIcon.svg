@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="shareIcon" transform="translate(0.001 -0.574)">
+    <g id="Ellipse_171" data-name="Ellipse 171" transform="translate(-0.001 0.574)" fill="none" stroke="#00846c" stroke-width="1.5">
+      <circle cx="22" cy="22" r="22" stroke="none"/>
+      <circle cx="22" cy="22" r="21.25" fill="none"/>
+    </g>
+    <g id="Page-1" transform="translate(12.999 13.574)">
+      <g id="Icon-Set" transform="translate(1 1)">
+        <path id="share" d="M324.974,742.388a2.048,2.048,0,1,1,2.048-2.048,2.048,2.048,0,0,1-2.048,2.048Zm-9.56-5.463a2.049,2.049,0,1,1,2.049-2.048,2.048,2.048,0,0,1-2.049,2.048Zm9.56-9.56a2.048,2.048,0,1,1-2.048,2.049,2.048,2.048,0,0,1,2.048-2.049Zm0,9.56A3.4,3.4,0,0,0,322.1,738.5l-3.657-2.089a3.206,3.206,0,0,0,.221-2.519l3.8-2.173a3.582,3.582,0,1,0-.752-1.326l-3.8,2.173a3.418,3.418,0,1,0-.44,5.013l-.014.026,4.135,2.363a3.283,3.283,0,0,0-.038.369,3.414,3.414,0,1,0,3.414-3.414Z" transform="translate(-312 -726)" fill="#00846c" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
