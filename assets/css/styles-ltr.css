@@ -12083,6 +12083,14 @@ footer .last-footer a:hover {
   background-color: #F9F9F9;
 }
 
+.gray-bg2 {
+  background-color: #f7f7f7;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
 .darkMood {
   background-color: #000 !important;
 }
@@ -13298,6 +13306,758 @@ service-center
 
 .service-list.inner-serv-list .service-card:hover .content-box p {
   -webkit-text-stroke: 1px #707070;
+}
+
+/**********************  tenders-list   **************************/
+.tenders-list .tender-list-card {
+  background-color: #fff;
+  border: 1px solid #ECECEC;
+  padding: 30px 20px;
+  height: 245px;
+  margin-bottom: 30px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  position: relative;
+}
+
+.tenders-list .tender-list-card h4, .tenders-list .tender-list-card .h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00846C;
+  margin-bottom: 17px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.tenders-list .tender-list-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tenders-list .tender-list-card ul li {
+  margin-right: 20px;
+  width: 205px;
+}
+
+.tenders-list .tender-list-card ul li:last-child {
+  margin-right: 0px;
+}
+
+.tenders-list .tender-list-card ul li h5, .tenders-list .tender-list-card ul li .h5 {
+  background-color: #E7F1ED;
+  border-radius: 2px;
+  padding: 5px 10px 10px;
+  padding-left: 25px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F3329;
+}
+
+.tenders-list .tender-list-card ul li .content {
+  padding-left: 25px;
+}
+
+.tenders-list .tender-list-card ul li .content .content-box div {
+  font-size: 14px;
+  font-weight: 400;
+  color: #C48145;
+}
+
+.tenders-list .tender-list-card ul li .content-have-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+}
+
+.tenders-list .tender-list-card ul li .content-have-icon .img-box {
+  margin-right: 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+}
+
+.tenders-list .tender-list-card ul li .content-have-icon .content-box div {
+  font-size: 14px;
+  font-weight: 400;
+  color: #C48145;
+}
+
+.tenders-list .tender-list-card ul li .content-have-icon.status .img-box img {
+  vertical-align: baseline;
+}
+
+.tenders-list .tender-list-card ul li .content-have-icon.status .content-box div {
+  color: #7E8C76;
+}
+
+.tenders-list .tender-list-card:hover {
+  -webkit-filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
+          filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
+}
+
+.tenders-list .tender-list-card:hover h4, .tenders-list .tender-list-card:hover .h4 {
+  text-decoration: underline;
+}
+
+.latest-tenders {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: rgba(180, 221, 192, 0.3);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.latest-tenders h3, .latest-tenders .h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1C614E;
+  margin-bottom: 23px;
+}
+
+.latest-tenders p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F3329;
+  margin-bottom: 35px;
+}
+
+.latest-tenders .send-cri .mail-input {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 2px solid #CBDDD6;
+  width: 385px;
+  height: 52px;
+  padding: 14px 20px;
+}
+
+.latest-tenders .send-cri .mail-send {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #00846C;
+  border-radius: 16px;
+  margin-left: 15px;
+  padding: 14px 18px;
+  border: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.latest-tenders .send-cri .mail-send span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.latest-tenders .send-cri .mail-send img {
+  margin-left: 50px;
+}
+
+.latest-tenders .send-cri .mail-send:hover {
+  background-color: #1C614E;
+}
+
+.tender-details {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  padding: 30px 20px 80px;
+  background-color: #fff;
+  border: 1px solid #ECECEC;
+}
+
+.tender-details h2, .tender-details .h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #00846C;
+  margin-bottom: 50px;
+}
+
+.tender-details .tenders-item {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tender-details .tenders-item .tenders-label {
+  background-color: #E7F1ED;
+  border-radius: 2px;
+  padding: 5px 12px;
+  width: 205px;
+  height: 34px;
+}
+
+.tender-details .tenders-item .tenders-label h4, .tender-details .tenders-item .tenders-label .h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F3329;
+  margin-bottom: 0;
+}
+
+.tender-details .tenders-item .det {
+  margin-left: 15px;
+}
+
+.tender-details .tenders-item .det p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #C48145;
+  margin-bottom: 0;
+}
+
+.tender-details .tenders-item-flag {
+  width: 100%;
+  height: 100%;
+  background-color: #E7F1ED;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tender-details .tenders-item-flag .label h4, .tender-details .tenders-item-flag select h4, .tender-details .tenders-item-flag label h4, .tender-details .tenders-item-flag .label .h4, .tender-details .tenders-item-flag select .h4, .tender-details .tenders-item-flag label .h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1D1D1B;
+  margin-bottom: 15px;
+}
+
+.tender-details .tenders-item-flag .det p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7E8C76;
+  margin-bottom: 0;
+}
+
+.tender-details .tenders-item-flag .det p img {
+  margin-right: 8px;
+}
+
+.tender-details .attachments-section {
+  margin-top: 40px;
+}
+
+.tender-details .attachments-section h3, .tender-details .attachments-section .h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00846C;
+  margin-bottom: 25px;
+}
+
+.tender-details .attachments-section .attachments-container .field--item:nth-child(even) {
+  background-color: #E7F1ED;
+}
+
+.tender-details .attachments-section .attachments-container .item, .tender-details .attachments-section .attachments-container .file {
+  border: 1px solid #CBDDD6;
+  border-radius: 2px;
+  padding: 12px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.tender-details .attachments-section .attachments-container .item:nth-child(even), .tender-details .attachments-section .attachments-container .file:nth-child(even) {
+  background-color: #E7F1ED;
+}
+
+.tender-details .attachments-section .attachments-container .item .type, .tender-details .attachments-section .attachments-container .item .file-icon, .tender-details .attachments-section .attachments-container .file .type, .tender-details .attachments-section .attachments-container .file .file-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+
+.tender-details .attachments-section .attachments-container .item .name, .tender-details .attachments-section .attachments-container .item .file-link, .tender-details .attachments-section .attachments-container .file .name, .tender-details .attachments-section .attachments-container .file .file-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F3329;
+}
+
+.tender-details .attachments-section .attachments-container .item .name a, .tender-details .attachments-section .attachments-container .item .file-link a, .tender-details .attachments-section .attachments-container .file .name a, .tender-details .attachments-section .attachments-container .file .file-link a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.tender-details .attachments-section .attachments-container .item .size, .tender-details .attachments-section .attachments-container .item .file-size, .tender-details .attachments-section .attachments-container .file .size, .tender-details .attachments-section .attachments-container .file .file-size {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F3329;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.tender-details .attachments-section .attachments-container .item:hover .name, .tender-details .attachments-section .attachments-container .file:hover .name {
+  text-decoration: underline;
+}
+
+/****************************** Governance *********************************/
+.Governance-main {
+  margin-top: 100px;
+}
+
+.Governance-main .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Governance-main .content-box p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #0B261F;
+  margin-bottom: 0;
+}
+
+.Governance-full {
+  margin-top: 35px;
+}
+
+.Governance-full .customTitle {
+  margin-bottom: 35px;
+}
+
+.Governance-list {
+  margin-top: 50px;
+}
+
+.Governance-list .customTitle {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0;
+}
+
+.Governance-list .customTitle::after {
+  display: none;
+}
+
+/************************************ reyadah page *******************************************/
+.reyadah-main {
+  position: relative;
+  height: 470px;
+}
+
+.reyadah-main .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.reyadah-main .img-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #0b261f;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 38, 31, 0.501838)), color-stop(65%, rgba(238, 251, 246, 0.952819)));
+  background: linear-gradient(90deg, rgba(11, 38, 31, 0.501838) 0%, rgba(238, 251, 246, 0.952819) 65%);
+}
+
+.reyadah-main .img-box img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reyadah-main .logo-box {
+  position: absolute;
+  top: 185px;
+  right: 85px;
+  z-index: -1;
+  width: 330px;
+  height: 110px;
+}
+
+.reyadah-main .content-box {
+  margin-top: 160px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reyadah-main .content-box h2, .reyadah-main .content-box .h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1C614E;
+  margin-bottom: 22px;
+}
+
+.reyadah-main .content-box p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0B261F;
+  margin-bottom: 0;
+}
+
+.reyadah-inner {
+  margin-top: 170px;
+}
+
+.reyadah-inner h2, .reyadah-inner .h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1C614E;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.reyadah-inner p {
+  font-size: 17px;
+  color: #0B261F;
+  font-family: "FrutigerLTArabic-55Roman";
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.reyadah-inner .strategic-directions {
+  margin-top: 65px;
+}
+
+.reyadah-inner .the-msg {
+  background-color: #fff;
+  padding: 55px;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.reyadah-inner .the-msg .content-box {
+  max-width: 845px;
+  margin: 0 auto;
+}
+
+.reyadah-inner .the-msg .content-box h3, .reyadah-inner .the-msg .content-box .h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #00846C;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.reyadah-inner .the-msg .content-box h3 img, .reyadah-inner .the-msg .content-box .h3 img {
+  margin-right: 17px;
+}
+
+.reyadah-inner .the-msg .content-box h3 span, .reyadah-inner .the-msg .content-box .h3 span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.reyadah-inner .the-msg .content-box p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C614E;
+  text-align: center;
+}
+
+.reyadah-inner .our-roles {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.reyadah-inner .our-roles h2, .reyadah-inner .our-roles .h2 {
+  margin-bottom: 35px;
+}
+
+.reyadah-inner .our-roles p {
+  font-family: inherit;
+}
+
+.reyadah-inner .list-ryadah-card {
+  padding-top: 45px;
+  padding-bottom: 55px;
+  padding-left: 40px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #EFF5F3;
+  min-height: 490px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-bottom: 50px;
+}
+
+.reyadah-inner .list-ryadah-card .img-box {
+  margin-bottom: 18px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.reyadah-inner .list-ryadah-card .content-box {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.reyadah-inner .list-ryadah-card .content-box h4, .reyadah-inner .list-ryadah-card .content-box .h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1C614E;
+  margin-bottom: 35px;
+}
+
+.reyadah-inner .list-ryadah-card .content-box ul.green-dots li {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C614E;
+}
+
+.reyadah-inner .list-ryadah-card .content-box ul.green-dots li::marker {
+  color: #00AB7A;
+  width: 10px;
+  height: 10px;
+  font-size: 23px;
+  line-height: 15px;
+}
+
+.reyadah-inner .list-ryadah-card:hover {
+  background-color: #FFFFFF;
+  -webkit-filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
+          filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
+}
+
+.reyadah-inner .list-ryadah-card:hover .img-box {
+  opacity: 0;
+}
+
+.reyadah-inner .list-ryadah-card:hover .content-box {
+  -webkit-transform: translateY(-115px);
+          transform: translateY(-115px);
+}
+
+.reyadah-inner .ryada-more {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reyadah-inner .ryada-more a {
+  padding: 28px 50px 25px;
+  padding-left: 85px;
+  background-color: #fff;
+  border: 2px solid #00846C;
+  border-radius: 68px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1C614E;
+  display: inline-block;
+}
+
+.reyadah-inner .ryada-more a img {
+  margin-left: 65px;
+}
+
+.the-pilings {
+  background-color: #fff;
+  padding: 55px;
+  border-radius: 8px;
+  margin-top: 70px;
+}
+
+.the-pilings h3, .the-pilings .h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #00846C;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.the-pilings .pilling-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.the-pilings .pilling-card .img-box {
+  margin-bottom: 16px;
+}
+
+.the-pilings .pilling-card .content-box h4, .the-pilings .pilling-card .content-box .h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1C614E;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.the-values {
+  margin-top: 70px;
+}
+
+.the-values .optimize-col-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.the-values h3, .the-values .h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #00846C;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.the-values h3 img, .the-values .h3 img {
+  margin-right: 17px;
+}
+
+.the-values .values-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: revert;
+          flex-direction: revert;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.the-values .values-list .values-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(20% - 16px);
+  margin-right: 20px;
+}
+
+.the-values .values-list .values-card:last-child {
+  margin-right: 0;
+}
+
+.the-values .values-list .values-card .img-box {
+  margin-bottom: 20px;
+}
+
+.the-values .values-list .values-card .content-box h4, .the-values .values-list .values-card .content-box .h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1C614E;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 /* AO start global fields */
