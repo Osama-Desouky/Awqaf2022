@@ -14061,9 +14061,9 @@ service-center
 }
 
 /* AO start global fields */
-input[type='email'],
+input[type="email"],
 textarea,
-input[type='text'] {
+input[type="text"] {
   border: 3px solid #00AB7A;
   padding: 0 17px;
   border-radius: 6px;
@@ -14116,6 +14116,119 @@ textarea {
   color: #05261487;
 }
 
+.arrowDown:hover strong img {
+  -webkit-transform: scaleX(1.1) scaleY(1.3);
+          transform: scaleX(1.1) scaleY(1.3);
+}
+
+.arrowDown span {
+  font-size: 16px;
+  color: #00846C;
+  padding-right: 15px;
+}
+
+.arrowDown strong {
+  width: 44px;
+  height: 44px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #00846C;
+  border-radius: 50px;
+}
+
+.arrowDown strong img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.shareLink {
+  position: relative;
+}
+
+.shareLink:hover strong {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+  opacity: 0;
+}
+
+.shareLink:hover .shareLi {
+  left: 0;
+}
+
+.shareLink:hover .shareLi li {
+  padding-right: 10px;
+}
+
+.shareLink strong {
+  display: none;
+  font-weight: 400;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shareLink strong span {
+  font-size: 16px;
+  color: #00846C;
+  padding-left: 15px;
+  font-weight: 400;
+}
+
+.shareLink .shareLi {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: -180px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.shareLink .shareLi li {
+  padding-right: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.shareLink .shareLi li a {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.shareLink .shareLi li a:hover {
+  background: #00ab7a;
+}
+
+.shareLink .shareLi li a:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
 .fancybox-skin {
   padding: 0px !important;
   -webkit-box-shadow: none !important;
@@ -14147,7 +14260,7 @@ textarea {
   font-weight: 500;
 }
 
-.font20bold, .cardNews .cardText .heading20, .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .h2 {
+.font20bold, .cardNews .cardText .heading20, .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .h2, .readableBox .RText h3, .readableBox .RText .h3, .serviceBox .srvText h3, .serviceBox .srvText .h3, .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .h4, .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .h3 {
   color: #1C614E;
   line-height: 35px;
   font-size: 20px;
@@ -14161,7 +14274,7 @@ textarea {
   line-height: 55px;
 }
 
-.pragh17regular, .BGInnerNew .contentNews p {
+.pragh17regular, .BGInnerNew .contentNews p, .servicesPageTwo .heading p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .boxServ2 .testSR p {
   color: #0B261F;
   font-size: 17px;
   line-height: 1.6;
@@ -14227,8 +14340,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btnWithArrow span {
@@ -14237,7 +14350,7 @@ textarea {
 }
 
 .btnWithArrow:hover {
-  background: #36976C;
+  background: #36976c;
 }
 
 select::-ms-expand {
@@ -14371,6 +14484,11 @@ select {
   height: 228px;
 }
 
+.cardNews:hover .CardImg img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .cardNews:hover .cardText {
   height: 286px;
 }
@@ -14383,6 +14501,7 @@ select {
   height: 247px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .cardNews .CardImg img {
@@ -14581,7 +14700,7 @@ select {
 
 .BGInnerNew .dateOfNews .dateNS span {
   font-size: 14px;
-  color: #96A78C;
+  color: #96a78c;
   padding-left: 5px;
 }
 
@@ -15090,7 +15209,7 @@ body .dotsCustom .owl-dot.active {
 
 .videoBox .forClick::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 60px;
   height: 60px;
   background: url(../images/gallery/playIcon.svg) no-repeat center center;
@@ -15126,14 +15245,14 @@ body .dotsCustom .owl-dot.active {
 
 .contactUsBg .contactBox .UsList li a {
   font-size: 16px;
-  color: #96A78C;
+  color: #96a78c;
   margin-bottom: 20px;
   display: inline-block;
 }
 
 .contactUsBg .contactBox .UsList li a .greenFont {
   font-size: 16px;
-  color: #96A78C;
+  color: #96a78c;
   padding-left: 10px;
   padding-right: 25px;
 }
@@ -15162,7 +15281,7 @@ body .dotsCustom .owl-dot.active {
 }
 
 .contactUsBg .bgMap .bgSend {
-  background: #F1F5F2;
+  background: #f1f5f2;
   padding: 60px 70px;
 }
 
@@ -15170,31 +15289,41 @@ body .dotsCustom .owl-dot.active {
   margin-bottom: 25px;
 }
 
-.contactUsBg .bgMap .bgSend .inputGroup input, .contactUsBg .bgMap .bgSend .inputGroup select, .contactUsBg .bgMap .bgSend .inputGroup textarea {
+.contactUsBg .bgMap .bgSend .inputGroup input,
+.contactUsBg .bgMap .bgSend .inputGroup select,
+.contactUsBg .bgMap .bgSend .inputGroup textarea {
   width: 100%;
   color: #0B261F;
   font-weight: 500;
 }
 
-.contactUsBg .bgMap .bgSend .inputGroup input::-webkit-input-placeholder, .contactUsBg .bgMap .bgSend .inputGroup select::-webkit-input-placeholder, .contactUsBg .bgMap .bgSend .inputGroup textarea::-webkit-input-placeholder {
+.contactUsBg .bgMap .bgSend .inputGroup input::-webkit-input-placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup select::-webkit-input-placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup textarea::-webkit-input-placeholder {
   font-size: 16px;
   color: #0B261F;
   font-weight: 500;
 }
 
-.contactUsBg .bgMap .bgSend .inputGroup input:-ms-input-placeholder, .contactUsBg .bgMap .bgSend .inputGroup select:-ms-input-placeholder, .contactUsBg .bgMap .bgSend .inputGroup textarea:-ms-input-placeholder {
+.contactUsBg .bgMap .bgSend .inputGroup input:-ms-input-placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup select:-ms-input-placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup textarea:-ms-input-placeholder {
   font-size: 16px;
   color: #0B261F;
   font-weight: 500;
 }
 
-.contactUsBg .bgMap .bgSend .inputGroup input::-ms-input-placeholder, .contactUsBg .bgMap .bgSend .inputGroup select::-ms-input-placeholder, .contactUsBg .bgMap .bgSend .inputGroup textarea::-ms-input-placeholder {
+.contactUsBg .bgMap .bgSend .inputGroup input::-ms-input-placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup select::-ms-input-placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup textarea::-ms-input-placeholder {
   font-size: 16px;
   color: #0B261F;
   font-weight: 500;
 }
 
-.contactUsBg .bgMap .bgSend .inputGroup input::placeholder, .contactUsBg .bgMap .bgSend .inputGroup select::placeholder, .contactUsBg .bgMap .bgSend .inputGroup textarea::placeholder {
+.contactUsBg .bgMap .bgSend .inputGroup input::placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup select::placeholder,
+.contactUsBg .bgMap .bgSend .inputGroup textarea::placeholder {
   font-size: 16px;
   color: #0B261F;
   font-weight: 500;
@@ -15242,7 +15371,7 @@ body .dotsCustom .owl-dot.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #CBDDD6;
+  border: 2px solid #cbddd6;
   width: 280px;
   height: 210px;
   -webkit-box-pack: center;
@@ -15251,8 +15380,8 @@ body .dotsCustom .owl-dot.active {
   border-radius: 12px;
   margin-right: 30px;
   margin-bottom: 30px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .channelCard .chCardBox p {
@@ -15293,12 +15422,12 @@ body .dotsCustom .owl-dot.active {
           justify-content: center;
 }
 
-.committeesV2 .ComText .font20bold, .committeesV2 .ComText .cardNews .cardText .heading20, .cardNews .cardText .committeesV2 .ComText .heading20, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText h2, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle .h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText .h2 {
+.committeesV2 .ComText .font20bold, .committeesV2 .ComText .cardNews .cardText .heading20, .cardNews .cardText .committeesV2 .ComText .heading20, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText h2, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle .h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText .h2, .committeesV2 .ComText .readableBox .RText h3, .readableBox .RText .committeesV2 .ComText h3, .committeesV2 .ComText .readableBox .RText .h3, .readableBox .RText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .srvText h3, .serviceBox .srvText .committeesV2 .ComText h3, .committeesV2 .ComText .serviceBox .srvText .h3, .serviceBox .srvText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .committeesV2 .ComText h4, .committeesV2 .ComText .serviceBox .detailsHidden .h4, .serviceBox .detailsHidden .committeesV2 .ComText .h4, .committeesV2 .ComText .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .committeesV2 .ComText h3, .committeesV2 .ComText .servicesPageTwo .redirectServ .h3, .servicesPageTwo .redirectServ .committeesV2 .ComText .h3 {
   font-size: 25px;
   margin-bottom: 21px;
 }
 
-.committeesV2 .ComText .pragh17regular, .committeesV2 .ComText .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV2 .ComText p {
+.committeesV2 .ComText .pragh17regular, .committeesV2 .ComText .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV2 .ComText p {
   font-size: 16px;
   margin: 0;
 }
@@ -15356,7 +15485,7 @@ body .dotsCustom .owl-dot.active {
 .boxCommittee {
   height: 234px;
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15373,8 +15502,8 @@ body .dotsCustom .owl-dot.active {
           align-items: center;
   text-align: center;
   margin-bottom: 40px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .boxCommittee:hover {
@@ -15386,7 +15515,7 @@ body .dotsCustom .owl-dot.active {
   margin-bottom: 16px;
 }
 
-.boxCommittee .pragh17regular, .boxCommittee .BGInnerNew .contentNews p, .BGInnerNew .contentNews .boxCommittee p {
+.boxCommittee .pragh17regular, .boxCommittee .BGInnerNew .contentNews p, .BGInnerNew .contentNews .boxCommittee p, .boxCommittee .servicesPageTwo .heading p, .servicesPageTwo .heading .boxCommittee p, .boxCommittee .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .boxCommittee p, .boxCommittee .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .boxCommittee p {
   height: 88px;
   margin: 0;
   overflow: hidden;
@@ -15396,19 +15525,19 @@ body .dotsCustom .owl-dot.active {
   margin-bottom: 100px;
 }
 
-.committeesV1 .pragh17regular, .committeesV1 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 p {
+.committeesV1 .pragh17regular, .committeesV1 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 p, .committeesV1 .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV1 p, .committeesV1 .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV1 p, .committeesV1 .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV1 p {
   font-size: 16px;
 }
 
-.committeesV1 .col-md-12 .pragh17regular, .committeesV1 .col-md-12 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 .col-md-12 p {
+.committeesV1 .col-md-12 .pragh17regular, .committeesV1 .col-md-12 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV1 .col-md-12 p {
   margin: 50px 0 60px;
   text-align: center;
 }
 
 .committeesV1 .boxCommitteeAwqaf {
   display: inline-block;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   margin-bottom: 30px;
 }
 
@@ -15418,8 +15547,8 @@ body .dotsCustom .owl-dot.active {
 }
 
 .committeesV1 .boxCommitteeAwqaf .BoxBgQwqaflogo img {
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .committeesV1 .boxCommitteeAwqaf .BoxBgQwqaflogo::after {
@@ -15438,7 +15567,7 @@ body .dotsCustom .owl-dot.active {
 }
 
 .committeesV1 .boxCommitteeAwqaf .AQtext p {
-  color: #96A78C;
+  color: #96a78c;
   font-size: 16px;
   line-height: 28px;
   height: 140px;
@@ -15447,8 +15576,8 @@ body .dotsCustom .owl-dot.active {
 }
 
 .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews img {
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   width: 30px;
 }
 
@@ -15474,6 +15603,377 @@ body .dotsCustom .owl-dot.active {
 }
 
 /* AO end committees page */
+/* start ReadableLibrary page*/
+.readableBox {
+  margin-bottom: 40px;
+}
+
+.readableBox:hover {
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.readableBox:hover .RImg img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.readableBox .RImg {
+  max-height: 383px;
+  overflow: hidden;
+  height: 383px;
+}
+
+.readableBox .RImg img {
+  height: 103%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.readableBox .RText {
+  background-color: #fff;
+  padding: 18px 16px 23px;
+  position: relative;
+}
+
+.readableBox .RText h3, .readableBox .RText .h3 {
+  font-size: 17px;
+  line-height: normal;
+  height: 44px;
+  overflow: hidden;
+  position: relative;
+}
+
+.readableBox .RText h3::before, .readableBox .RText .h3::before {
+  position: absolute;
+  content: "";
+  background-color: #cbddd6;
+  width: 78px;
+  height: 3px;
+  left: 0;
+  top: 36px;
+}
+
+.readableBox .RText p {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 4px 16px;
+  border-radius: 20px;
+  color: #C48145;
+  margin: 0;
+  display: inline-flex;
+  position: absolute;
+  top: -52px;
+  right: 15px;
+}
+
+.readableBox .RText p span {
+  font-size: 14px;
+  padding-left: 8px;
+  color: #C48145;
+}
+
+.readableBox .RText .actionsBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.displayRow2 .col-md-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.displayRow2 .readableBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #ececec;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.displayRow2 .readableBox .RImg {
+  width: 196px;
+  height: 226px;
+}
+
+.displayRow2 .readableBox .RText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  width: 65%;
+}
+
+.displayRow2 .readableBox .RText h3::before, .displayRow2 .readableBox .RText .h3::before {
+  display: none;
+}
+
+.displayRow2 .readableBox .RText p {
+  position: unset;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.displayRow2 .readableBox .RText .actionsBtn {
+  margin-top: 21px;
+}
+
+/* end ReadableLibrary page*/
+/* start services page */
+.FAQParent .tabsBtns .nav-item button {
+  min-width: 190px;
+}
+
+.serviceBox {
+  background: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 60px 20px 30px;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  height: 315px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.serviceBox:hover {
+  padding: 20px;
+  background: #00AB7A;
+}
+
+.serviceBox:hover .srvText,
+.serviceBox:hover .SrvLogo {
+  display: none;
+}
+
+.serviceBox:hover .detailsHidden {
+  display: block;
+}
+
+.serviceBox .SrvLogo {
+  height: 120px;
+}
+
+.serviceBox .srvText h3, .serviceBox .srvText .h3 {
+  font-size: 24px;
+  margin: 0;
+  line-height: normal;
+  height: 90px;
+  overflow: hidden;
+}
+
+.serviceBox .detailsHidden {
+  display: none;
+}
+
+.serviceBox .detailsHidden h4, .serviceBox .detailsHidden .h4 {
+  font-size: 24px;
+  margin: 0;
+  line-height: normal;
+  height: 70px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.serviceBox .detailsHidden p {
+  font-size: 16px;
+  margin-bottom: 23px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.serviceBox .detailsHidden .actionServ {
+  margin: 0 20%;
+}
+
+.serviceBox .detailsHidden .actionServ .btnWithArrow {
+  background: #1c614e;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 20px;
+  margin-bottom: 9px;
+}
+
+.serviceBox .detailsHidden .actionServ .descServ {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 17px;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+}
+
+.serviceBox .detailsHidden .actionServ .descServ:hover {
+  border: 1px solid #fff;
+}
+
+.servicesPageTwo {
+  background-color: #f7f7f7;
+  padding: 73px 0 108px;
+}
+
+.servicesPageTwo .heading {
+  padding-top: 31px;
+  margin-bottom: 50px;
+}
+
+.servicesPageTwo .heading .customTitle {
+  margin-bottom: 20px;
+}
+
+.servicesPageTwo .heading p {
+  padding-left: 40px;
+}
+
+.servicesPageTwo .redirectServ {
+  background: #fff;
+  border-radius: 8px;
+  padding: 47px 24px 65px;
+}
+
+.servicesPageTwo .redirectServ .btnWithArrow {
+  background: #1C614E;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 86px;
+}
+
+.servicesPageTwo .redirectServ .btnWithArrow h3, .servicesPageTwo .redirectServ .btnWithArrow .h3 {
+  font-size: 25px;
+  margin-bottom: 28px;
+}
+
+.servicesPageTwo .redirectServ .btnWithArrow span {
+  padding-right: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.servicesPageTwo .redirectServ .btnWithArrow:hover {
+  background-color: #00846C;
+}
+
+.servicesPageTwo .wrapperBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 23px;
+}
+
+.servicesPageTwo .wrapperBox .whiteBoxServ {
+  background-color: #fff;
+  padding: 19px 25px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 37px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: calc(51% - 21px);
+}
+
+.servicesPageTwo .wrapperBox .whiteBoxServ:nth-of-type(odd) {
+  margin-right: 21px;
+}
+
+.servicesPageTwo .wrapperBox .whiteBoxServ .logoB {
+  width: 37px;
+  margin-right: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.servicesPageTwo .wrapperBox .whiteBoxServ .textB h3, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .h3 {
+  color: #D6BD81;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+
+.servicesPageTwo .wrapperBox .whiteBoxServ .textB p {
+  margin-bottom: 0;
+}
+
+.servicesPageTwo .boxServ2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.servicesPageTwo .boxServ2 .logoSR {
+  width: 40px;
+  padding-right: 18px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.servicesPageTwo .boxServ2 .testSR h2, .servicesPageTwo .boxServ2 .testSR .h2 {
+  color: #00846C;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+
+.servicesPageTwo .boxServ2 .testSR p {
+  margin-bottom: 12px;
+}
+
+.servicesPageTwo .boxServ2 .testSR ul {
+  padding-left: 15px;
+  list-style: decimal;
+}
+
+/* end services page */
 /*
 this UI is made desktop first.
 */
