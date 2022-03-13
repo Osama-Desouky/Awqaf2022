@@ -63,7 +63,7 @@ textarea {
     color: $color3;
     line-height: 24px;
     margin-bottom: 15px;
-    
+
     p {
       font-size: 16px;
       color: $color3;
@@ -288,6 +288,94 @@ label {
   @extend .label;
 }
 /* AO end global fields */
+
+/* in dark mode */
+.darkMood {
+
+  background-color: #060c0a !important;
+  .breadcrumb-area {
+    // background-color: #060c0a !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a:not(.nav-link),
+  span,
+  strong,
+  .details-list ul.green-dots li,
+  .details-list ul.green-dots li::marker,
+  .filterDate label,
+  .pagination a.current,
+  .breadcrumb li {
+    color: #fff !important;
+  }
+  .functions-sec a {
+    filter: grayscale(100%);
+  }
+  .about-tabs ul.nav {
+    background-color: #fff;
+  }
+  .FAQParent .redMoreCenter .readMoreBtn img ,
+  .channelCard .chCardBox img,
+  .breadcrumb-area ul.breadcrumb li:not(:last-of-type)::before,
+  .BGInnerNew .dateOfNews .dateNS img,
+  .content-with-icon .img-box img,
+  .share img,
+  .customTitle::after,
+  .boxServices .iconServ img,
+  .arrowNews .owl-carousel .owl-nav button {
+    filter: brightness(0) invert(1) !important;
+  }
+  .endowmentHeader .owl-carousel .owl-nav button {
+    filter: unset !important;
+  }
+  .about-list-cards .list-card .content-box p {
+    color: #0f3329 !important;
+  }
+  .bgGallery .galleryBox .GLtitle h2,
+  .pagination a,
+  .bgGallery .galleryBox .GLtitle a span,
+  .boxCommittee .pragh17regular,
+  .shareLink strong span,
+  .top-nav .top-links .Accessibilty .dropdown-menu li a span,
+  .board-members .list-card .content-box p,
+  .readableBox .RText h3, .readableBox .RText .h3,
+  .cardNews .cardText .heading20,
+  .cardNews .cardText .redMoreNews span,
+  .board-members .list-card .content-box h4 {
+    color: #1c614e !important;
+  }
+  .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
+  .board-members .list-card .content-box a {
+    color: #00ab7a !important;
+  }
+  .top-nav .top-links .Accessibilty .dropdown-menu li a {
+    color: #96a78c !important;
+  }
+  .committeesV1 .boxCommitteeAwqaf .AQtext p {
+    color: #96a78c !important;
+  }
+  .displayRow .cardNews .cardText .praghCard {
+    color: #8fa498  !important;
+  }
+  .readableBox .RText p span {
+    color: #C48145 !important;
+  }
+  .contactUsBg .bgMap .bgSend {
+    background: #0d1815;
+  }
+  .bgNews,
+  .bgGallery,
+  .PrivacyPolicy,
+  .Bgshare,
+  .FAQParent {
+    background-color: transparent;
+  }
+}
 
 /* AO start news page */
 .forDirction {
@@ -1909,7 +1997,6 @@ body {
   }
 }
 
-
 .Suggestions {
   background-color: $bgf7f7f7;
   padding-top: 97px;
@@ -1923,23 +2010,23 @@ body {
     margin-bottom: 50px;
     box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
     .red {
-      color: #C44545;
+      color: #c44545;
       padding-right: 7px;
     }
     .inputg {
       label {
         display: block;
         margin-bottom: 5px;
-        color: #0B261F;
+        color: #0b261f;
         font-size: 16px;
       }
-      input[type='email'],
-      input[type='number'],
+      input[type="email"],
+      input[type="number"],
       textarea,
       select,
-      input[type='text'] {
+      input[type="text"] {
         width: 100%;
-        border: 2px solid #CBDDD6;
+        border: 2px solid #cbddd6;
         height: 48px;
         border-radius: 6px;
         margin-bottom: 15px;
@@ -1950,12 +2037,10 @@ body {
       select {
         background: #fff url(../images/news/ArrowSelect.svg) no-repeat 13px 20px;
       }
-      
     }
-
   }
   .bgW2 {
-    background: rgba(203,221, 214, 0.3);
+    background: rgba(203, 221, 214, 0.3);
     padding: 35px 52px 20px 52px;
     border-radius: 6px;
     .filepond--drop-label {
@@ -1976,7 +2061,7 @@ body {
         padding-#{$start-direction}: 15px;
       }
     }
-  } 
+  }
   .actionBtn {
     padding: 85px 0 30px;
     width: 90%;
@@ -1985,20 +2070,17 @@ body {
     align-items: center;
     justify-content: space-between;
     .btnWithArrow {
-      background-color: #00846C;
+      background-color: #00846c;
       &:hover {
-        background-color: #1C614E;
-
+        background-color: #1c614e;
       }
     }
   }
 }
 
-
 .searchModal {
-
 }
-@media(min-width:576px) {
+@media (min-width: 576px) {
   .modal-dialog {
     max-width: 917px;
     display: flex;
@@ -2011,7 +2093,7 @@ body {
   justify-content: space-between;
   padding: 0;
   margin: 12px 21px 29px;
-  border-bottom: 1px solid #DCEBE5;
+  border-bottom: 1px solid #dcebe5;
   padding-bottom: 10px;
 }
 .modal-header .btn-close {
@@ -2021,3 +2103,199 @@ body {
 .modal-footer {
   display: none;
 }
+
+/* start responsive media */
+
+/* tab */
+@media (max-width: 992px) {
+  .committeesV2 {
+    .ComText {
+      padding-left: 0;
+    }
+  }
+  .BoxBgQwqaflogo {
+    height: 280px;
+  }
+  .committeesV1 {
+    margin-bottom: 0;
+  }
+  .contactUsBg {
+    .bgMap {
+      .bgSend {
+        padding: 28px 20px;
+        .actionBtn {
+          flex-direction: column;
+          .btnWithArrow {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    padding-bottom: 0;
+    .contactBox {
+      .UsList {
+        li {
+          a {
+            .greenFont {
+              padding-#{$end-direction}: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .BGInnerNew {
+    padding-bottom: 0px;
+  }
+
+  // -----------------------------------
+  .bgNews .forDirction {
+  }
+  .bgNews .forDirction .col-md-3 {
+    max-width: unset;
+  }
+  .forDirction .col-md-3:nth-of-type(1) {
+    width: 35%;
+  }
+  .forDirction .col-md-3:nth-of-type(2) {
+    width: 30%;
+  }
+  .forDirction .col-md-3:nth-of-type(3) {
+    display: none;
+  }
+  .snipptNews .col-md-3,
+  .displayHandlerCompenet .col-md-3 {
+    width: 50%;
+  }
+  .displayHandlerCompenet.displayRow .col-md-3 {
+    width: 100%;
+  }
+  .BGInnerNew .col-md-12 .font30bold {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-next {
+    right: -15px;
+    background-color: #fff;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-prev {
+    left: -15px;
+    background-color: #fff;
+  }
+  .BGInnerNew .sliderNews .fancybox img {
+    max-height: 300px;
+  }
+  // -----------------------------------
+}
+/* end tab 992 */
+
+/* mob */
+@media (max-width: 767px) {
+  .committeesV2 {
+    .ComText {
+      margin-top: 25px;
+    }
+  }
+  .marginBottom {
+    margin: 30px 0;
+  }
+  .BoxBgQwqaflogo {
+    height: 280px;
+  }
+  .clearPadding {
+    margin-bottom: 0px;
+  }
+  .contactUsBg {
+    padding-top: 40px;
+    .bgMap {
+      margin-top: 0;
+      .customTitle {
+        margin-bottom: 32px;
+        margin-top: 30px;
+      }
+      .col-md-6 {
+        &:first-of-type {
+          padding-#{$end-direction}: 12px;
+        }
+        &:last-of-type {
+          padding-#{$start-direction}: 12px;
+        }
+      }
+    }
+    .contactBox {
+      margin-top: 0;
+    }
+  }
+  .channelCard {
+    .chCardBox {
+      margin: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .BGInnerNew .col-md-12 .font30bold {
+    font-size: 25px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+  }
+  .BGInnerNew .dateOfNews {
+    flex-direction: column;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-next {
+    right: -15px;
+    transform: scale(-0.8) translateY(50%);
+    background-color: #fff;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-prev {
+    left: -15px;
+    transform: scale(0.8) translateY(-50%);
+    background-color: #fff;
+  }
+  .BGInnerNew .sliderNews .fancybox img {
+    max-height: 220px;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .sliderNews .fancybox::after {
+    bottom: 0px;
+    right: 5px;
+    transform: scale(0.8);
+  }
+  .BGInnerNew .contentNews p {
+    font-size: 16px;
+  }
+  // -----------------------------------
+  .bgNews .forDirction {
+  }
+  .bgNews .forDirction .col-md-3 {
+    max-width: unset;
+  }
+  .forDirction {
+    text-align: right;
+  }
+  .forDirction .col-md-3:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .forDirction .col-md-3:nth-of-type(2) {
+    width: 100%;
+  }
+  .forDirction .col-md-3:nth-of-type(3) {
+    display: none;
+  }
+  .snipptNews .col-md-3,
+  .displayHandlerCompenet .col-md-3 {
+    width: 100%;
+  }
+  .displayHandlerCompenet.displayRow .col-md-3 {
+    width: 100%;
+  }
+  //   -------------------------------
+}
+/* end mob 767 */
+@media (max-width: 350px) {
+}
+
+/* end responsive media */

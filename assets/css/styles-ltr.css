@@ -14445,6 +14445,128 @@ select {
 }
 
 /* AO end global fields */
+/* in dark mode */
+.darkMood {
+  background-color: #060c0a !important;
+}
+
+.darkMood h1, .darkMood .h1,
+.darkMood h2,
+.darkMood .h2,
+.darkMood h3,
+.darkMood .h3,
+.darkMood h4,
+.darkMood .h4,
+.darkMood h5,
+.darkMood .h5,
+.darkMood h6,
+.darkMood .h6,
+.darkMood p,
+.darkMood a:not(.nav-link),
+.darkMood span,
+.darkMood strong,
+.darkMood .details-list ul.green-dots li,
+.darkMood .details-list ul.green-dots li::marker,
+.darkMood .filterDate label,
+.darkMood .pagination a.current,
+.darkMood .breadcrumb li {
+  color: #fff !important;
+}
+
+.darkMood .functions-sec a {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.darkMood .about-tabs ul.nav {
+  background-color: #fff;
+}
+
+.darkMood .FAQParent .redMoreCenter .readMoreBtn img,
+.darkMood .channelCard .chCardBox img,
+.darkMood .breadcrumb-area ul.breadcrumb li:not(:last-of-type)::before,
+.darkMood .BGInnerNew .dateOfNews .dateNS img,
+.darkMood .content-with-icon .img-box img,
+.darkMood .share img,
+.darkMood .customTitle::after,
+.darkMood .boxServices .iconServ img,
+.darkMood .arrowNews .owl-carousel .owl-nav button {
+  -webkit-filter: brightness(0) invert(1) !important;
+          filter: brightness(0) invert(1) !important;
+}
+
+.darkMood .endowmentHeader .owl-carousel .owl-nav button {
+  -webkit-filter: unset !important;
+          filter: unset !important;
+}
+
+.darkMood .about-list-cards .list-card .content-box p {
+  color: #0f3329 !important;
+}
+
+.darkMood .bgGallery .galleryBox .GLtitle h2, .darkMood .bgGallery .galleryBox .GLtitle .h2,
+.darkMood .pagination a,
+.darkMood .bgGallery .galleryBox .GLtitle a span,
+.darkMood .boxCommittee .pragh17regular,
+.darkMood .boxCommittee .BGInnerNew .contentNews p,
+.BGInnerNew .contentNews .darkMood .boxCommittee p,
+.darkMood .boxCommittee .servicesPageTwo .heading p,
+.servicesPageTwo .heading .darkMood .boxCommittee p,
+.darkMood .boxCommittee .servicesPageTwo .wrapperBox .whiteBoxServ .textB p,
+.servicesPageTwo .wrapperBox .whiteBoxServ .textB .darkMood .boxCommittee p,
+.darkMood .boxCommittee .servicesPageTwo .boxServ2 .testSR p,
+.servicesPageTwo .boxServ2 .testSR .darkMood .boxCommittee p,
+.darkMood .boxCommittee .textHeading p,
+.textHeading .darkMood .boxCommittee p,
+.darkMood .boxCommittee .TermsConditions .boxDesc p,
+.TermsConditions .boxDesc .darkMood .boxCommittee p,
+.darkMood .boxCommittee .PrivacyPolicy .boxDesc p,
+.PrivacyPolicy .boxDesc .darkMood .boxCommittee p,
+.darkMood .shareLink strong span,
+.darkMood .top-nav .top-links .Accessibilty .dropdown-menu li a span,
+.darkMood .board-members .list-card .content-box p,
+.darkMood .readableBox .RText h3,
+.darkMood .readableBox .RText .h3, .darkMood .readableBox .RText .h3,
+.darkMood .cardNews .cardText .heading20,
+.darkMood .cardNews .cardText .redMoreNews span,
+.darkMood .board-members .list-card .content-box h4,
+.darkMood .board-members .list-card .content-box .h4 {
+  color: #1c614e !important;
+}
+
+.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
+.darkMood .board-members .list-card .content-box a {
+  color: #00ab7a !important;
+}
+
+.darkMood .top-nav .top-links .Accessibilty .dropdown-menu li a {
+  color: #96a78c !important;
+}
+
+.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext p {
+  color: #96a78c !important;
+}
+
+.darkMood .displayRow .cardNews .cardText .praghCard {
+  color: #8fa498  !important;
+}
+
+.darkMood .readableBox .RText p span {
+  color: #C48145 !important;
+}
+
+.darkMood .contactUsBg .bgMap .bgSend {
+  background: #0d1815;
+}
+
+.darkMood .bgNews,
+.darkMood .bgGallery,
+.darkMood .PrivacyPolicy,
+.darkMood .Bgshare,
+.darkMood .FAQParent {
+  background-color: transparent;
+}
+
 /* AO start news page */
 .forDirction {
   -webkit-box-orient: horizontal;
@@ -16466,24 +16588,24 @@ body .dotsCustom .owl-dot.active {
 }
 
 .Suggestions .bgWhite .red {
-  color: #C44545;
+  color: #c44545;
   padding-right: 7px;
 }
 
 .Suggestions .bgWhite .inputg label {
   display: block;
   margin-bottom: 5px;
-  color: #0B261F;
+  color: #0b261f;
   font-size: 16px;
 }
 
-.Suggestions .bgWhite .inputg input[type='email'],
-.Suggestions .bgWhite .inputg input[type='number'],
+.Suggestions .bgWhite .inputg input[type="email"],
+.Suggestions .bgWhite .inputg input[type="number"],
 .Suggestions .bgWhite .inputg textarea,
 .Suggestions .bgWhite .inputg select,
-.Suggestions .bgWhite .inputg input[type='text'] {
+.Suggestions .bgWhite .inputg input[type="text"] {
   width: 100%;
-  border: 2px solid #CBDDD6;
+  border: 2px solid #cbddd6;
   height: 48px;
   border-radius: 6px;
   margin-bottom: 15px;
@@ -16544,11 +16666,11 @@ body .dotsCustom .owl-dot.active {
 }
 
 .Suggestions .actionBtn .btnWithArrow {
-  background-color: #00846C;
+  background-color: #00846c;
 }
 
 .Suggestions .actionBtn .btnWithArrow:hover {
-  background-color: #1C614E;
+  background-color: #1c614e;
 }
 
 @media (min-width: 576px) {
@@ -16571,7 +16693,7 @@ body .dotsCustom .owl-dot.active {
           justify-content: space-between;
   padding: 0;
   margin: 12px 21px 29px;
-  border-bottom: 1px solid #DCEBE5;
+  border-bottom: 1px solid #dcebe5;
   padding-bottom: 10px;
 }
 
@@ -16584,6 +16706,179 @@ body .dotsCustom .owl-dot.active {
   display: none;
 }
 
+/* start responsive media */
+/* tab */
+@media (max-width: 992px) {
+  .committeesV2 .ComText {
+    padding-left: 0;
+  }
+  .BoxBgQwqaflogo {
+    height: 280px;
+  }
+  .committeesV1 {
+    margin-bottom: 0;
+  }
+  .contactUsBg {
+    padding-bottom: 0;
+  }
+  .contactUsBg .bgMap .bgSend {
+    padding: 28px 20px;
+  }
+  .contactUsBg .bgMap .bgSend .actionBtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactUsBg .bgMap .bgSend .actionBtn .btnWithArrow {
+    margin-top: 20px;
+  }
+  .contactUsBg .contactBox .UsList li a .greenFont {
+    padding-right: 0px;
+  }
+  .BGInnerNew {
+    padding-bottom: 0px;
+  }
+  .bgNews .forDirction .col-md-3 {
+    max-width: unset;
+  }
+  .forDirction .col-md-3:nth-of-type(1) {
+    width: 35%;
+  }
+  .forDirction .col-md-3:nth-of-type(2) {
+    width: 30%;
+  }
+  .forDirction .col-md-3:nth-of-type(3) {
+    display: none;
+  }
+  .snipptNews .col-md-3,
+  .displayHandlerCompenet .col-md-3 {
+    width: 50%;
+  }
+  .displayHandlerCompenet.displayRow .col-md-3 {
+    width: 100%;
+  }
+  .BGInnerNew .col-md-12 .font30bold, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 h3, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li .h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 .h3, .BGInnerNew .col-md-12 .downloadBook a strong, .downloadBook a .BGInnerNew .col-md-12 strong {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-next {
+    right: -15px;
+    background-color: #fff;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-prev {
+    left: -15px;
+    background-color: #fff;
+  }
+  .BGInnerNew .sliderNews .fancybox img {
+    max-height: 300px;
+  }
+}
+
+/* end tab 992 */
+/* mob */
+@media (max-width: 767px) {
+  .committeesV2 .ComText {
+    margin-top: 25px;
+  }
+  .marginBottom {
+    margin: 30px 0;
+  }
+  .BoxBgQwqaflogo {
+    height: 280px;
+  }
+  .clearPadding {
+    margin-bottom: 0px;
+  }
+  .contactUsBg {
+    padding-top: 40px;
+  }
+  .contactUsBg .bgMap {
+    margin-top: 0;
+  }
+  .contactUsBg .bgMap .customTitle {
+    margin-bottom: 32px;
+    margin-top: 30px;
+  }
+  .contactUsBg .bgMap .col-md-6:first-of-type {
+    padding-right: 12px;
+  }
+  .contactUsBg .bgMap .col-md-6:last-of-type {
+    padding-left: 12px;
+  }
+  .contactUsBg .contactBox {
+    margin-top: 0;
+  }
+  .channelCard .chCardBox {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .BGInnerNew .col-md-12 .font30bold, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 h3, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li .h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 .h3, .BGInnerNew .col-md-12 .downloadBook a strong, .downloadBook a .BGInnerNew .col-md-12 strong {
+    font-size: 25px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+  }
+  .BGInnerNew .dateOfNews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-next {
+    right: -15px;
+    -webkit-transform: scale(-0.8) translateY(50%);
+            transform: scale(-0.8) translateY(50%);
+    background-color: #fff;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-prev {
+    left: -15px;
+    -webkit-transform: scale(0.8) translateY(-50%);
+            transform: scale(0.8) translateY(-50%);
+    background-color: #fff;
+  }
+  .BGInnerNew .sliderNews .fancybox img {
+    max-height: 220px;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sliderNews .fancybox::after {
+    bottom: 0px;
+    right: 5px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .BGInnerNew .contentNews p {
+    font-size: 16px;
+  }
+  .bgNews .forDirction .col-md-3 {
+    max-width: unset;
+  }
+  .forDirction {
+    text-align: right;
+  }
+  .forDirction .col-md-3:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .forDirction .col-md-3:nth-of-type(2) {
+    width: 100%;
+  }
+  .forDirction .col-md-3:nth-of-type(3) {
+    display: none;
+  }
+  .snipptNews .col-md-3,
+  .displayHandlerCompenet .col-md-3 {
+    width: 100%;
+  }
+  .displayHandlerCompenet.displayRow .col-md-3 {
+    width: 100%;
+  }
+}
+
+/* end mob 767 */
+/* end responsive media */
 /*
 this UI is made desktop first.
 */
