@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135.293" height="128.235" viewBox="0 0 135.293 128.235">
+  <defs>
+    <filter id="ASQsasq" x="0" y="0" width="135.293" height="128.235" filterUnits="userSpaceOnUse">
+      <feOffset dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="asd" transform="translate(-22250.795 -25701.5)">
+    <g transform="matrix(1, 0, 0, 1, 22250.79, 25701.5)" filter="url(#ASQsasq)">
+      <path id="ASQsasq-2" data-name="ASQsasq" d="M6.5,0,13,7H0Z" transform="translate(74.15 72.5) rotate(180)" fill="#fff" stroke="#e2e2e2" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

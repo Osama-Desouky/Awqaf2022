@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="logo002" transform="translate(2 2)">
+    <rect id="base" width="40" height="40" rx="20" transform="translate(-2 -2)" fill="#00ab7a" opacity="0.2"/>
+    <g id="Group_56329" data-name="Group 56329" transform="translate(6.037 5.785)">
+      <line id="Line_397" data-name="Line 397" x2="10.456" transform="translate(10.103 8.669)" fill="none" stroke="#00846c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_1170" data-name="Line 1170" x2="6.535" transform="translate(14.076 13.519)" fill="none" stroke="#00846c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_1171" data-name="Line 1171" x2="3.3" transform="translate(14.078 18.368)" fill="none" stroke="#00846c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_123271" data-name="Path 123271" d="M245.216,337.93H254.6a1.006,1.006,0,0,0,1.017-1v-16.1a1.215,1.215,0,0,0-.378-1.017l-5.331-5.133a1.144,1.144,0,0,0-.794-.32H237.751a1.006,1.006,0,0,0-1.017,1V324.2" transform="translate(-231.692 -314.36)" fill="rgba(0,0,0,0)" stroke="#00846c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <ellipse id="Ellipse_11262" data-name="Ellipse 11262" cx="5.658" cy="5.658" rx="5.658" ry="5.658" transform="translate(0 13.114)" fill="none" stroke="#00846c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_125000" data-name="Path 125000" d="M-10497.76,3752.3l1.515,2.114,3.94-3.512" transform="translate(10500.689 -3733.479)" fill="none" stroke="#00846c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

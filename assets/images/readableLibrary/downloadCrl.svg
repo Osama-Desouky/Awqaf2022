@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="downloadCrl" transform="translate(-4 -4)">
+    <g id="downloadCrl-2" data-name="downloadCrl" transform="translate(4 4)" fill="none" stroke="#00846c" stroke-width="1.5">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.25" fill="none"/>
+    </g>
+    <g id="Group_23077" data-name="Group 23077" transform="translate(18.057 27.156) rotate(-90)">
+      <g id="Group_8" data-name="Group 8" transform="translate(10.018) rotate(90)">
+        <line id="Line_1" data-name="Line 1" y2="9.341" transform="translate(3.883)" fill="none" stroke="#00846c" stroke-width="1.5"/>
+        <path id="Path_92" data-name="Path 92" d="M7.767,0,3.883,3.974,0,0" transform="translate(0 6.043)" fill="none" stroke="#00846c" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="293" height="46" viewBox="0 0 293 46">
+  <g id="upload1" transform="translate(-1005 -432.316)">
+    <g id="Rectangle_13960" data-name="Rectangle 13960" transform="translate(1133 432.316)" fill="#f1fcf8" stroke="#bddcd0" stroke-width="1">
+      <rect width="165" height="46" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="164" height="45" rx="1.5" fill="none"/>
+    </g>
+    <text id="Choose_file" data-name="Choose file" transform="translate(1215 462.316)" fill="#0b261f" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-41.637" y="0">Choose file</tspan></text>
+    <text id="No_file_chosen" data-name="No file chosen" transform="translate(1059 462.316)" fill="#0b261f" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-53.797" y="0">No file chosen</tspan></text>
+  </g>
+</svg>
