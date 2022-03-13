@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="shareIconSmall" transform="translate(-3.999 -4.496)">
+    <g id="circle" transform="translate(3.999 4.496)" fill="none" stroke="#00846c" stroke-width="1.5">
+      <rect width="36" height="36" rx="18" stroke="none"/>
+      <rect x="0.75" y="0.75" width="34.5" height="34.5" rx="17.25" fill="none"/>
+    </g>
+    <g id="Page-1" transform="translate(12.999 13.574)">
+      <g id="Icon-Set" transform="translate(1 1)">
+        <path id="share" d="M324.974,742.388a2.048,2.048,0,1,1,2.048-2.048,2.048,2.048,0,0,1-2.048,2.048Zm-9.56-5.463a2.049,2.049,0,1,1,2.049-2.048,2.048,2.048,0,0,1-2.049,2.048Zm9.56-9.56a2.048,2.048,0,1,1-2.048,2.049,2.048,2.048,0,0,1,2.048-2.049Zm0,9.56A3.4,3.4,0,0,0,322.1,738.5l-3.657-2.089a3.206,3.206,0,0,0,.221-2.519l3.8-2.173a3.582,3.582,0,1,0-.752-1.326l-3.8,2.173a3.418,3.418,0,1,0-.44,5.013l-.014.026,4.135,2.363a3.283,3.283,0,0,0-.038.369,3.414,3.414,0,1,0,3.414-3.414Z" transform="translate(-312 -726)" fill="#00846c" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

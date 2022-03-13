@@ -14981,6 +14981,10 @@ input[type="text"] {
   min-height: 48px;
 }
 
+.filepond--credits {
+  display: none;
+}
+
 textarea {
   height: 154px;
   resize: none;
@@ -15059,6 +15063,77 @@ textarea {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.ulPoint {
+  padding-bottom: 50px;
+}
+
+.ulPoint li {
+  font-size: 16px;
+  color: #0B261F;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.ulPoint li p {
+  font-size: 16px;
+  color: #0B261F;
+  line-height: 24px;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.ulPoint li::marker {
+  color: #00846C;
+  font-size: 22px;
+}
+
+.downloadFile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 421px;
+  background: #fff;
+  min-height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 22px;
+  padding-right: 41px;
+  border: 1px solid #cbddd6;
+  border-radius: 4px;
+}
+
+.downloadFile span {
+  font-size: 17px;
+  color: #0b261f;
+  width: 80%;
+}
+
+.downloadFile span strong {
+  color: #00846C;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.downloadFile .logoBorder {
+  width: 20%;
+  border-left: 1px solid #cbddd6;
+  padding-left: 30px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .shareLink {
@@ -15171,7 +15246,7 @@ textarea {
   font-weight: 500;
 }
 
-.font20bold, .cardNews .cardText .heading20, .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .h2, .readableBox .RText h3, .readableBox .RText .h3, .serviceBox .srvText h3, .serviceBox .srvText .h3, .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .h4, .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .h3 {
+.font20bold, .cardNews .cardText .heading20, .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .h2, .readableBox .RText h3, .readableBox .RText .h3, .serviceBox .srvText h3, .serviceBox .srvText .h3, .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .h4, .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .h3, .SearchResults .resultBox li h3 a, .SearchResults .resultBox li .h3 a {
   color: #1C614E;
   line-height: 35px;
   font-size: 20px;
@@ -15185,7 +15260,8 @@ textarea {
   line-height: 55px;
 }
 
-.pragh17regular, .BGInnerNew .contentNews p, .servicesPageTwo .heading p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .boxServ2 .testSR p {
+.pragh17regular, .BGInnerNew .contentNews p, .servicesPageTwo .heading p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .boxServ2 .testSR p, .textHeading p, .TermsConditions .boxDesc p,
+.PrivacyPolicy .boxDesc p {
   color: #0B261F;
   font-size: 17px;
   line-height: 1.6;
@@ -15280,6 +15356,128 @@ select {
 }
 
 /* AO end global fields */
+/* in dark mode */
+.darkMood {
+  background-color: #060c0a !important;
+}
+
+.darkMood h1, .darkMood .h1,
+.darkMood h2,
+.darkMood .h2,
+.darkMood h3,
+.darkMood .h3,
+.darkMood h4,
+.darkMood .h4,
+.darkMood h5,
+.darkMood .h5,
+.darkMood h6,
+.darkMood .h6,
+.darkMood p,
+.darkMood a:not(.nav-link),
+.darkMood span,
+.darkMood strong,
+.darkMood .details-list ul.green-dots li,
+.darkMood .details-list ul.green-dots li::marker,
+.darkMood .filterDate label,
+.darkMood .pagination a.current,
+.darkMood .breadcrumb li {
+  color: #fff !important;
+}
+
+.darkMood .functions-sec a {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.darkMood .about-tabs ul.nav {
+  background-color: #fff;
+}
+
+.darkMood .FAQParent .redMoreCenter .readMoreBtn img,
+.darkMood .channelCard .chCardBox img,
+.darkMood .breadcrumb-area ul.breadcrumb li:not(:last-of-type)::before,
+.darkMood .BGInnerNew .dateOfNews .dateNS img,
+.darkMood .content-with-icon .img-box img,
+.darkMood .share img,
+.darkMood .customTitle::after,
+.darkMood .boxServices .iconServ img,
+.darkMood .arrowNews .owl-carousel .owl-nav button {
+  -webkit-filter: brightness(0) invert(1) !important;
+          filter: brightness(0) invert(1) !important;
+}
+
+.darkMood .endowmentHeader .owl-carousel .owl-nav button {
+  -webkit-filter: unset !important;
+          filter: unset !important;
+}
+
+.darkMood .about-list-cards .list-card .content-box p {
+  color: #0f3329 !important;
+}
+
+.darkMood .bgGallery .galleryBox .GLtitle h2, .darkMood .bgGallery .galleryBox .GLtitle .h2,
+.darkMood .pagination a,
+.darkMood .bgGallery .galleryBox .GLtitle a span,
+.darkMood .boxCommittee .pragh17regular,
+.darkMood .boxCommittee .BGInnerNew .contentNews p,
+.BGInnerNew .contentNews .darkMood .boxCommittee p,
+.darkMood .boxCommittee .servicesPageTwo .heading p,
+.servicesPageTwo .heading .darkMood .boxCommittee p,
+.darkMood .boxCommittee .servicesPageTwo .wrapperBox .whiteBoxServ .textB p,
+.servicesPageTwo .wrapperBox .whiteBoxServ .textB .darkMood .boxCommittee p,
+.darkMood .boxCommittee .servicesPageTwo .boxServ2 .testSR p,
+.servicesPageTwo .boxServ2 .testSR .darkMood .boxCommittee p,
+.darkMood .boxCommittee .textHeading p,
+.textHeading .darkMood .boxCommittee p,
+.darkMood .boxCommittee .TermsConditions .boxDesc p,
+.TermsConditions .boxDesc .darkMood .boxCommittee p,
+.darkMood .boxCommittee .PrivacyPolicy .boxDesc p,
+.PrivacyPolicy .boxDesc .darkMood .boxCommittee p,
+.darkMood .shareLink strong span,
+.darkMood .top-nav .top-links .Accessibilty .dropdown-menu li a span,
+.darkMood .board-members .list-card .content-box p,
+.darkMood .readableBox .RText h3,
+.darkMood .readableBox .RText .h3, .darkMood .readableBox .RText .h3,
+.darkMood .cardNews .cardText .heading20,
+.darkMood .cardNews .cardText .redMoreNews span,
+.darkMood .board-members .list-card .content-box h4,
+.darkMood .board-members .list-card .content-box .h4 {
+  color: #1c614e !important;
+}
+
+.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
+.darkMood .board-members .list-card .content-box a {
+  color: #00ab7a !important;
+}
+
+.darkMood .top-nav .top-links .Accessibilty .dropdown-menu li a {
+  color: #96a78c !important;
+}
+
+.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext p {
+  color: #96a78c !important;
+}
+
+.darkMood .displayRow .cardNews .cardText .praghCard {
+  color: #8fa498  !important;
+}
+
+.darkMood .readableBox .RText p span {
+  color: #C48145 !important;
+}
+
+.darkMood .contactUsBg .bgMap .bgSend {
+  background: #0d1815;
+}
+
+.darkMood .bgNews,
+.darkMood .bgGallery,
+.darkMood .PrivacyPolicy,
+.darkMood .Bgshare,
+.darkMood .FAQParent {
+  background-color: transparent;
+}
+
 /* AO start news page */
 .forDirction {
   -webkit-box-orient: horizontal;
@@ -15903,22 +16101,14 @@ body .dotsCustom .owl-dot.active {
 }
 
 /* AO End endowment page */
-.FAQParent {
-  background-color: #f7f7f7;
-}
-
-.FAQParent .accordion {
-  margin-bottom: 68px;
-}
-
-.FAQParent .tabsBtns {
+.tabsBtns {
   margin: 50px 0 42px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.FAQParent .tabsBtns .nav-item button {
+.tabsBtns .nav-item button {
   min-width: 224px;
   background: #fff;
   height: 62px;
@@ -15930,9 +16120,17 @@ body .dotsCustom .owl-dot.active {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.FAQParent .tabsBtns .nav-item button.active {
+.tabsBtns .nav-item button.active {
   background: #1C614E;
   color: #fff;
+}
+
+.FAQParent {
+  background-color: #f7f7f7;
+}
+
+.FAQParent .accordion {
+  margin-bottom: 68px;
 }
 
 .FAQParent .tab-content {
@@ -16333,12 +16531,13 @@ body .dotsCustom .owl-dot.active {
           justify-content: center;
 }
 
-.committeesV2 .ComText .font20bold, .committeesV2 .ComText .cardNews .cardText .heading20, .cardNews .cardText .committeesV2 .ComText .heading20, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText h2, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle .h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText .h2, .committeesV2 .ComText .readableBox .RText h3, .readableBox .RText .committeesV2 .ComText h3, .committeesV2 .ComText .readableBox .RText .h3, .readableBox .RText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .srvText h3, .serviceBox .srvText .committeesV2 .ComText h3, .committeesV2 .ComText .serviceBox .srvText .h3, .serviceBox .srvText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .committeesV2 .ComText h4, .committeesV2 .ComText .serviceBox .detailsHidden .h4, .serviceBox .detailsHidden .committeesV2 .ComText .h4, .committeesV2 .ComText .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .committeesV2 .ComText h3, .committeesV2 .ComText .servicesPageTwo .redirectServ .h3, .servicesPageTwo .redirectServ .committeesV2 .ComText .h3 {
+.committeesV2 .ComText .font20bold, .committeesV2 .ComText .cardNews .cardText .heading20, .cardNews .cardText .committeesV2 .ComText .heading20, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText h2, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle .h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText .h2, .committeesV2 .ComText .readableBox .RText h3, .readableBox .RText .committeesV2 .ComText h3, .committeesV2 .ComText .readableBox .RText .h3, .readableBox .RText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .srvText h3, .serviceBox .srvText .committeesV2 .ComText h3, .committeesV2 .ComText .serviceBox .srvText .h3, .serviceBox .srvText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .committeesV2 .ComText h4, .committeesV2 .ComText .serviceBox .detailsHidden .h4, .serviceBox .detailsHidden .committeesV2 .ComText .h4, .committeesV2 .ComText .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .committeesV2 .ComText h3, .committeesV2 .ComText .servicesPageTwo .redirectServ .h3, .servicesPageTwo .redirectServ .committeesV2 .ComText .h3, .committeesV2 .ComText .SearchResults .resultBox li h3 a, .SearchResults .resultBox li h3 .committeesV2 .ComText a, .committeesV2 .ComText .SearchResults .resultBox li .h3 a, .SearchResults .resultBox li .h3 .committeesV2 .ComText a {
   font-size: 25px;
   margin-bottom: 21px;
 }
 
-.committeesV2 .ComText .pragh17regular, .committeesV2 .ComText .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV2 .ComText p {
+.committeesV2 .ComText .pragh17regular, .committeesV2 .ComText .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV2 .ComText p, .committeesV2 .ComText .textHeading p, .textHeading .committeesV2 .ComText p, .committeesV2 .ComText .TermsConditions .boxDesc p, .TermsConditions .boxDesc .committeesV2 .ComText p,
+.committeesV2 .ComText .PrivacyPolicy .boxDesc p, .PrivacyPolicy .boxDesc .committeesV2 .ComText p {
   font-size: 16px;
   margin: 0;
 }
@@ -16426,7 +16625,8 @@ body .dotsCustom .owl-dot.active {
   margin-bottom: 16px;
 }
 
-.boxCommittee .pragh17regular, .boxCommittee .BGInnerNew .contentNews p, .BGInnerNew .contentNews .boxCommittee p, .boxCommittee .servicesPageTwo .heading p, .servicesPageTwo .heading .boxCommittee p, .boxCommittee .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .boxCommittee p, .boxCommittee .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .boxCommittee p {
+.boxCommittee .pragh17regular, .boxCommittee .BGInnerNew .contentNews p, .BGInnerNew .contentNews .boxCommittee p, .boxCommittee .servicesPageTwo .heading p, .servicesPageTwo .heading .boxCommittee p, .boxCommittee .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .boxCommittee p, .boxCommittee .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .boxCommittee p, .boxCommittee .textHeading p, .textHeading .boxCommittee p, .boxCommittee .TermsConditions .boxDesc p, .TermsConditions .boxDesc .boxCommittee p,
+.boxCommittee .PrivacyPolicy .boxDesc p, .PrivacyPolicy .boxDesc .boxCommittee p {
   height: 88px;
   margin: 0;
   overflow: hidden;
@@ -16436,11 +16636,13 @@ body .dotsCustom .owl-dot.active {
   margin-bottom: 100px;
 }
 
-.committeesV1 .pragh17regular, .committeesV1 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 p, .committeesV1 .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV1 p, .committeesV1 .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV1 p, .committeesV1 .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV1 p {
+.committeesV1 .pragh17regular, .committeesV1 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 p, .committeesV1 .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV1 p, .committeesV1 .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV1 p, .committeesV1 .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV1 p, .committeesV1 .textHeading p, .textHeading .committeesV1 p, .committeesV1 .TermsConditions .boxDesc p, .TermsConditions .boxDesc .committeesV1 p,
+.committeesV1 .PrivacyPolicy .boxDesc p, .PrivacyPolicy .boxDesc .committeesV1 p {
   font-size: 16px;
 }
 
-.committeesV1 .col-md-12 .pragh17regular, .committeesV1 .col-md-12 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV1 .col-md-12 p {
+.committeesV1 .col-md-12 .pragh17regular, .committeesV1 .col-md-12 .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .textHeading p, .textHeading .committeesV1 .col-md-12 p, .committeesV1 .col-md-12 .TermsConditions .boxDesc p, .TermsConditions .boxDesc .committeesV1 .col-md-12 p,
+.committeesV1 .col-md-12 .PrivacyPolicy .boxDesc p, .PrivacyPolicy .boxDesc .committeesV1 .col-md-12 p {
   margin: 50px 0 60px;
   text-align: center;
 }
@@ -16663,6 +16865,14 @@ body .dotsCustom .owl-dot.active {
   margin-top: 21px;
 }
 
+.displayRow2 .readableBox .RText p {
+  padding: 0;
+}
+
+.displayRow2 .readableBoxV2 {
+  margin-bottom: 40px;
+}
+
 /* end ReadableLibrary page*/
 /* start services page */
 .FAQParent .tabsBtns .nav-item button {
@@ -16863,13 +17073,13 @@ body .dotsCustom .owl-dot.active {
 
 .servicesPageTwo .boxServ2 .logoSR {
   width: 40px;
-  padding-right: 18px;
+  margin-right: 18px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
 .servicesPageTwo .boxServ2 .testSR h2, .servicesPageTwo .boxServ2 .testSR .h2 {
-  color: #00846C;
+  color: #00846c;
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 26px;
@@ -16884,7 +17094,702 @@ body .dotsCustom .owl-dot.active {
   list-style: decimal;
 }
 
+.servicesPageTwo .boxServ2 .testSR .ulIcons {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0 60px;
+}
+
+.servicesPageTwo .boxServ2 .testSR .ulIcons li {
+  width: 210px;
+  padding-right: 63px;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+
+.servicesPageTwo .boxServ2 .testSR .ulIcons li:last-of-type::after {
+  display: none;
+}
+
+.servicesPageTwo .boxServ2 .testSR .ulIcons li::after {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 67px;
+  width: 50%;
+  height: 10px;
+  background: #d2d2d2;
+  z-index: -1;
+}
+
+.servicesPageTwo .boxServ2 .testSR .ulIcons li img {
+  max-width: 138px;
+}
+
+.servicesPageTwo .boxServ2 .testSR .ulIcons li p {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 31px;
+}
+
+.servicesPageTwo .boxServ2 .testSR .actionsDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.servicesPageTwo .boxServ2 .testSR .actionsDownload .downloadFile {
+  margin-right: 20px;
+}
+
 /* end services page */
+.RegulationsV2 {
+  background-color: #f7f7f7;
+}
+
+.imgHeaing {
+  max-height: 437px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.textHeading {
+  margin-top: 50px;
+  height: calc(100% - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textHeading p {
+  margin: 0;
+  line-height: 32px;
+}
+
+.flexRevers {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.flexRevers .tabsBtns {
+  padding-right: 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0 !important;
+}
+
+.flexRevers .tabsBtns .nav-item button {
+  min-width: auto;
+  font-size: 14px;
+}
+
+.flexRevers .searchNews input {
+  width: 100%;
+}
+
+.flexRevers .displayComponent .label, .flexRevers .displayComponent select, .flexRevers .displayComponent label {
+  font-size: 14px;
+}
+
+.readableBoxV2 {
+  margin-bottom: 50px;
+}
+
+.readableBoxV2 .RText {
+  background-color: transparent;
+}
+
+.readableBoxV2 .RText .actionsBtn {
+  overflow: unset;
+}
+
+.readableBoxV2 .RText h3, .readableBoxV2 .RText .h3 {
+  font-size: 16px;
+  line-height: 35px;
+  height: 65px;
+  margin-bottom: 10px;
+}
+
+.readableBoxV2 .RText h3::before, .readableBoxV2 .RText .h3::before {
+  display: none;
+}
+
+.readableBoxV2 .shareLink .shareLi {
+  top: -50px;
+  right: 0;
+  left: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  padding: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.readableBoxV2 .shareLink .shareLi li {
+  padding-left: 5px;
+}
+
+.readableBoxV2 .shareLink .shareLi::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 32px;
+  right: 58px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+.readableBoxV2 .shareLink:hover .shareLi {
+  opacity: 1;
+}
+
+.readableBoxV2 .shareLink:hover .shareLi li {
+  padding-right: 5px;
+}
+
+.readableBoxV2 .shareLink:hover strong {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
+}
+
+.readableBoxV2 .shareLink strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.readableBoxV2 .shareLink strong span {
+  padding-left: 10px;
+}
+
+.readableBoxV2 .actionsBtn .downloadL a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.readableBoxV2 .actionsBtn .downloadL a span {
+  padding-left: 10px;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.readableBoxV2:hover .RText {
+  background-color: #fff;
+}
+
+.Bgshare {
+  background-color: #f7f7f7;
+}
+
+.TermsConditions,
+.PrivacyPolicy {
+  padding-bottom: 170px;
+  padding-top: 40px;
+  background-color: #f7f7f7;
+}
+
+.TermsConditions .textHeading h1, .TermsConditions .textHeading .h1,
+.PrivacyPolicy .textHeading h1,
+.PrivacyPolicy .textHeading .h1 {
+  width: 100%;
+  color: #1C614E;
+  line-height: 24px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.TermsConditions .boxDesc,
+.PrivacyPolicy .boxDesc {
+  margin-bottom: 50px;
+}
+
+.TermsConditions .boxDesc .customTitle,
+.PrivacyPolicy .boxDesc .customTitle {
+  margin-bottom: 33px;
+}
+
+.TermsConditions .boxDesc p,
+.PrivacyPolicy .boxDesc p {
+  margin-bottom: 0;
+  line-height: 34px;
+}
+
+/*Search Results*/
+.SearchResults {
+  background-color: #f7f7f7;
+  padding-top: 53px;
+}
+
+.SearchResults .bgSearch {
+  background: #d7e5df;
+  border-radius: 12px;
+  padding: 25px 56px;
+}
+
+.SearchResults .bgSearch form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SearchResults .bgSearch .form-group-search {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SearchResults .bgSearch .form-group-search input {
+  border: unset;
+  width: calc(100% - 68px);
+  border-radius: 0;
+  height: 60px;
+}
+
+.SearchResults .bgSearch .form-group-search button {
+  height: 60px;
+  border: unset;
+  width: 65px;
+  background: #00846C;
+}
+
+.SearchResults .bgSearch .helpClass span {
+  font-size: 16px;
+  color: #1C614E;
+  padding-left: 11px;
+}
+
+.SearchResults .resultSearc {
+  color: #7E8C76;
+  font-size: 16px;
+  padding-left: 58px;
+  margin: 10px 0 43px;
+}
+
+.SearchResults .resultBox {
+  padding: 0;
+  list-style: none;
+}
+
+.SearchResults .resultBox li {
+  border-bottom: 1px solid #d6e2de;
+  padding: 30px 45px 37px 45px;
+}
+
+.SearchResults .resultBox li:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.SearchResults .resultBox li:last-of-type {
+  border-bottom: 0px solid #d6e2de;
+}
+
+.SearchResults .resultBox li > img {
+  width: 25px;
+  float: right;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.SearchResults .resultBox li h3, .SearchResults .resultBox li .h3 {
+  padding-left: 40px;
+  margin-top: -8px;
+}
+
+.SearchResults .resultBox li h3 a, .SearchResults .resultBox li .h3 a {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.SearchResults .resultBox li p {
+  font-size: 16px;
+  color: #0b261f;
+  margin-bottom: 7px;
+  padding-left: 40px;
+}
+
+.SearchResults .resultBox li .downloadPdf {
+  font-size: 14px;
+  color: #c48145;
+  margin: 0;
+  padding-left: 40px;
+}
+
+.SearchResults .pagination {
+  padding-top: 95px;
+}
+
+.Suggestions {
+  background-color: #f7f7f7;
+  padding-top: 97px;
+}
+
+.Suggestions .customTitle {
+  margin-bottom: 20px;
+}
+
+.Suggestions .bgWhite {
+  background: #fff;
+  padding: 35px 52px 20px 52px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+}
+
+.Suggestions .bgWhite .red {
+  color: #c44545;
+  padding-right: 7px;
+}
+
+.Suggestions .bgWhite .inputg label {
+  display: block;
+  margin-bottom: 5px;
+  color: #0b261f;
+  font-size: 16px;
+}
+
+.Suggestions .bgWhite .inputg input[type="email"],
+.Suggestions .bgWhite .inputg input[type="number"],
+.Suggestions .bgWhite .inputg textarea,
+.Suggestions .bgWhite .inputg select,
+.Suggestions .bgWhite .inputg input[type="text"] {
+  width: 100%;
+  border: 2px solid #cbddd6;
+  height: 48px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.Suggestions .bgWhite .inputg textarea {
+  min-height: 115px;
+}
+
+.Suggestions .bgWhite .inputg select {
+  background: #fff url(../images/news/ArrowSelect.svg) no-repeat 13px 20px;
+}
+
+.Suggestions .bgW2 {
+  background: rgba(203, 221, 214, 0.3);
+  padding: 35px 52px 20px 52px;
+  border-radius: 6px;
+}
+
+.Suggestions .bgW2 .filepond--drop-label {
+  background: #fff;
+}
+
+.Suggestions .bgW2 .filepond--drop-label label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+  padding-right: 41px;
+}
+
+.Suggestions .bgW2 .hintUpload span {
+  font-size: 14px;
+  color: #0F3329;
+  padding-left: 15px;
+}
+
+.Suggestions .actionBtn {
+  padding: 85px 0 30px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Suggestions .actionBtn .btnWithArrow {
+  background-color: #00846c;
+}
+
+.Suggestions .actionBtn .btnWithArrow:hover {
+  background-color: #1c614e;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 917px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.modal-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 12px 21px 29px;
+  border-bottom: 1px solid #dcebe5;
+  padding-bottom: 10px;
+}
+
+.modal-header .btn-close {
+  padding: unset;
+  margin: unset;
+}
+
+.modal-footer {
+  display: none;
+}
+
+/* start responsive media */
+/* tab */
+@media (max-width: 992px) {
+  .committeesV2 .ComText {
+    padding-left: 0;
+  }
+  .BoxBgQwqaflogo {
+    height: 280px;
+  }
+  .committeesV1 {
+    margin-bottom: 0;
+  }
+  .contactUsBg {
+    padding-bottom: 0;
+  }
+  .contactUsBg .bgMap .bgSend {
+    padding: 28px 20px;
+  }
+  .contactUsBg .bgMap .bgSend .actionBtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactUsBg .bgMap .bgSend .actionBtn .btnWithArrow {
+    margin-top: 20px;
+  }
+  .contactUsBg .contactBox .UsList li a .greenFont {
+    padding-right: 0px;
+  }
+  .BGInnerNew {
+    padding-bottom: 0px;
+  }
+  .bgNews .forDirction .col-md-3 {
+    max-width: unset;
+  }
+  .forDirction .col-md-3:nth-of-type(1) {
+    width: 35%;
+  }
+  .forDirction .col-md-3:nth-of-type(2) {
+    width: 30%;
+  }
+  .forDirction .col-md-3:nth-of-type(3) {
+    display: none;
+  }
+  .snipptNews .col-md-3,
+  .displayHandlerCompenet .col-md-3 {
+    width: 50%;
+  }
+  .displayHandlerCompenet.displayRow .col-md-3 {
+    width: 100%;
+  }
+  .BGInnerNew .col-md-12 .font30bold, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 h3, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li .h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 .h3, .BGInnerNew .col-md-12 .downloadBook a strong, .downloadBook a .BGInnerNew .col-md-12 strong {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-next {
+    right: -15px;
+    background-color: #fff;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-prev {
+    left: -15px;
+    background-color: #fff;
+  }
+  .BGInnerNew .sliderNews .fancybox img {
+    max-height: 300px;
+  }
+}
+
+/* end tab 992 */
+/* mob */
+@media (max-width: 767px) {
+  .committeesV2 .ComText {
+    margin-top: 25px;
+  }
+  .marginBottom {
+    margin: 30px 0;
+  }
+  .BoxBgQwqaflogo {
+    height: 280px;
+  }
+  .clearPadding {
+    margin-bottom: 0px;
+  }
+  .contactUsBg {
+    padding-top: 40px;
+  }
+  .contactUsBg .bgMap {
+    margin-top: 0;
+  }
+  .contactUsBg .bgMap .customTitle {
+    margin-bottom: 32px;
+    margin-top: 30px;
+  }
+  .contactUsBg .bgMap .col-md-6:first-of-type {
+    padding-right: 12px;
+  }
+  .contactUsBg .bgMap .col-md-6:last-of-type {
+    padding-left: 12px;
+  }
+  .contactUsBg .contactBox {
+    margin-top: 0;
+  }
+  .channelCard .chCardBox {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .BGInnerNew .col-md-12 .font30bold, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 h3, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li .h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 .h3, .BGInnerNew .col-md-12 .downloadBook a strong, .downloadBook a .BGInnerNew .col-md-12 strong {
+    font-size: 25px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+  }
+  .BGInnerNew .dateOfNews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-next {
+    right: -15px;
+    -webkit-transform: scale(-0.8) translateY(50%);
+            transform: scale(-0.8) translateY(50%);
+    background-color: #fff;
+  }
+  .BGInnerNew .arrowNews .owl-carousel .owl-nav button.owl-prev {
+    left: -15px;
+    -webkit-transform: scale(0.8) translateY(-50%);
+            transform: scale(0.8) translateY(-50%);
+    background-color: #fff;
+  }
+  .BGInnerNew .sliderNews .fancybox img {
+    max-height: 220px;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sliderNews .fancybox::after {
+    bottom: 0px;
+    right: 5px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .BGInnerNew .contentNews p {
+    font-size: 16px;
+  }
+  .bgNews .forDirction .col-md-3 {
+    max-width: unset;
+  }
+  .forDirction {
+    text-align: right;
+  }
+  .forDirction .col-md-3:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .forDirction .col-md-3:nth-of-type(2) {
+    width: 100%;
+  }
+  .forDirction .col-md-3:nth-of-type(3) {
+    display: none;
+  }
+  .snipptNews .col-md-3,
+  .displayHandlerCompenet .col-md-3 {
+    width: 100%;
+  }
+  .displayHandlerCompenet.displayRow .col-md-3 {
+    width: 100%;
+  }
+}
+
+/* end mob 767 */
+/* end responsive media */
 /*
 this UI is made desktop first.
 */
