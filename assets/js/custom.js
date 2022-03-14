@@ -48,7 +48,7 @@ $(function () {
     });
   
     $('.top-nav .dropdown').hover(function(){ 
-      console.log("top");
+      // console.log("top");
       $('.dropdown-toggle', this).trigger('click'); 
 
     });
@@ -146,32 +146,60 @@ $(function () {
 
 
 
-//  /* --- Font sizing Function --- */
-//  $('#fontIncrease').click(function(){
-//   modifyFontSize('html','increase');
+// //  /* --- Font sizing Function --- */
+//  $('#fontIncrease').on("click",function(e){
+//   modifyFontSize('body *' ,'increase');
+//   e.stopPropagation();
 // });
-// $('#fontDecrease').click(function(){
-//   modifyFontSize('html','decrease')
-// });
+// // $('#fontDecrease').click(function(e){
+// //   modifyFontSize('html','decrease')
+// //   e.stopPropagation();
+// // });
 
 
 // function modifyFontSize(MyElement,flag){
 
 //   var HtmlElement = $(MyElement);
-//   var currentFontSize = parseInt (HtmlElement.css('font-size'));
-  
-//   if (flag =='increase' & currentFontSize < 19 )
-//       currentFontSize += 1;
-//   else if (flag == 'decrease' & currentFontSize >= 16 )
-//       currentFontSize -= 1;
-//   else if (flag == 'reset')
-//   currentFontSize = 16;
+//   // console.log(HtmlElement);
+//    var currentFontSize = parseInt (HtmlElement.css('font-size'));
+   
+//   if (flag =='increase'   )
+//   currentFontSize += 1;
+//   // else if (flag == 'decrease' & currentFontSize >= 16 )
+//   //     currentFontSize -= 1;
+//   // else if (flag == 'reset')
+//   // currentFontSize = 16;
 
 //   HtmlElement.css('font-size', currentFontSize);
 
 //   // console.log(currentFontSize);
 
 // }
+
+
+$(function() {
+  $("#fontIncrease").on("click",function(e) {
+    $("div").children().each(function() {
+      var size = parseInt($(this).css("font-size"));
+      size = size + 1 + "px";
+      $(this).css({
+        'font-size': size
+      });
+    });
+    e.stopPropagation();
+  });
+});
+// $(function() {
+//   $("#decrease").click(function() {
+//     $("div").children().each(function() {
+//       var size = parseInt($(this).css("font-size"));
+//       size = size - 1 + "px";
+//       $(this).css({
+//         'font-size': size
+//       });
+//     });
+//   });
+// });
 
 
 

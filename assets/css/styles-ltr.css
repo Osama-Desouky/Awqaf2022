@@ -14971,6 +14971,43 @@ service-center
   border: none;
 }
 
+.darkMood .main-slider .item .caption a.more img {
+  -webkit-filter: contrast(0.5) brightness(50);
+          filter: contrast(0.5) brightness(50);
+}
+
+.darkMood .home-about .content-box a img {
+  -webkit-filter: contrast(0.5) brightness(50);
+          filter: contrast(0.5) brightness(50);
+}
+
+.darkMood .services-slider .item .serviceBox {
+  background-color: #000;
+}
+
+.darkMood .services-slider .item .serviceBox .SrvLogo {
+  -webkit-filter: contrast(0.5) brightness(50);
+          filter: contrast(0.5) brightness(50);
+}
+
+.darkMood .services-slider .item .serviceBox:hover {
+  background-color: #00AB7A;
+}
+
+.darkMood .services-slider .all-services a img {
+  -webkit-filter: contrast(0.5) brightness(50);
+          filter: contrast(0.5) brightness(50);
+}
+
+.darkMood .news-slider .item .content-box a.more img {
+  -webkit-filter: contrast(0.5) brightness(50);
+          filter: contrast(0.5) brightness(50);
+}
+
+.darkMood .Affiliate-sites .item .sites-card {
+  background-color: #000;
+}
+
 /* AO start global fields */
 input[type="email"],
 textarea,

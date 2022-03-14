@@ -3197,6 +3197,36 @@ service-center
   }
 }
 
+
+.darkMood{
+  .main-slider .item .caption a.more img{
+    filter: contrast(0.5) brightness(50);
+  }
+  .home-about .content-box a img{
+    filter: contrast(0.5) brightness(50);
+  }
+  .services-slider {
+    .item .serviceBox{
+      background-color: #000;
+      .SrvLogo{
+        filter: contrast(0.5) brightness(50);
+      }
+      &:hover{
+        background-color: $green-bg2;
+      }
+    }
+    .all-services a img{
+      filter: contrast(0.5) brightness(50);
+    }
+  }
+  .news-slider .item .content-box a.more img{
+    filter: contrast(0.5) brightness(50);
+  }
+  .Affiliate-sites .item .sites-card{
+    background-color: #000;
+  }
+}
+
 // LTR
 // html[dir="ltr"] {
 // }
