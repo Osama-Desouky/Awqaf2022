@@ -291,10 +291,9 @@ label {
 
 /* in dark mode */
 .darkMood {
-
   background-color: #060c0a !important;
   .breadcrumb-area {
-    // background-color: #060c0a !important;
+    background-color: #10201b !important;
   }
   h1,
   h2,
@@ -310,6 +309,24 @@ label {
   .details-list ul.green-dots li::marker,
   .filterDate label,
   .pagination a.current,
+  .main-navbar .nav-item .nav-link,
+  .Suggestions .bgWhite .inputg label,
+  .about-tabs .Birth-and-founding ul li,
+  .readableBoxV2.readableBox:not(:hover) .RText h3,
+  .readableBoxV2.readableBox:not(:hover) .shareLink strong span,
+  .reyadah-inner .list-ryadah-card:not(:hover) .content-box ul.green-dots li,
+  .tenders-list
+    .tender-list-card
+    ul
+    li
+    .content-have-icon.status
+    .content-box
+    div,
+  .reyadah-inner
+    .list-ryadah-card:not(:hover)
+    .content-box
+    ul.green-dots
+    li::marker,
   .breadcrumb li {
     color: #fff !important;
   }
@@ -319,7 +336,7 @@ label {
   .about-tabs ul.nav {
     background-color: #fff;
   }
-  .FAQParent .redMoreCenter .readMoreBtn img ,
+  .FAQParent .redMoreCenter .readMoreBtn img,
   .channelCard .chCardBox img,
   .breadcrumb-area ul.breadcrumb li:not(:last-of-type)::before,
   .BGInnerNew .dateOfNews .dateNS img,
@@ -327,6 +344,21 @@ label {
   .share img,
   .customTitle::after,
   .boxServices .iconServ img,
+  .reyadah-inner .list-ryadah-card .img-box img,
+  .the-values .values-list .values-card .img-box img,
+  .the-values h3 img,
+  .bgSearch .helpClass img,
+  .SearchResults .resultBox li:not(:hover) > img,
+  .service-list.inner-serv-list .service-card:not(:hover) .img-box img,
+  .branches .branches-details ul.contact-det li img,
+  .servicesPageTwo .wrapperBox .whiteBoxServ .logoB img,
+  .servicesPageTwo .boxServ2 .logoSR img,
+  .downloadFile .logoBorder img,
+  .serviceBox .SrvLogo img,
+  .main-navbar .nav-item .nav-link::after,
+  .readableBoxV2:not(:hover) .RText .actionsBtn img,
+  .tenders-list .tender-list-card ul li .content-have-icon.status .img-box img,
+  .main-navbar .nav-item .dropdown-menu::before,
   .arrowNews .owl-carousel .owl-nav button {
     filter: brightness(0) invert(1) !important;
   }
@@ -346,24 +378,42 @@ label {
   .readableBox .RText h3, .readableBox .RText .h3,
   .cardNews .cardText .heading20,
   .cardNews .cardText .redMoreNews span,
+  .reyadah-inner .the-msg .content-box p,
+  // .reyadah-main .content-box h2,
+  .the-pilings .pilling-card .content-box h4, .the-pilings .pilling-card .content-box .h4,
+  .readableBoxV2:hover .actionsBtn .downloadL a span,
+  .reyadah-inner .ryada-more a,
+  .SearchResults .resultBox li:hover h3 a,
+  .displayRow2 .readableBoxV2:not(:hover) .RText h3 ,
+  .displayRow2 .readableBoxV2:not(:hover) .actionsBtn span ,
+  .main-navbar .nav-item .dropdown-menu li a,
   .board-members .list-card .content-box h4 {
     color: #1c614e !important;
   }
+  .service-list.inner-serv-list .service-card:hover .content-box h4,
   .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
   .board-members .list-card .content-box a {
     color: #00ab7a !important;
   }
+  .committeesV1 .boxCommitteeAwqaf .AQtext p,
   .top-nav .top-links .Accessibilty .dropdown-menu li a {
     color: #96a78c !important;
   }
-  .committeesV1 .boxCommitteeAwqaf .AQtext p {
-    color: #96a78c !important;
+  .the-pilings h3, .the-pilings .h3,
+  // .reyadah-main .content-box p,
+  .reyadah-inner .the-msg .content-box h3 {
+    color: #00846c !important;
   }
   .displayRow .cardNews .cardText .praghCard {
-    color: #8fa498  !important;
+    color: #8fa498 !important;
   }
+  .SearchResults .resultBox li:hover .downloadPdf,
   .readableBox .RText p span {
-    color: #C48145 !important;
+    color: #c48145 !important;
+  }
+  .SearchResults .resultBox li:hover p strong,
+  .SearchResults .resultBox li:hover p {
+    color: #0b261f !important;
   }
   .contactUsBg .bgMap .bgSend {
     background: #0d1815;
@@ -371,9 +421,122 @@ label {
   .bgNews,
   .bgGallery,
   .PrivacyPolicy,
+  .TermsConditions,
   .Bgshare,
+  .SearchResults,
+  .Suggestions,
+  .RegulationsV2,
+  .servicesPageTwo,
   .FAQParent {
     background-color: transparent;
+  }
+  .reyadah-inner .list-ryadah-card:not(:hover) {
+    background-color: #09120f;
+  }
+  .servicesPageTwo .boxServ2 .testSR .actionsDownload .downloadFile,
+  .servicesPageTwo .wrapperBox .whiteBoxServ,
+  .service-list.inner-serv-list .service-card:not(:hover),
+  .servicesPageTwo .redirectServ,
+  .serviceBox,
+  .Suggestions .bgWhite,
+  .SearchResults .bgSearch {
+    background: #1b1c1b;
+  }
+  .tenders-list .tender-list-card,
+  .latest-tenders,
+  .tender-details {
+    background: #202020;
+  }
+  .tender-details .tenders-item-flag,
+  .tender-details .tenders-item .tenders-label {
+    background-color: #060c0a;
+  }
+  .tenders-list .tender-list-card ul li h5,
+  .about-tabs .Birth-and-founding,
+  .tender-details
+    .attachments-section
+    .attachments-container
+    .field--item:nth-child(even) {
+    background-color: #1a1a1a;
+  }
+  .tender-details,
+  .tenders-list .tender-list-card,
+  .tender-details .attachments-section .attachments-container .item,
+  .tender-details .attachments-section .attachments-container .file {
+    border: 1px solid #060c0a;
+  }
+  .reyadah-main .img-box::before {
+    background: linear-gradient(
+      90deg,
+      rgba(11, 38, 31, 0.5018382352941176) 0%,
+      rgba(5, 14, 10, 0.953) 65%
+    );
+  }
+  footer .last-footer,
+  footer .top-footer,
+  .top-nav {
+    // background-color: #061612;
+    background-color: #10201b;
+  }
+  footer .footer-slider {
+    // background-color: #081e19;
+    background-color: #10201b;
+  }
+  .endowmentHeader .endowmentBox {
+    background-color: #09120f;
+  }
+  .top-nav .top-links a.waqfi {
+    border-#{$end-direction}: 1px solid #ffffff;
+  }
+  .main-navbar {
+    background-color: #0c1814;
+  }
+  .branches .branches-details select {
+    filter: grayscale(100%);
+  }
+  .displayRow2 .readableBoxV2:not(:hover) .actionsBtn img {
+    filter: unset !important;
+  }
+  .main-navbar .nav-item .dropdown-menu {
+    background-color: #fff;
+  }
+  .main-navbar .nav-item .dropdown-menu li a:hover {
+    background-color: #1c614e0f;
+  }
+
+  .navbar-brand {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      #{$start-direction}: 0;
+      background-image: url(../images/footer-Logo.svg);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+  }
+  select,
+  .searchNews input {
+    border: 3px solid #013e2d;
+  }
+  .prePagi.current,
+  .SearchResults .bgSearch .form-group-search button,
+  .displayComponent .boxGridDS a.active {
+    background: #24704e;
+  }
+  .about-tabs ul.nav li button.active,
+  .latest-tenders .send-cri .mail-send,
+  .contactUsBg .bgMap .bgSend .actionBtn .btnWithArrow,
+  .tabsBtns .nav-item button.active {
+    background: #10382d;
+  }
+  .serviceBox:hover {
+    background: #0b2820;
+  }
+  .channelCard .chCardBox:hover {
+    background-color: #0b2820;
+    border: 2px solid #0b2820;
   }
 }
 

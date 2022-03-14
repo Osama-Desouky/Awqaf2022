@@ -14450,6 +14450,10 @@ select {
   background-color: #060c0a !important;
 }
 
+.darkMood .breadcrumb-area {
+  background-color: #10201b !important;
+}
+
 .darkMood h1, .darkMood .h1,
 .darkMood h2,
 .darkMood .h2,
@@ -14469,6 +14473,15 @@ select {
 .darkMood .details-list ul.green-dots li::marker,
 .darkMood .filterDate label,
 .darkMood .pagination a.current,
+.darkMood .main-navbar .nav-item .nav-link,
+.darkMood .Suggestions .bgWhite .inputg label,
+.darkMood .about-tabs .Birth-and-founding ul li,
+.darkMood .readableBoxV2.readableBox:not(:hover) .RText h3,
+.darkMood .readableBoxV2.readableBox:not(:hover) .RText .h3,
+.darkMood .readableBoxV2.readableBox:not(:hover) .shareLink strong span,
+.darkMood .reyadah-inner .list-ryadah-card:not(:hover) .content-box ul.green-dots li,
+.darkMood .tenders-list .tender-list-card ul li .content-have-icon.status .content-box div,
+.darkMood .reyadah-inner .list-ryadah-card:not(:hover) .content-box ul.green-dots li::marker,
 .darkMood .breadcrumb li {
   color: #fff !important;
 }
@@ -14490,6 +14503,22 @@ select {
 .darkMood .share img,
 .darkMood .customTitle::after,
 .darkMood .boxServices .iconServ img,
+.darkMood .reyadah-inner .list-ryadah-card .img-box img,
+.darkMood .the-values .values-list .values-card .img-box img,
+.darkMood .the-values h3 img,
+.darkMood .the-values .h3 img,
+.darkMood .bgSearch .helpClass img,
+.darkMood .SearchResults .resultBox li:not(:hover) > img,
+.darkMood .service-list.inner-serv-list .service-card:not(:hover) .img-box img,
+.darkMood .branches .branches-details ul.contact-det li img,
+.darkMood .servicesPageTwo .wrapperBox .whiteBoxServ .logoB img,
+.darkMood .servicesPageTwo .boxServ2 .logoSR img,
+.darkMood .downloadFile .logoBorder img,
+.darkMood .serviceBox .SrvLogo img,
+.darkMood .main-navbar .nav-item .nav-link::after,
+.darkMood .readableBoxV2:not(:hover) .RText .actionsBtn img,
+.darkMood .tenders-list .tender-list-card ul li .content-have-icon.status .img-box img,
+.darkMood .main-navbar .nav-item .dropdown-menu::before,
 .darkMood .arrowNews .owl-carousel .owl-nav button {
   -webkit-filter: brightness(0) invert(1) !important;
           filter: brightness(0) invert(1) !important;
@@ -14529,30 +14558,51 @@ select {
 .darkMood .readableBox .RText .h3, .darkMood .readableBox .RText .h3,
 .darkMood .cardNews .cardText .heading20,
 .darkMood .cardNews .cardText .redMoreNews span,
+.darkMood .reyadah-inner .the-msg .content-box p,
+.darkMood .the-pilings .pilling-card .content-box h4,
+.darkMood .the-pilings .pilling-card .content-box .h4, .darkMood .the-pilings .pilling-card .content-box .h4,
+.darkMood .readableBoxV2:hover .actionsBtn .downloadL a span,
+.darkMood .reyadah-inner .ryada-more a,
+.darkMood .SearchResults .resultBox li:hover h3 a,
+.darkMood .SearchResults .resultBox li:hover .h3 a,
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .RText h3,
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .RText .h3,
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .actionsBtn span,
+.darkMood .main-navbar .nav-item .dropdown-menu li a,
 .darkMood .board-members .list-card .content-box h4,
 .darkMood .board-members .list-card .content-box .h4 {
   color: #1c614e !important;
 }
 
+.darkMood .service-list.inner-serv-list .service-card:hover .content-box h4, .darkMood .service-list.inner-serv-list .service-card:hover .content-box .h4,
 .darkMood .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
 .darkMood .board-members .list-card .content-box a {
   color: #00ab7a !important;
 }
 
+.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext p,
 .darkMood .top-nav .top-links .Accessibilty .dropdown-menu li a {
   color: #96a78c !important;
 }
 
-.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext p {
-  color: #96a78c !important;
+.darkMood .the-pilings h3, .darkMood .the-pilings .h3, .darkMood .the-pilings .h3,
+.darkMood .reyadah-inner .the-msg .content-box h3,
+.darkMood .reyadah-inner .the-msg .content-box .h3 {
+  color: #00846c !important;
 }
 
 .darkMood .displayRow .cardNews .cardText .praghCard {
-  color: #8fa498  !important;
+  color: #8fa498 !important;
 }
 
+.darkMood .SearchResults .resultBox li:hover .downloadPdf,
 .darkMood .readableBox .RText p span {
-  color: #C48145 !important;
+  color: #c48145 !important;
+}
+
+.darkMood .SearchResults .resultBox li:hover p strong,
+.darkMood .SearchResults .resultBox li:hover p {
+  color: #0b261f !important;
 }
 
 .darkMood .contactUsBg .bgMap .bgSend {
@@ -14562,9 +14612,135 @@ select {
 .darkMood .bgNews,
 .darkMood .bgGallery,
 .darkMood .PrivacyPolicy,
+.darkMood .TermsConditions,
 .darkMood .Bgshare,
+.darkMood .SearchResults,
+.darkMood .Suggestions,
+.darkMood .RegulationsV2,
+.darkMood .servicesPageTwo,
 .darkMood .FAQParent {
   background-color: transparent;
+}
+
+.darkMood .reyadah-inner .list-ryadah-card:not(:hover) {
+  background-color: #09120f;
+}
+
+.darkMood .servicesPageTwo .boxServ2 .testSR .actionsDownload .downloadFile,
+.darkMood .servicesPageTwo .wrapperBox .whiteBoxServ,
+.darkMood .service-list.inner-serv-list .service-card:not(:hover),
+.darkMood .servicesPageTwo .redirectServ,
+.darkMood .serviceBox,
+.darkMood .Suggestions .bgWhite,
+.darkMood .SearchResults .bgSearch {
+  background: #1b1c1b;
+}
+
+.darkMood .tenders-list .tender-list-card,
+.darkMood .latest-tenders,
+.darkMood .tender-details {
+  background: #202020;
+}
+
+.darkMood .tender-details .tenders-item-flag,
+.darkMood .tender-details .tenders-item .tenders-label {
+  background-color: #060c0a;
+}
+
+.darkMood .tenders-list .tender-list-card ul li h5, .darkMood .tenders-list .tender-list-card ul li .h5,
+.darkMood .about-tabs .Birth-and-founding,
+.darkMood .tender-details .attachments-section .attachments-container .field--item:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.darkMood .tender-details,
+.darkMood .tenders-list .tender-list-card,
+.darkMood .tender-details .attachments-section .attachments-container .item,
+.darkMood .tender-details .attachments-section .attachments-container .file {
+  border: 1px solid #060c0a;
+}
+
+.darkMood .reyadah-main .img-box::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 38, 31, 0.501838)), color-stop(65%, rgba(5, 14, 10, 0.953)));
+  background: linear-gradient(90deg, rgba(11, 38, 31, 0.501838) 0%, rgba(5, 14, 10, 0.953) 65%);
+}
+
+.darkMood footer .last-footer,
+.darkMood footer .top-footer,
+.darkMood .top-nav {
+  background-color: #10201b;
+}
+
+.darkMood footer .footer-slider {
+  background-color: #10201b;
+}
+
+.darkMood .endowmentHeader .endowmentBox {
+  background-color: #09120f;
+}
+
+.darkMood .top-nav .top-links a.waqfi {
+  border-left: 1px solid #ffffff;
+}
+
+.darkMood .main-navbar {
+  background-color: #0c1814;
+}
+
+.darkMood .branches .branches-details select {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .actionsBtn img {
+  -webkit-filter: unset !important;
+          filter: unset !important;
+}
+
+.darkMood .main-navbar .nav-item .dropdown-menu {
+  background-color: #fff;
+}
+
+.darkMood .main-navbar .nav-item .dropdown-menu li a:hover {
+  background-color: #1c614e0f;
+}
+
+.darkMood .navbar-brand::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/footer-Logo.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.darkMood select,
+.darkMood .searchNews input {
+  border: 3px solid #013e2d;
+}
+
+.darkMood .prePagi.current,
+.darkMood .SearchResults .bgSearch .form-group-search button,
+.darkMood .displayComponent .boxGridDS a.active {
+  background: #24704e;
+}
+
+.darkMood .about-tabs ul.nav li button.active,
+.darkMood .latest-tenders .send-cri .mail-send,
+.darkMood .contactUsBg .bgMap .bgSend .actionBtn .btnWithArrow,
+.darkMood .tabsBtns .nav-item button.active {
+  background: #10382d;
+}
+
+.darkMood .serviceBox:hover {
+  background: #0b2820;
+}
+
+.darkMood .channelCard .chCardBox:hover {
+  background-color: #0b2820;
+  border: 2px solid #0b2820;
 }
 
 /* AO start news page */
