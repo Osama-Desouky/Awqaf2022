@@ -146,40 +146,79 @@ $(function () {
 
 
 
-// //  /* --- Font sizing Function --- */
-//  $('#fontIncrease').on("click",function(e){
-//   modifyFontSize('body *' ,'increase');
-//   e.stopPropagation();
-// });
-// // $('#fontDecrease').click(function(e){
-// //   modifyFontSize('html','decrease')
-// //   e.stopPropagation();
-// // });
 
-
-// function modifyFontSize(MyElement,flag){
-
-//   var HtmlElement = $(MyElement);
-//   // console.log(HtmlElement);
-//    var currentFontSize = parseInt (HtmlElement.css('font-size'));
-   
-//   if (flag =='increase'   )
-//   currentFontSize += 1;
-//   // else if (flag == 'decrease' & currentFontSize >= 16 )
-//   //     currentFontSize -= 1;
-//   // else if (flag == 'reset')
-//   // currentFontSize = 16;
-
-//   HtmlElement.css('font-size', currentFontSize);
-
-//   // console.log(currentFontSize);
-
-// }
+$(".heading").one('click', function() {
+  console.log("clicked");
+  $(this).off('click'); 
+  console.log("clicked");
+});
 
 
 $(function() {
-  $("#fontIncrease").on("click",function(e) {
-    $("div").children().each(function() {
+  $(".print").on("click", function() {
+    window.print();
+});
+
+
+  let count = 0;
+  $(".restFont").click(function(e) {
+; 
+    // console.log(count);
+    
+    if (count < 4) {
+      // console.log(count); 
+      $("div").not(".top-nav div").children().each(function() {
+        var size = parseInt($(this).css("font-size"));
+        size = size - count + "px";
+        
+        $(this).css({
+          'font-size': size
+        });
+      });
+      count = 0
+    } if (count == -3) {
+      // console.log(count); 
+      $("div").not(".top-nav div").children().each(function() {
+        var size = parseInt($(this).css("font-size"));
+        size = size - count + "px";
+        
+        $(this).css({
+          'font-size': size
+        });
+      });
+    }
+    $(".fontDecrease").removeClass('click')
+    $(".fontIncrease").removeClass('click')
+    e.stopPropagation();
+  });
+
+  $(".fontDecrease").click(function(e) {
+   
+    count -= 1;
+    // console.log(count);
+    if (count == -3) {
+      $(this).toggleClass('click'); 
+    }
+    $(".fontIncrease").removeClass('click')
+    $("div").not(".top-nav div").children().each(function() {
+      var size = parseInt($(this).css("font-size"));
+      size = size - 1 + "px";
+      
+      $(this).css({
+        'font-size': size
+      });
+    });
+    e.stopPropagation();
+  });
+  $(".fontIncrease").on("click",function(e) {
+    count += 1;
+    // console.log(count);
+    if (count >= 3) {
+      $(this).toggleClass('click'); 
+
+    }
+    $(".fontDecrease").removeClass('click')
+    $("div").not(".top-nav div").children().each(function() {
       var size = parseInt($(this).css("font-size"));
       size = size + 1 + "px";
       $(this).css({
@@ -189,17 +228,11 @@ $(function() {
     e.stopPropagation();
   });
 });
-// $(function() {
-//   $("#decrease").click(function() {
-//     $("div").children().each(function() {
-//       var size = parseInt($(this).css("font-size"));
-//       size = size - 1 + "px";
-//       $(this).css({
-//         'font-size': size
-//       });
-//     });
-//   });
-// });
+
+
+
+
+
 
 
 
