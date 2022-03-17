@@ -14995,6 +14995,10 @@ service-center
 }
 
 /* AO start global fields */
+.click {
+  pointer-events: none;
+}
+
 input[type="email"],
 textarea,
 input[type="text"] {
@@ -15384,6 +15388,10 @@ select {
   background-color: #060c0a !important;
 }
 
+.darkMood .breadcrumb-area {
+  background-color: #10201b !important;
+}
+
 .darkMood h1, .darkMood .h1,
 .darkMood h2,
 .darkMood .h2,
@@ -15403,6 +15411,15 @@ select {
 .darkMood .details-list ul.green-dots li::marker,
 .darkMood .filterDate label,
 .darkMood .pagination a.current,
+.darkMood .main-navbar .nav-item .nav-link,
+.darkMood .Suggestions .bgWhite .inputg label,
+.darkMood .about-tabs .Birth-and-founding ul li,
+.darkMood .readableBoxV2.readableBox:not(:hover) .RText h3,
+.darkMood .readableBoxV2.readableBox:not(:hover) .RText .h3,
+.darkMood .readableBoxV2.readableBox:not(:hover) .shareLink strong span,
+.darkMood .reyadah-inner .list-ryadah-card:not(:hover) .content-box ul.green-dots li,
+.darkMood .tenders-list .tender-list-card ul li .content-have-icon.status .content-box div,
+.darkMood .reyadah-inner .list-ryadah-card:not(:hover) .content-box ul.green-dots li::marker,
 .darkMood .breadcrumb li {
   color: #fff !important;
 }
@@ -15424,6 +15441,22 @@ select {
 .darkMood .share img,
 .darkMood .customTitle::after,
 .darkMood .boxServices .iconServ img,
+.darkMood .reyadah-inner .list-ryadah-card .img-box img,
+.darkMood .the-values .values-list .values-card .img-box img,
+.darkMood .the-values h3 img,
+.darkMood .the-values .h3 img,
+.darkMood .bgSearch .helpClass img,
+.darkMood .SearchResults .resultBox li:not(:hover) > img,
+.darkMood .service-list.inner-serv-list .service-card:not(:hover) .img-box img,
+.darkMood .branches .branches-details ul.contact-det li img,
+.darkMood .servicesPageTwo .wrapperBox .whiteBoxServ .logoB img,
+.darkMood .servicesPageTwo .boxServ2 .logoSR img,
+.darkMood .downloadFile .logoBorder img,
+.darkMood .serviceBox .SrvLogo img,
+.darkMood .main-navbar .nav-item .nav-link::after,
+.darkMood .readableBoxV2:not(:hover) .RText .actionsBtn img,
+.darkMood .tenders-list .tender-list-card ul li .content-have-icon.status .img-box img,
+.darkMood .main-navbar .nav-item .dropdown-menu::before,
 .darkMood .arrowNews .owl-carousel .owl-nav button {
   -webkit-filter: brightness(0) invert(1) !important;
           filter: brightness(0) invert(1) !important;
@@ -15463,30 +15496,51 @@ select {
 .darkMood .readableBox .RText .h3, .darkMood .readableBox .RText .h3,
 .darkMood .cardNews .cardText .heading20,
 .darkMood .cardNews .cardText .redMoreNews span,
+.darkMood .reyadah-inner .the-msg .content-box p,
+.darkMood .the-pilings .pilling-card .content-box h4,
+.darkMood .the-pilings .pilling-card .content-box .h4, .darkMood .the-pilings .pilling-card .content-box .h4,
+.darkMood .readableBoxV2:hover .actionsBtn .downloadL a span,
+.darkMood .reyadah-inner .ryada-more a,
+.darkMood .SearchResults .resultBox li:hover h3 a,
+.darkMood .SearchResults .resultBox li:hover .h3 a,
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .RText h3,
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .RText .h3,
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .actionsBtn span,
+.darkMood .main-navbar .nav-item .dropdown-menu li a,
 .darkMood .board-members .list-card .content-box h4,
 .darkMood .board-members .list-card .content-box .h4 {
   color: #1c614e !important;
 }
 
+.darkMood .service-list.inner-serv-list .service-card:hover .content-box h4, .darkMood .service-list.inner-serv-list .service-card:hover .content-box .h4,
 .darkMood .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
 .darkMood .board-members .list-card .content-box a {
   color: #00ab7a !important;
 }
 
+.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext p,
 .darkMood .top-nav .top-links .Accessibilty .dropdown-menu li a {
   color: #96a78c !important;
 }
 
-.darkMood .committeesV1 .boxCommitteeAwqaf .AQtext p {
-  color: #96a78c !important;
+.darkMood .the-pilings h3, .darkMood .the-pilings .h3, .darkMood .the-pilings .h3,
+.darkMood .reyadah-inner .the-msg .content-box h3,
+.darkMood .reyadah-inner .the-msg .content-box .h3 {
+  color: #00846c !important;
 }
 
 .darkMood .displayRow .cardNews .cardText .praghCard {
-  color: #8fa498  !important;
+  color: #8fa498 !important;
 }
 
+.darkMood .SearchResults .resultBox li:hover .downloadPdf,
 .darkMood .readableBox .RText p span {
-  color: #C48145 !important;
+  color: #c48145 !important;
+}
+
+.darkMood .SearchResults .resultBox li:hover p strong,
+.darkMood .SearchResults .resultBox li:hover p {
+  color: #0b261f !important;
 }
 
 .darkMood .contactUsBg .bgMap .bgSend {
@@ -15496,9 +15550,135 @@ select {
 .darkMood .bgNews,
 .darkMood .bgGallery,
 .darkMood .PrivacyPolicy,
+.darkMood .TermsConditions,
 .darkMood .Bgshare,
+.darkMood .SearchResults,
+.darkMood .Suggestions,
+.darkMood .RegulationsV2,
+.darkMood .servicesPageTwo,
 .darkMood .FAQParent {
   background-color: transparent;
+}
+
+.darkMood .reyadah-inner .list-ryadah-card:not(:hover) {
+  background-color: #09120f;
+}
+
+.darkMood .servicesPageTwo .boxServ2 .testSR .actionsDownload .downloadFile,
+.darkMood .servicesPageTwo .wrapperBox .whiteBoxServ,
+.darkMood .service-list.inner-serv-list .service-card:not(:hover),
+.darkMood .servicesPageTwo .redirectServ,
+.darkMood .serviceBox,
+.darkMood .Suggestions .bgWhite,
+.darkMood .SearchResults .bgSearch {
+  background: #1b1c1b;
+}
+
+.darkMood .tenders-list .tender-list-card,
+.darkMood .latest-tenders,
+.darkMood .tender-details {
+  background: #202020;
+}
+
+.darkMood .tender-details .tenders-item-flag,
+.darkMood .tender-details .tenders-item .tenders-label {
+  background-color: #060c0a;
+}
+
+.darkMood .tenders-list .tender-list-card ul li h5, .darkMood .tenders-list .tender-list-card ul li .h5,
+.darkMood .about-tabs .Birth-and-founding,
+.darkMood .tender-details .attachments-section .attachments-container .field--item:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.darkMood .tender-details,
+.darkMood .tenders-list .tender-list-card,
+.darkMood .tender-details .attachments-section .attachments-container .item,
+.darkMood .tender-details .attachments-section .attachments-container .file {
+  border: 1px solid #060c0a;
+}
+
+.darkMood .reyadah-main .img-box::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 38, 31, 0.501838)), color-stop(65%, rgba(5, 14, 10, 0.953)));
+  background: linear-gradient(90deg, rgba(11, 38, 31, 0.501838) 0%, rgba(5, 14, 10, 0.953) 65%);
+}
+
+.darkMood footer .last-footer,
+.darkMood footer .top-footer,
+.darkMood .top-nav {
+  background-color: #10201b;
+}
+
+.darkMood footer .footer-slider {
+  background-color: #10201b;
+}
+
+.darkMood .endowmentHeader .endowmentBox {
+  background-color: #09120f;
+}
+
+.darkMood .top-nav .top-links a.waqfi {
+  border-right: 1px solid #ffffff;
+}
+
+.darkMood .main-navbar {
+  background-color: #0c1814;
+}
+
+.darkMood .branches .branches-details select {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.darkMood .displayRow2 .readableBoxV2:not(:hover) .actionsBtn img {
+  -webkit-filter: unset !important;
+          filter: unset !important;
+}
+
+.darkMood .main-navbar .nav-item .dropdown-menu {
+  background-color: #fff;
+}
+
+.darkMood .main-navbar .nav-item .dropdown-menu li a:hover {
+  background-color: #1c614e0f;
+}
+
+.darkMood .navbar-brand::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/footer-Logo.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.darkMood select,
+.darkMood .searchNews input {
+  border: 3px solid #013e2d;
+}
+
+.darkMood .prePagi.current,
+.darkMood .SearchResults .bgSearch .form-group-search button,
+.darkMood .displayComponent .boxGridDS a.active {
+  background: #24704e;
+}
+
+.darkMood .about-tabs ul.nav li button.active,
+.darkMood .latest-tenders .send-cri .mail-send,
+.darkMood .contactUsBg .bgMap .bgSend .actionBtn .btnWithArrow,
+.darkMood .tabsBtns .nav-item button.active {
+  background: #10382d;
+}
+
+.darkMood .serviceBox:hover {
+  background: #0b2820;
+}
+
+.darkMood .channelCard .chCardBox:hover {
+  background-color: #0b2820;
+  border: 2px solid #0b2820;
 }
 
 /* AO start news page */
@@ -17643,6 +17823,9 @@ body .dotsCustom .owl-dot.active {
 /* start responsive media */
 /* tab */
 @media (max-width: 992px) {
+  .breadcrumb-area .functions-sec {
+    display: none;
+  }
   .committeesV2 .ComText {
     padding-left: 0;
   }
@@ -17685,9 +17868,24 @@ body .dotsCustom .owl-dot.active {
   .forDirction .col-md-3:nth-of-type(3) {
     display: none;
   }
+  .RegulationsV2 .displayHandlerCompenet2 .col-md-3,
   .snipptNews .col-md-3,
   .displayHandlerCompenet .col-md-3 {
     width: 50%;
+  }
+  .RegulationsV2 .flexRevers .tabsBtns .nav-item button {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .RegulationsV2 .displayComponent {
+    display: none;
+  }
+  .RegulationsV2 .flexRevers .col-md-3:first-of-type {
+    width: 100%;
+  }
+  .RegulationsV2 .flexRevers .searchNews {
+    margin-bottom: 20px;
+    max-width: 250px;
   }
   .displayHandlerCompenet.displayRow .col-md-3 {
     width: 100%;
@@ -17707,11 +17905,129 @@ body .dotsCustom .owl-dot.active {
   .BGInnerNew .sliderNews .fancybox img {
     max-height: 300px;
   }
+  .endowmentHeader .endowmentBox {
+    padding: 92px 20px;
+  }
+  .arrowNews .owl-carousel .owl-nav button.owl-next {
+    -webkit-transform: scaleX(-1) translateY(-50%);
+            transform: scaleX(-1) translateY(-50%);
+  }
+  .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .h3 {
+    font-size: 23px;
+  }
+  .chartDevEndowment ul li:last-of-type::before,
+  .chartDevEndowment ul li::after {
+    display: none;
+  }
+  .chartDevEndowment ul li:nth-of-type(5) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .chartDevEndowment ul li:nth-of-type(6) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .downloadBook a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .downloadBook a strong {
+    padding: 20px;
+    text-align: center;
+  }
+  footer .top-footer {
+    text-align: center;
+  }
+  footer .top-footer .social-media,
+  .two-logos {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  footer .top-footer .social-media {
+    margin-bottom: 20px;
+  }
+  .FAQParent .tabsBtns .nav-item button {
+    min-width: 190px;
+    margin-bottom: 20px;
+  }
+  .FAQParent .tab-content .accordion-item .accordion-header button {
+    font-size: 16px;
+    text-align: left;
+  }
+  .FAQParent .tab-content .accordion-item .accordion-header button {
+    height: auto;
+    padding: 20px 44px;
+    line-height: 1.5;
+  }
+  .ReadableLibrary .displayHandlerCompenet2 .col-md-3 {
+    width: 50%;
+  }
+  .servicesPageTwo .col-md-4,
+  .servicesPageTwo .col-md-8 {
+    width: 100%;
+  }
+  .servicesPageTwo .boxServ2 .testSR .ulIcons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .servicesPageTwo .boxServ2 .testSR .actionsDownload .downloadFile {
+    margin-bottom: 20px;
+  }
+  .servicesPageTwo .boxServ2 .testSR .ulIcons li:nth-of-type(3)::after {
+    display: none;
+  }
+  .servicesPageTwo .reverseMob {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .SearchResults .bgSearch form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .SearchResults .bgSearch .form-group-search {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /* end tab 992 */
 /* mob */
 @media (max-width: 767px) {
+  body .main-navbar .navbar-toggler {
+    top: 100px;
+  }
+  body .main-navbar #navbarSupportedContent {
+    top: 155px;
+  }
+  .top-nav .top-links a.language {
+    margin-right: 10px;
+  }
+  .top-nav .top-links .contact-us-top {
+    margin-right: 0px;
+  }
+  .top-nav .top-links .Accessibilty {
+    margin-right: 0px;
+  }
+  .top-nav .top-links a.waqfi {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #12783F;
+  }
+  .main-navbar .nav-item .dropdown-menu::before {
+    top: 38px;
+  }
   .committeesV2 .ComText {
     margin-top: 25px;
   }
@@ -17790,7 +18106,7 @@ body .dotsCustom .owl-dot.active {
     max-width: unset;
   }
   .forDirction {
-    text-align: right;
+    text-align: left;
   }
   .forDirction .col-md-3:nth-of-type(1) {
     width: 100%;
@@ -17809,10 +18125,262 @@ body .dotsCustom .owl-dot.active {
   .displayHandlerCompenet.displayRow .col-md-3 {
     width: 100%;
   }
+  .endowmentHeader .endowmentBox {
+    padding: 92px 20px 25px 20px;
+    height: auto;
+  }
+  .endowmentHeader .owl-item img {
+    height: 350px;
+  }
+  .downloadBook a strong {
+    font-size: 20px;
+  }
+  .downloadBook a strong span {
+    font-size: 14px;
+  }
+  footer .footer-slider .item .caption {
+    font-size: 20px;
+  }
+  footer .footer-slider .item .caption a {
+    margin: 0;
+  }
+  footer .last-footer .copySection {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  footer .last-footer .copySection p {
+    margin-top: 20px;
+  }
+  .FAQParent .tabsBtns li {
+    width: 100%;
+  }
+  .FAQParent .tabsBtns li button {
+    width: 90%;
+  }
+  .downloadFile,
+  .ReadableLibrary .displayHandlerCompenet2 .col-md-3,
+  .readableBox .RImg img,
+  .bgGallery .galleryBox .GLimg img {
+    width: 100%;
+  }
+  .bgGallery .forDirction {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .servicesPageTwo {
+    padding: 0;
+  }
+  .servicesPageTwo .wrapperBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .servicesPageTwo .wrapperBox .whiteBoxServ {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .servicesPageTwo .redirectServ {
+    padding: 47px 24px 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .servicesPageTwo .wrapperBox .whiteBoxServ .textB h3, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .h3 {
+    font-size: 20px;
+  }
+  .servicesPageTwo .redirectServ .btnWithArrow {
+    height: 70px;
+  }
+  .flexRevers .tabsBtns li {
+    width: 95%;
+  }
+  .servicesPageTwo .boxServ2 .testSR .actionsDownload .downloadFile {
+    margin-left: 0;
+    padding: 12px;
+  }
+  .downloadFile .logoBorder {
+    padding: 10px;
+  }
+  .servicesPageTwo .heading {
+    padding-top: 0;
+  }
+  .flexRevers .tabsBtns li button {
+    width: 100%;
+  }
+  .RegulationsV2 .displayHandlerCompenet2 .col-md-3 {
+    width: 100%;
+  }
+  .RegulationsV2 .readableBox .RText h3, .RegulationsV2 .readableBox .RText .h3 {
+    height: auto;
+  }
+  .readableBox .RImg {
+    max-height: 260px;
+  }
+  .SearchResults .bgSearch {
+    padding: 20px;
+  }
+  .SearchResults .resultBox li {
+    padding: 30px 10px 37px 10px;
+  }
+  .SearchResults .resultBox li .downloadPdf {
+    display: block;
+    word-break: break-all;
+  }
+  .SearchResults .resultBox li h3 a, .SearchResults .resultBox li .h3 a {
+    font-size: 23px;
+  }
+  .SearchResults .pagination {
+    padding: 0;
+  }
+  .SearchResults .bgSearch .form-group-search button,
+  .SearchResults .bgSearch .form-group-search input {
+    height: 50px;
+  }
+  .SearchResults .resultSearc {
+    padding-left: 0;
+  }
+  .TermsConditions {
+    padding-bottom: 0px;
+  }
+  .TermsConditions .textHeading {
+    margin-top: 0;
+  }
+  .TermsConditions .textHeading h1, .TermsConditions .textHeading .h1 {
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .imgHeaing {
+    margin: 10px 0 50px;
+  }
+  .Suggestions {
+    padding-top: 35px;
+  }
+  .Suggestions .bgW2,
+  .Suggestions .bgWhite {
+    padding: 20px;
+  }
+  .Suggestions .actionBtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 45px 0 20px;
+  }
+  .Suggestions .actionBtn .btnWithArrow {
+    margin-top: 20px;
+  }
+  .Suggestions .bgW2 .filepond--drop-label label {
+    padding: 15px;
+  }
+  .Suggestions .bgW2 .filepond--drop-label label img:first-of-type {
+    width: 20%;
+  }
+  .Suggestions .bgW2 .filepond--drop-label label img:last-of-type {
+    width: 70%;
+  }
+  .hintUpload {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hintUpload img {
+    padding-top: 7px;
+  }
 }
 
 /* end mob 767 */
+@media (max-width: 350px) {
+  .readableBox .RText h3, .readableBox .RText .h3 {
+    height: 55px;
+  }
+  .readableBox .RText h3::before, .readableBox .RText .h3::before {
+    top: 95%;
+  }
+}
+
+@media (min-width: 504px) and (max-width: 767px) {
+  .servicesPageTwo .boxServ2 .testSR .ulIcons li:nth-of-type(4)::after,
+  .servicesPageTwo .boxServ2 .testSR .ulIcons li:nth-of-type(2)::after {
+    display: none;
+  }
+  .servicesPageTwo .boxServ2 .testSR .ulIcons li:nth-of-type(3)::after {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .servicesPageTwo .boxServ2 .testSR .ulIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0;
+  }
+  .servicesPageTwo .boxServ2 .testSR .ulIcons li::after {
+    display: none;
+  }
+  .servicesPageTwo .boxServ2 .testSR .ulIcons li p {
+    margin-top: 9px;
+    margin-bottom: 20px;
+  }
+}
+
 /* end responsive media */
+/* start print style */
+@media print {
+  /**{ color-adjust: exact;  -webkit-print-color-adjust: exact; print-color-adjust: exact; }*/
+  body {
+    -webkit-print-color-adjust: exact !important;
+    text-align: right !important;
+  }
+  .innerpages .table > thead > tr > th {
+    -webkit-print-color-adjust: exact !important;
+    background: #228B5E !important;
+    color: #fff !important;
+  }
+  .innerpages .table > tbody > tr > th {
+    -webkit-print-color-adjust: exact !important;
+    background: #228B5E !important;
+    color: #fff !important;
+  }
+  .innerpages .table > tbody > tr > td {
+    -webkit-print-color-adjust: exact !important;
+    color: #555 !important;
+  }
+  .innerpages .table > tbody > tr:nth-child(odd) {
+    -webkit-print-color-adjust: exact !important;
+    background: #F3F3F3 !important;
+  }
+  .innerpages .table > tbody > tr:nth-child(even) {
+    -webkit-print-color-adjust: exact !important;
+    background: #fff !important;
+  }
+  .innerpages .grid > thead > tr > th {
+    -webkit-print-color-adjust: exact !important;
+    background: #228B5E !important;
+    color: #fff !important;
+  }
+  .innerpages .grid > tbody > tr > th {
+    -webkit-print-color-adjust: exact !important;
+    background: #228B5E !important;
+    color: #fff !important;
+  }
+  .innerpages .grid > tbody > tr > td {
+    -webkit-print-color-adjust: exact !important;
+    color: #555 !important;
+  }
+  .innerpages .grid > tbody > tr:nth-child(odd) {
+    -webkit-print-color-adjust: exact !important;
+    background: #F3F3F3 !important;
+  }
+  .innerpages .grid > tbody > tr:nth-child(even) {
+    -webkit-print-color-adjust: exact !important;
+    background: #fff !important;
+  }
+}
+
+/* end print style */
 /*
 this UI is made desktop first.
 */
