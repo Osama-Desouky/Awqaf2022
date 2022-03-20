@@ -96,6 +96,35 @@ this UI is made desktop first.
       }
     }
   }
+  
+  // board
+  .board-tabs{
+    ul.nav{
+      li{
+        min-width: 250px;
+      }
+    }
+  }
+  .words {
+    .content-box {
+      .word-content {
+        p{
+          font-size: 16px;
+        }
+        .signature{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // list
+  .board-members {
+    .list-cards{
+      .list-card{
+        width: auto;
+      }
+    }
+  }
 }
 
 
@@ -320,6 +349,125 @@ this UI is made desktop first.
         }
       }
     }
+
+    // board members
+
+    // inner
+    .details-list {
+      ul.green-dots{
+        padding-right: 30px;
+        list-style-position: outside;
+      }
+    }
+
+    .board-members {
+      // .list-cards{
+        .list-card{
+          .content-box{
+            padding: 15px;
+            h4{
+              font-size: 18px;
+              line-height: 22px;
+              margin-bottom: 10px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 20px;
+              height: calc(20px * 2);
+            }
+            .hidden-details {
+              font-size: 14px;
+              line-height: 21px;
+              max-height: calc(21px * 9);
+            }
+          }
+        }
+      // }
+    }
+
+
+    // Careers
+    .career-slider {
+      .main-cont {
+        .caption {
+          h2{
+            font-size: 30px;
+          }
+          p{
+            font-size: 16px;
+            margin-bottom: 40px;
+          }
+          .slider-btns {
+            a{
+              width: 250px;
+              height: 65px;
+              font-size: 14px;
+              img{
+                max-height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .life-at-awqaaf {
+      h2{
+        font-size: 28px;
+      }
+      .accordion-item {
+        .accordion-collapse {
+          .accordion-body {
+            p{
+              font-size: 15px;
+              line-height: 26px;
+            }
+            .life-card {
+              .content-box {
+                p{
+                  font-size: 14px;
+                  line-height: 24px;
+                  height: calc(24px * 7);
+                }
+              }
+              &:hover{
+                .content-box {
+                  p{
+                    height: calc(24px *10);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .why-hay2a {
+      h2{
+        font-size: 28px;
+      }
+      .why-list {
+        .why-card{
+          margin-#{$end-direction}: 30px;
+          width: calc(100% /3 - 20px);
+          // &:nth-child(3n+0){
+          //   margin-#{$end-direction}: 0;
+          // }
+        }
+      }
+    }
+    .career-btns {
+      a{
+        width: 400px;
+        height: 85px;
+        font-size: 20px;
+        img{
+          max-height: 100%;
+        }
+        span{
+          padding: 10px 0;
+        }
+      }
+    }
   }
 
   
@@ -344,87 +492,91 @@ this UI is made desktop first.
 
 }
 // Large devices (desktops, less than 1200px)
-@include media-breakpoint-down(lg) {
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link {
-    font-size: 12px;
-  }
-
-  .main-navbar #navbarSupportedContent > .navbar-nav{
-    padding-inline-start: 15px;
-  }
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item{
-    margin-#{$start-direction}: 10px;
-  }
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item:last-child {
-    margin-right: 10px;
-  }
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::after{
-    background-size: contain;
-    background-position-y: 100%;
-    width: 8px;
-  }
+@include media-breakpoint-down(xl) {
   
-  .main-navbar .nav-div{
-    width: auto;
-    .nav-item {
+  .main-navbar {
+    .nav-item{
       .nav-link{
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   }
+  // breadcrumb
+  .breadcrumb-area {
+    .heading{
+      font-size: 25px;
+    }
+  }
 
-  // footer
-
-  footer {
-    h5{
-      font-size: 20px;
-      line-height: 25px;
-      margin-bottom: 12px;
-    }
-    ul {
-      li{
-        margin-bottom: 5px;
-        a{
-          font-size: 15px;
-          line-height: 20px;
+// board
+  .words {
+    .content-box {
+      .word-content {
+        p{
+          font-size: 14px;
         }
       }
-    }
-    .about-us-footer{
-      ul {
-        li{
-          margin-bottom: 15px;
-        }
-      }
-    }
-    .copySection{
-      flex-direction: column;
-      .copy-rights{
-        .copy{
-          font-size: 15px;
-          padding-#{$end-direction}: 20px;
-          border-#{$end-direction}: 1px solid #7D7D7D;
-          margin-#{$end-direction}: 15px;
-        }
-        a{
-          font-size: 15px;
-          margin-#{$end-direction}: 10px;
-        }
-      }
-      .social-media{
-        width: auto;
-        justify-content: flex-end;
-        a{
-          margin-#{$start-direction}: 15px;
-        }
+      .signature{
+        font-size: 13px;
+        margin-top: 15px;
       }
     }
   }
 
 
-
-
-  
+      // Careers
+      .career-slider {
+        .main-cont {
+          .caption {
+            h2{
+              font-size: 25px;
+            }
+           
+            .slider-btns {
+              a{
+                width: 215px;
+                &.jobs-btn{
+                  margin-#{$start-direction}:15px ;
+                }
+              }
+            }
+          }
+        }
+      }
+      .life-at-awqaaf {
+        h2{
+          font-size: 25px;
+        }
+      
+      }
+      .why-hay2a {
+        h2{
+          font-size: 25px;
+        }
+        .why-list {
+          .why-card{
+          flex: 0 0 auto;
+          .content-box{
+            h5{
+              font-size: 15px;
+            }
+          }
+          }
+        }
+      }
+      .career-btns {
+        a{
+          width: 400px;
+          height: 85px;
+          font-size: 20px;
+          img{
+            max-height: 100%;
+          }
+          span{
+            padding: 10px 0;
+          }
+        }
+      }
 }
 
 
@@ -437,14 +589,14 @@ this UI is made desktop first.
       width: 100%;
       left: 0;
       background: #fff;
-      top: 99px;
+      top: 180px;
       z-index: 99;
       > .navbar-nav {
         box-shadow: 0 80px 65px rgba($color: #000, $alpha: 0.20);
         padding-bottom: 20px;
         padding-inline-start: 0;
         > .nav-item {
-          margin: auto;
+          margin: auto !important;
           display: flex;
           flex-direction: column;
           &.search-mob{
@@ -487,7 +639,7 @@ this UI is made desktop first.
     .navbar-toggler {
       position: absolute;
       #{$end-direction}: 50px;
-      top: 40px;
+      top: 100px;
       width: 54px;
       min-width: auto;
     }
@@ -551,6 +703,12 @@ this UI is made desktop first.
     }
   } 
 
+  // breadcrumb
+  .breadcrumb-area {
+    .heading{
+      font-size: 24px;
+    }
+  }
   // index
   .main-slider {
     background-color: #000;
@@ -669,6 +827,125 @@ this UI is made desktop first.
     }
   }
 
+
+    // board members
+
+    // inner
+    .main-inner-member{
+      .img-box{
+        margin: 0 auto;
+        height: 325px;
+        width: 325px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .content-box{
+        text-align: center;
+        margin-top: 30px;
+        height: auto;
+        div {
+          .name{
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+          .job{
+            font-size: 16px;
+          }
+        }
+        .social-contact {
+          margin-top: 15px;
+          h4{
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .details-full {
+      margin-top: 50px;
+      p{
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 25px;
+      }
+  }
+  .customTitle {
+    font-size: 22px;
+  }
+  .details-list {
+    margin-top: 55px;
+    margin-bottom: 35px;
+    ul.green-dots {
+      margin-bottom: 30px;
+      li {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  // word
+  .board-tabs{
+    .words{
+      .img-box{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .branches {
+    .branches-details{
+      margin-bottom: 20px;
+      h3{
+        font-size: 18px !important;
+        margin-top: 25px !important;
+      }
+      .location{
+        font-size: 14px !important;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+      }
+      ul.contact-det {
+        li{
+          margin-#{$end-direction}: 25px;
+          font-size: 14px;
+          img{
+            margin-#{$end-direction}: 7px;
+          }
+        }
+      }
+    }
+  }
+  .service-list.inner-serv-list {
+    .service-card{
+      padding: 30px 20px !important;
+      height: 310px !important;
+      margin-bottom: 30px !important;
+      h4{
+        font-size: 18px !important;
+        line-height: 30px !important;
+        height: calc(30px * 2) !important;
+      }
+      p{
+        font-size: 14px !important;
+        line-height: 23px !important;
+        max-height: calc(23px * 5) !important;
+      }
+    }
+  }
+
+  .life-at-awqaaf{
+    .img-box{
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -801,6 +1078,63 @@ this UI is made desktop first.
       }
     }
 
+    .board-tabs{
+      ul.nav {
+        li{
+          min-width: auto;
+        }
+      }
+    }
+    .board-members {
+      .list-cards{
+        .col-xl-3.col-lg-4.col-md-6{
+          display: flex;
+          justify-content: center;
+        }
+        .list-card{
+          width: 325px;
+          margin: auto;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .why-hay2a {
+      margin-bottom: 60px;
+      .why-list {
+        .why-card{
+          margin-#{$end-direction}: 30px;
+          width: calc(100% /2 - 15px);
+          &:nth-child(3n+0){
+            margin-#{$end-direction}: 30px;    
+          }
+          &:nth-child(2n+0){
+            margin-#{$end-direction}: 0px; 
+          }
+        }
+      }
+    }
+    .life-at-awqaaf .accordion-item .accordion-collapse .accordion-body .life-card{
+      margin-bottom: 30px;
+    }
+    .career-btns {
+      margin-bottom: 55px;
+      a{
+        padding: 15px 20px;
+        height: 70px;
+        font-size: 16px;
+        span{
+          padding: 5px 0;
+        }
+      }
+    }
+
+    .details-list p{
+      font-size: 14px;
+    }
+    .Governance-main .content-box p{
+      font-size: 14px;
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -996,6 +1330,53 @@ this UI is made desktop first.
         p{
           font-size: 12px;
         }
+      }
+    }
+  }
+
+    
+
+.career-slider .main-cont {
+    padding-top: 120px;
+    .caption {
+      h2{
+        font-size: 22px;
+        line-height: 30px;
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      .slider-btns a{
+        width: 100%;
+        &.jobs-btn{
+          margin: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .life-at-awqaaf {
+    h2{
+      font-size: 22px;
+    }
+    .accordion-item .accordion-collapse .accordion-body p{
+      font-size: 14px;
+    }
+  }
+  .why-hay2a .why-list .why-card .content-box h5{
+    font-size: 13px;
+    line-height: 20px;
+    height: calc(20px * 3);
+  }
+  .career-btns {
+    flex-wrap: wrap;
+    a{
+      flex: 0 0 auto;
+      width: 100%;
+      &.jobs-btn{
+        margin: 0;
+        margin-top: 10px;
       }
     }
   }

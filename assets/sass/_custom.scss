@@ -2591,6 +2591,7 @@ service-center
     position: absolute;
     top: 88%;
     #{$start-direction}:50%;
+    transform: translateX(50%);
     .owl-dot {
       span{
         background-color: transparent;
@@ -2796,6 +2797,7 @@ service-center
           margin-bottom: 0;
           line-height: 26px;
           height: calc(26px * 2);
+          overflow: hidden;
           text-align: center;
         }
       }

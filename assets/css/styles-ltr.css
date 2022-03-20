@@ -14284,6 +14284,8 @@ service-center
   position: absolute;
   top: 88%;
   left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .career-slider .owl-dots .owl-dot span {
@@ -14528,6 +14530,7 @@ service-center
   margin-bottom: 0;
   line-height: 26px;
   height: calc(26px * 2);
+  overflow: hidden;
   text-align: center;
 }
 
@@ -18433,6 +18436,18 @@ this UI is made desktop first.
   .about-tabs ul.nav li {
     width: auto;
   }
+  .board-tabs ul.nav li {
+    min-width: 250px;
+  }
+  .words .content-box .word-content p {
+    font-size: 16px;
+  }
+  .words .content-box .word-content .signature {
+    font-size: 15px;
+  }
+  .board-members .list-cards .list-card {
+    width: auto;
+  }
 }
 
 @media (max-width: 1399.97px) {
@@ -18581,6 +18596,76 @@ this UI is made desktop first.
   .about-list-cards .list-card .content-box p {
     font-size: 15px;
   }
+  .details-list ul.green-dots {
+    padding-right: 30px;
+    list-style-position: outside;
+  }
+  .board-members .list-card .content-box {
+    padding: 15px;
+  }
+  .board-members .list-card .content-box h4, .board-members .list-card .content-box .h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .board-members .list-card .content-box p {
+    font-size: 14px;
+    line-height: 20px;
+    height: calc(20px * 2);
+  }
+  .board-members .list-card .content-box .hidden-details {
+    font-size: 14px;
+    line-height: 21px;
+    max-height: calc(21px * 9);
+  }
+  .career-slider .main-cont .caption h2, .career-slider .main-cont .caption .h2 {
+    font-size: 30px;
+  }
+  .career-slider .main-cont .caption p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .career-slider .main-cont .caption .slider-btns a {
+    width: 250px;
+    height: 65px;
+    font-size: 14px;
+  }
+  .career-slider .main-cont .caption .slider-btns a img {
+    max-height: 100%;
+  }
+  .life-at-awqaaf h2, .life-at-awqaaf .h2 {
+    font-size: 28px;
+  }
+  .life-at-awqaaf .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .life-at-awqaaf .accordion-item .accordion-collapse .accordion-body .life-card .content-box p {
+    font-size: 14px;
+    line-height: 24px;
+    height: calc(24px * 7);
+  }
+  .life-at-awqaaf .accordion-item .accordion-collapse .accordion-body .life-card:hover .content-box p {
+    height: calc(24px *10);
+  }
+  .why-hay2a h2, .why-hay2a .h2 {
+    font-size: 28px;
+  }
+  .why-hay2a .why-list .why-card {
+    margin-right: 30px;
+    width: calc(100% /3 - 20px);
+  }
+  .career-btns a {
+    width: 400px;
+    height: 85px;
+    font-size: 20px;
+  }
+  .career-btns a img {
+    max-height: 100%;
+  }
+  .career-btns a span {
+    padding: 10px 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -18597,70 +18682,53 @@ this UI is made desktop first.
   /* makes the dropdown full width  */
 }
 
-@media (max-width: 991.98px) {
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link {
-    font-size: 12px;
+@media (max-width: 1199.98px) {
+  .main-navbar .nav-item .nav-link {
+    font-size: 14px;
   }
-  .main-navbar #navbarSupportedContent > .navbar-nav {
-    -webkit-padding-start: 15px;
-            padding-inline-start: 15px;
+  .breadcrumb-area .heading {
+    font-size: 25px;
   }
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
-    margin-left: 10px;
+  .words .content-box .word-content p {
+    font-size: 14px;
   }
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item:last-child {
-    margin-right: 10px;
+  .words .content-box .signature {
+    font-size: 13px;
+    margin-top: 15px;
   }
-  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::after {
-    background-size: contain;
-    background-position-y: 100%;
-    width: 8px;
+  .career-slider .main-cont .caption h2, .career-slider .main-cont .caption .h2 {
+    font-size: 25px;
   }
-  .main-navbar .nav-div {
-    width: auto;
+  .career-slider .main-cont .caption .slider-btns a {
+    width: 215px;
   }
-  .main-navbar .nav-div .nav-item .nav-link {
-    font-size: 15px;
-  }
-  footer h5, footer .h5 {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 12px;
-  }
-  footer ul li {
-    margin-bottom: 5px;
-  }
-  footer ul li a {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  footer .about-us-footer ul li {
-    margin-bottom: 15px;
-  }
-  footer .copySection {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  footer .copySection .copy-rights .copy {
-    font-size: 15px;
-    padding-right: 20px;
-    border-right: 1px solid #7D7D7D;
-    margin-right: 15px;
-  }
-  footer .copySection .copy-rights a {
-    font-size: 15px;
-    margin-right: 10px;
-  }
-  footer .copySection .social-media {
-    width: auto;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  footer .copySection .social-media a {
+  .career-slider .main-cont .caption .slider-btns a.jobs-btn {
     margin-left: 15px;
+  }
+  .life-at-awqaaf h2, .life-at-awqaaf .h2 {
+    font-size: 25px;
+  }
+  .why-hay2a h2, .why-hay2a .h2 {
+    font-size: 25px;
+  }
+  .why-hay2a .why-list .why-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .why-hay2a .why-list .why-card .content-box h5, .why-hay2a .why-list .why-card .content-box .h5 {
+    font-size: 15px;
+  }
+  .career-btns a {
+    width: 400px;
+    height: 85px;
+    font-size: 20px;
+  }
+  .career-btns a img {
+    max-height: 100%;
+  }
+  .career-btns a span {
+    padding: 10px 0;
   }
 }
 
@@ -18670,7 +18738,7 @@ this UI is made desktop first.
     width: 100%;
     left: 0;
     background: #fff;
-    top: 99px;
+    top: 180px;
     z-index: 99;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav {
@@ -18681,7 +18749,7 @@ this UI is made desktop first.
             padding-inline-start: 0;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
-    margin: auto;
+    margin: auto !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -18723,7 +18791,7 @@ this UI is made desktop first.
   .main-navbar .navbar-toggler {
     position: absolute;
     right: 50px;
-    top: 40px;
+    top: 100px;
     width: 54px;
     min-width: auto;
   }
@@ -18791,6 +18859,9 @@ this UI is made desktop first.
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 10px;
+  }
+  .breadcrumb-area .heading {
+    font-size: 24px;
   }
   .main-slider {
     background-color: #000;
@@ -18872,6 +18943,103 @@ this UI is made desktop first.
   }
   .content-with-icon .content-box h4, .content-with-icon .content-box .h4 {
     font-size: 20px;
+  }
+  .main-inner-member .img-box {
+    margin: 0 auto;
+    height: 325px;
+    width: 325px;
+    overflow: hidden;
+  }
+  .main-inner-member .img-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-inner-member .content-box {
+    text-align: center;
+    margin-top: 30px;
+    height: auto;
+  }
+  .main-inner-member .content-box div .name {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .main-inner-member .content-box div .job {
+    font-size: 16px;
+  }
+  .main-inner-member .content-box .social-contact {
+    margin-top: 15px;
+  }
+  .main-inner-member .content-box .social-contact h4, .main-inner-member .content-box .social-contact .h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .details-full {
+    margin-top: 50px;
+  }
+  .details-full p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+  .customTitle {
+    font-size: 22px;
+  }
+  .details-list {
+    margin-top: 55px;
+    margin-bottom: 35px;
+  }
+  .details-list ul.green-dots {
+    margin-bottom: 30px;
+  }
+  .details-list ul.green-dots li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .board-tabs .words .img-box {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .branches .branches-details {
+    margin-bottom: 20px;
+  }
+  .branches .branches-details h3, .branches .branches-details .h3 {
+    font-size: 18px !important;
+    margin-top: 25px !important;
+  }
+  .branches .branches-details .location {
+    font-size: 14px !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .branches .branches-details ul.contact-det li {
+    margin-right: 25px;
+    font-size: 14px;
+  }
+  .branches .branches-details ul.contact-det li img {
+    margin-right: 7px;
+  }
+  .service-list.inner-serv-list .service-card {
+    padding: 30px 20px !important;
+    height: 310px !important;
+    margin-bottom: 30px !important;
+  }
+  .service-list.inner-serv-list .service-card h4, .service-list.inner-serv-list .service-card .h4 {
+    font-size: 18px !important;
+    line-height: 30px !important;
+    height: calc(30px * 2) !important;
+  }
+  .service-list.inner-serv-list .service-card p {
+    font-size: 14px !important;
+    line-height: 23px !important;
+    max-height: calc(23px * 5) !important;
+  }
+  .life-at-awqaaf .img-box {
+    text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -18955,6 +19123,55 @@ this UI is made desktop first.
   }
   .about-list-cards .list-card .content-box p {
     font-size: 13px;
+  }
+  .board-tabs ul.nav li {
+    min-width: auto;
+  }
+  .board-members .list-cards .col-xl-3.col-lg-4.col-md-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .board-members .list-cards .list-card {
+    width: 325px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .why-hay2a {
+    margin-bottom: 60px;
+  }
+  .why-hay2a .why-list .why-card {
+    margin-right: 30px;
+    width: calc(100% /2 - 15px);
+  }
+  .why-hay2a .why-list .why-card:nth-child(3n+0) {
+    margin-right: 30px;
+  }
+  .why-hay2a .why-list .why-card:nth-child(2n+0) {
+    margin-right: 0px;
+  }
+  .life-at-awqaaf .accordion-item .accordion-collapse .accordion-body .life-card {
+    margin-bottom: 30px;
+  }
+  .career-btns {
+    margin-bottom: 55px;
+  }
+  .career-btns a {
+    padding: 15px 20px;
+    height: 70px;
+    font-size: 16px;
+  }
+  .career-btns a span {
+    padding: 5px 0;
+  }
+  .details-list p {
+    font-size: 14px;
+  }
+  .Governance-main .content-box p {
+    font-size: 14px;
   }
 }
 
@@ -19087,6 +19304,49 @@ this UI is made desktop first.
   }
   .about-list-cards .list-card .content-box p {
     font-size: 12px;
+  }
+  .career-slider .main-cont {
+    padding-top: 120px;
+  }
+  .career-slider .main-cont .caption h2, .career-slider .main-cont .caption .h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .career-slider .main-cont .caption p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .career-slider .main-cont .caption .slider-btns a {
+    width: 100%;
+  }
+  .career-slider .main-cont .caption .slider-btns a.jobs-btn {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .life-at-awqaaf h2, .life-at-awqaaf .h2 {
+    font-size: 22px;
+  }
+  .life-at-awqaaf .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 14px;
+  }
+  .why-hay2a .why-list .why-card .content-box h5, .why-hay2a .why-list .why-card .content-box .h5 {
+    font-size: 13px;
+    line-height: 20px;
+    height: calc(20px * 3);
+  }
+  .career-btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .career-btns a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+  }
+  .career-btns a.jobs-btn {
+    margin: 0;
+    margin-top: 10px;
   }
 }
 
