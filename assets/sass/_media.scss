@@ -125,6 +125,48 @@ this UI is made desktop first.
       }
     }
   }
+  .tender-details {
+    .tenders-item {
+      .det {
+        p{
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+
+  .tenders-list {
+    .tender-list-card {
+      height: 205px;
+      margin-bottom: 20px;
+      padding: 25px 20px;
+      h4{
+        font-size: 18px;
+      }
+      ul {
+        li {
+          h5{
+            padding: 5px 8px 8px;
+            padding-#{$start-direction}: 12px;
+            margin-bottom: 15px;
+            font-size: 14px;
+          }
+          .content-have-icon{
+            padding-#{$start-direction}: 10px;
+            img{
+              flex: 0 0 15px;
+            }
+            .content-box {
+              div{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -468,6 +510,18 @@ this UI is made desktop first.
         }
       }
     }
+    .tender-details {
+      .tenders-item {
+        .tenders-label{
+          flex: 0 0 160px;
+          width: 160px;
+          min-height: 30px;
+          h4{
+            font-size: 14px;  
+          }
+        }
+      }
+    }
   }
 
   
@@ -577,6 +631,158 @@ this UI is made desktop first.
           }
         }
       }
+
+      // ryada
+      .reyadah-main {
+        .content-box {
+          h2{
+            font-size: 28px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+      .reyadah-inner {
+        h2{
+          font-size: 28px;
+        }
+        p{
+          font-size: 16px;
+        }
+        .the-msg {
+          .content-box {
+            h3{
+              font-size: 22px;
+              margin-bottom: 15px;
+            }
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+        .the-values {
+          h3{
+            font-size: 22px;
+            margin-bottom: 20px;
+          }
+          .values-list {
+            flex-wrap: wrap;
+            .values-card{
+              width: calc(30% - 20px);
+              margin-#{$end-direction}: 20px;
+              margin-top: 50px;
+              .content-box{
+               h4{
+                font-size: 15px;
+               }
+              }
+            }
+          }
+        }
+        .the-pilings {
+          h3{
+            font-size: 22px;
+            margin-bottom: 30px;
+          }
+            .pilling-card {
+              .content-box {
+                h4{
+                  font-size: 14px;
+                }
+              }
+          }
+        }
+        .list-ryadah-card{
+          padding-top: 30px;
+          padding-bottom: 35px;
+          padding-#{$start-direction}: 20px;
+          padding-#{$end-direction}: 20px;
+          margin-bottom: 30px;
+          min-height: 420px;
+          .content-box {
+            h4{
+              font-size: 18px;
+              margin-bottom: 25px;
+            }
+            ul{
+              padding-#{$start-direction}: 25px;
+              padding-#{$end-direction}: 0px;
+              li{
+                margin-bottom: 10px !important;
+                font-size: 14px !important;
+                &::marker{
+                  font-size: 18px !important;
+                }
+              }
+            }
+          }
+        }
+        .ryada-more {
+          a{
+            font-size: 20px;
+            padding: 20px 25px 20px;
+            padding-#{$start-direction}: 35px;
+            img{
+              margin-#{$start-direction}: 40px;
+              max-width: 60px;
+
+            }
+          }
+        }
+      }
+
+      // tenders
+      .tender-details {
+        margin-bottom: 70px;
+        h2{
+          font-size: 22px;
+        }
+        .tenders-item-flag{
+          padding: 20px;
+        }
+        .tenders-item {
+          .tenders-label{
+            flex: 0 0 190px;
+            width: 190px;
+          }
+        }
+        .attachments-section {
+          .attachments-container {
+            .file {
+              .file-size{
+                font-size: 14px;
+              }
+              .file-link{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .latest-tenders {
+        h3{
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+        p{
+          font-size: 14px;
+          margin-bottom: 25px;
+        }
+        .send-cri {
+          .mail-send{
+            padding: 12px 15px;
+            font-size: 14px;
+          }
+          .mail-input{
+            font-size: 14px;
+            height: 48px;
+            padding: 10px 20px;
+          }
+        }
+
+      }
+      
 }
 
 
@@ -946,6 +1152,92 @@ this UI is made desktop first.
       margin-top: 20px;
     }
   }
+
+  // ryada
+  .reyadah-main {
+    .logo-box{
+      width: 260px;
+      #{$end-direction}:40px;
+    }
+    .content-box {
+      h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  .reyadah-inner {
+    margin-top: 70px;
+    h2{
+      font-size: 22px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .the-msg {
+      .content-box {
+        h3{
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+    .the-values {
+      h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .values-list {
+        flex-wrap: wrap;
+        .values-card{
+          width: calc(30% - 20px);
+          margin-#{$end-direction}: 20px;
+          margin-top: 50px;
+          .content-box{
+            h4{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .the-pilings {
+      h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .pilling-card {
+        margin-bottom: 30px;
+        // .content-box {
+        //   h4{
+        //     font-size: 12px;
+        //   }
+        // }
+      }
+    }
+    .list-ryadah-card{
+      min-height: 390px;
+    }
+    .ryada-more {
+      a{
+        font-size: 16px;
+        padding-top: 10px ;
+        padding-bottom: 10px ;
+        img{
+          margin-#{$start-direction}: 20px;
+          max-width: 45px;
+
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -1135,6 +1427,76 @@ this UI is made desktop first.
     .Governance-main .content-box p{
       font-size: 14px;
     }
+
+    // sitemap
+    .sitemap {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      .accordion {
+        .accordion-item {
+          margin-bottom: 20px;
+          .accordion-header {
+            .accordion-button{
+              padding: 13px 10px;
+              font-size: 18px;
+            }
+          }
+          .accordion-body{
+            padding: 15px 20px 5px !important;
+            ul{
+              li{
+                a{
+                  font-size: 14px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+      // ryada
+  .reyadah-main {
+    .logo-box{
+      top: 65%;
+      #{$end-direction}: 20px;
+      width: 200px;
+    }
+  }
+
+
+  // tenders
+  .latest-tenders {
+    .send-cri {
+      .mail-input{
+        width: 290px;
+      }
+      .mail-send{
+        padding: 12px 10px;
+        img{
+          margin-#{$start-direction}: 20px;
+        }
+      }
+    }
+  }
+  .tenders-list {
+    .tender-list-card{
+      height: auto;
+      ul{
+        flex-direction: column;
+      }
+      ul{
+        li {
+          h5{
+            margin-bottom: 10px;
+          }
+          .content-have-icon{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -1380,6 +1742,69 @@ this UI is made desktop first.
       }
     }
   }
+
+
+
+  // tenders
+
+  .tender-details {
+    h2{
+      font-size: 18px;
+    line-height: 25px;
+    }
+    .tenders-item{
+      flex-direction: column;
+      align-items: self-start;
+      .tenders-label{
+        flex:  0 0 auto;
+        width: auto;
+        margin-bottom: 5px;
+      }
+    }
+    .attachments-section {
+      .attachments-container {
+        .file {
+          .file-icon{
+            width: 15px;
+            height: 15px;
+            margin-#{$end-direction}: 15px;
+          }
+          .file-link{
+            font-size: 12px;
+          }
+          .file-size{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .latest-tenders {
+    padding-#{$start-direction}: 15px;
+    padding-#{$end-direction}: 15px;
+    h3{
+      font-size: 22px;
+    }
+    p{
+      text-align: center;
+      line-height: 20px;
+    }
+    .send-cri {
+      .mail-input{
+        width: 215px;
+        height: 42px;
+      }
+      .mail-send{
+        padding: 10px 10px;
+        margin-#{$start-direction}: 10px;
+        img{
+          margin-#{$start-direction}: 12px;
+        }
+      }
+    }
+  }
+
+
 }
 
 

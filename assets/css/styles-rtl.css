@@ -13540,6 +13540,9 @@ service-center
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tender-details .tenders-item .tenders-label {
@@ -13547,7 +13550,10 @@ service-center
   border-radius: 2px;
   padding: 5px 12px;
   width: 205px;
-  height: 34px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 205px;
+          flex: 0 0 205px;
+  min-height: 34px;
 }
 
 .tender-details .tenders-item .tenders-label h4, .tender-details .tenders-item .tenders-label .h4 {
@@ -18448,6 +18454,34 @@ this UI is made desktop first.
   .board-members .list-cards .list-card {
     width: auto;
   }
+  .tender-details .tenders-item .det p {
+    line-height: 22px;
+  }
+  .tenders-list .tender-list-card {
+    height: 205px;
+    margin-bottom: 20px;
+    padding: 25px 20px;
+  }
+  .tenders-list .tender-list-card h4, .tenders-list .tender-list-card .h4 {
+    font-size: 18px;
+  }
+  .tenders-list .tender-list-card ul li h5, .tenders-list .tender-list-card ul li .h5 {
+    padding: 5px 8px 8px;
+    padding-right: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .tenders-list .tender-list-card ul li .content-have-icon {
+    padding-right: 10px;
+  }
+  .tenders-list .tender-list-card ul li .content-have-icon img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15px;
+            flex: 0 0 15px;
+  }
+  .tenders-list .tender-list-card ul li .content-have-icon .content-box div {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1399.97px) {
@@ -18666,6 +18700,16 @@ this UI is made desktop first.
   .career-btns a span {
     padding: 10px 0;
   }
+  .tender-details .tenders-item .tenders-label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 160px;
+            flex: 0 0 160px;
+    width: 160px;
+    min-height: 30px;
+  }
+  .tender-details .tenders-item .tenders-label h4, .tender-details .tenders-item .tenders-label .h4 {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -18729,6 +18773,118 @@ this UI is made desktop first.
   }
   .career-btns a span {
     padding: 10px 0;
+  }
+  .reyadah-main .content-box h2, .reyadah-main .content-box .h2 {
+    font-size: 28px;
+  }
+  .reyadah-main .content-box p {
+    font-size: 16px;
+  }
+  .reyadah-inner h2, .reyadah-inner .h2 {
+    font-size: 28px;
+  }
+  .reyadah-inner p {
+    font-size: 16px;
+  }
+  .reyadah-inner .the-msg .content-box h3, .reyadah-inner .the-msg .content-box .h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .reyadah-inner .the-msg .content-box p {
+    font-size: 16px;
+  }
+  .reyadah-inner .the-values h3, .reyadah-inner .the-values .h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .reyadah-inner .the-values .values-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reyadah-inner .the-values .values-list .values-card {
+    width: calc(30% - 20px);
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .reyadah-inner .the-values .values-list .values-card .content-box h4, .reyadah-inner .the-values .values-list .values-card .content-box .h4 {
+    font-size: 15px;
+  }
+  .reyadah-inner .the-pilings h3, .reyadah-inner .the-pilings .h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .reyadah-inner .the-pilings .pilling-card .content-box h4, .reyadah-inner .the-pilings .pilling-card .content-box .h4 {
+    font-size: 14px;
+  }
+  .reyadah-inner .list-ryadah-card {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    min-height: 420px;
+  }
+  .reyadah-inner .list-ryadah-card .content-box h4, .reyadah-inner .list-ryadah-card .content-box .h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .reyadah-inner .list-ryadah-card .content-box ul {
+    padding-right: 25px;
+    padding-left: 0px;
+  }
+  .reyadah-inner .list-ryadah-card .content-box ul li {
+    margin-bottom: 10px !important;
+    font-size: 14px !important;
+  }
+  .reyadah-inner .list-ryadah-card .content-box ul li::marker {
+    font-size: 18px !important;
+  }
+  .reyadah-inner .ryada-more a {
+    font-size: 20px;
+    padding: 20px 25px 20px;
+    padding-right: 35px;
+  }
+  .reyadah-inner .ryada-more a img {
+    margin-right: 40px;
+    max-width: 60px;
+  }
+  .tender-details {
+    margin-bottom: 70px;
+  }
+  .tender-details h2, .tender-details .h2 {
+    font-size: 22px;
+  }
+  .tender-details .tenders-item-flag {
+    padding: 20px;
+  }
+  .tender-details .tenders-item .tenders-label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 190px;
+            flex: 0 0 190px;
+    width: 190px;
+  }
+  .tender-details .attachments-section .attachments-container .file .file-size {
+    font-size: 14px;
+  }
+  .tender-details .attachments-section .attachments-container .file .file-link {
+    font-size: 14px;
+  }
+  .latest-tenders h3, .latest-tenders .h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .latest-tenders p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .latest-tenders .send-cri .mail-send {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  .latest-tenders .send-cri .mail-input {
+    font-size: 14px;
+    height: 48px;
+    padding: 10px 20px;
   }
 }
 
@@ -19041,6 +19197,69 @@ this UI is made desktop first.
     text-align: center;
     margin-top: 20px;
   }
+  .reyadah-main .logo-box {
+    width: 260px;
+    left: 40px;
+  }
+  .reyadah-main .content-box h2, .reyadah-main .content-box .h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .reyadah-main .content-box p {
+    font-size: 14px;
+  }
+  .reyadah-inner {
+    margin-top: 70px;
+  }
+  .reyadah-inner h2, .reyadah-inner .h2 {
+    font-size: 22px;
+  }
+  .reyadah-inner p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .reyadah-inner .the-msg .content-box h3, .reyadah-inner .the-msg .content-box .h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .reyadah-inner .the-msg .content-box p {
+    font-size: 14px;
+  }
+  .reyadah-inner .the-values h3, .reyadah-inner .the-values .h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .reyadah-inner .the-values .values-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reyadah-inner .the-values .values-list .values-card {
+    width: calc(30% - 20px);
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .reyadah-inner .the-values .values-list .values-card .content-box h4, .reyadah-inner .the-values .values-list .values-card .content-box .h4 {
+    font-size: 13px;
+  }
+  .reyadah-inner .the-pilings h3, .reyadah-inner .the-pilings .h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .reyadah-inner .the-pilings .pilling-card {
+    margin-bottom: 30px;
+  }
+  .reyadah-inner .list-ryadah-card {
+    min-height: 390px;
+  }
+  .reyadah-inner .ryada-more a {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .reyadah-inner .ryada-more a img {
+    margin-right: 20px;
+    max-width: 45px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -19172,6 +19391,52 @@ this UI is made desktop first.
   }
   .Governance-main .content-box p {
     font-size: 14px;
+  }
+  .sitemap {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  .sitemap .accordion .accordion-item {
+    margin-bottom: 20px;
+  }
+  .sitemap .accordion .accordion-item .accordion-header .accordion-button {
+    padding: 13px 10px;
+    font-size: 18px;
+  }
+  .sitemap .accordion .accordion-item .accordion-body {
+    padding: 15px 20px 5px !important;
+  }
+  .sitemap .accordion .accordion-item .accordion-body ul li a {
+    font-size: 14px !important;
+  }
+  .reyadah-main .logo-box {
+    top: 65%;
+    left: 20px;
+    width: 200px;
+  }
+  .latest-tenders .send-cri .mail-input {
+    width: 290px;
+  }
+  .latest-tenders .send-cri .mail-send {
+    padding: 12px 10px;
+  }
+  .latest-tenders .send-cri .mail-send img {
+    margin-right: 20px;
+  }
+  .tenders-list .tender-list-card {
+    height: auto;
+  }
+  .tenders-list .tender-list-card ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tenders-list .tender-list-card ul li h5, .tenders-list .tender-list-card ul li .h5 {
+    margin-bottom: 10px;
+  }
+  .tenders-list .tender-list-card ul li .content-have-icon {
+    margin-bottom: 15px;
   }
 }
 
@@ -19347,6 +19612,59 @@ this UI is made desktop first.
   .career-btns a.jobs-btn {
     margin: 0;
     margin-top: 10px;
+  }
+  .tender-details h2, .tender-details .h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .tender-details .tenders-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+  }
+  .tender-details .tenders-item .tenders-label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: auto;
+    margin-bottom: 5px;
+  }
+  .tender-details .attachments-section .attachments-container .file .file-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+  }
+  .tender-details .attachments-section .attachments-container .file .file-link {
+    font-size: 12px;
+  }
+  .tender-details .attachments-section .attachments-container .file .file-size {
+    font-size: 12px;
+  }
+  .latest-tenders {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .latest-tenders h3, .latest-tenders .h3 {
+    font-size: 22px;
+  }
+  .latest-tenders p {
+    text-align: center;
+    line-height: 20px;
+  }
+  .latest-tenders .send-cri .mail-input {
+    width: 215px;
+    height: 42px;
+  }
+  .latest-tenders .send-cri .mail-send {
+    padding: 10px 10px;
+    margin-right: 10px;
+  }
+  .latest-tenders .send-cri .mail-send img {
+    margin-right: 12px;
   }
 }
 
