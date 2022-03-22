@@ -17965,7 +17965,7 @@ body .dotsCustom .owl-dot.active {
     margin-bottom: 20px;
   }
   .FAQParent .tab-content .accordion-item .accordion-header button {
-    font-size: 16px;
+    font-size: 17px;
     text-align: right;
   }
   .FAQParent .tab-content .accordion-item .accordion-header button {
@@ -18154,11 +18154,17 @@ body .dotsCustom .owl-dot.active {
     margin: 0;
   }
   footer .last-footer .copySection {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   footer .last-footer .copySection p {
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    font-size: 14px;
   }
   .FAQParent .tabsBtns li {
     width: 100%;
@@ -18233,6 +18239,7 @@ body .dotsCustom .owl-dot.active {
   .SearchResults .resultBox li .downloadPdf {
     display: block;
     word-break: break-all;
+    line-height: 1.8;
   }
   .SearchResults .resultBox li h3 a, .SearchResults .resultBox li .h3 a {
     font-size: 23px;
@@ -18258,7 +18265,7 @@ body .dotsCustom .owl-dot.active {
     margin-bottom: 15px;
   }
   .imgHeaing {
-    margin: 10px 0 50px;
+    margin: 20px 0 0px;
   }
   .Suggestions {
     padding-top: 35px;
@@ -18297,18 +18304,41 @@ body .dotsCustom .owl-dot.active {
   .hintUpload img {
     padding-top: 7px;
   }
+  footer .top-footer h5, footer .top-footer .h5, footer .top-footer .h5 {
+    font-size: 16px;
+  }
+  footer .top-footer ul li {
+    font-size: 14px;
+  }
+  footer .top-footer .whatsapp a,
+  footer .top-footer .apps .android {
+    padding-right: 15px;
+  }
+  .pagination a {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .TermsConditions .col-md-4.col-lg-5 .imgHeaing {
+    margin: 0px 0 30px;
+  }
+  .PrivacyPolicy .col-md-4.col-lg-5 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .RegulationsV2 .container > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .RegulationsV2 .textHeading {
+    margin-top: 0px;
+  }
 }
 
 /* end mob 767 */
-@media (max-width: 350px) {
-  .readableBox .RText h3, .readableBox .RText .h3 {
-    height: 55px;
-  }
-  .readableBox .RText h3::before, .readableBox .RText .h3::before {
-    top: 95%;
-  }
-}
-
 @media (min-width: 504px) and (max-width: 767px) {
   .servicesPageTwo .boxServ2 .testSR .ulIcons li:nth-of-type(4)::after,
   .servicesPageTwo .boxServ2 .testSR .ulIcons li:nth-of-type(2)::after {
@@ -18332,6 +18362,85 @@ body .dotsCustom .owl-dot.active {
   .servicesPageTwo .boxServ2 .testSR .ulIcons li p {
     margin-top: 9px;
     margin-bottom: 20px;
+  }
+  .breadcrumb-area .heading {
+    font-size: 27px;
+  }
+  .committeesV2 .ComText .font20bold, .committeesV2 .ComText .cardNews .cardText .heading20, .cardNews .cardText .committeesV2 .ComText .heading20, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText h2, .committeesV2 .ComText .bgGallery .galleryBox .GLtitle .h2, .bgGallery .galleryBox .GLtitle .committeesV2 .ComText .h2, .committeesV2 .ComText .readableBox .RText h3, .readableBox .RText .committeesV2 .ComText h3, .committeesV2 .ComText .readableBox .RText .h3, .readableBox .RText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .srvText h3, .serviceBox .srvText .committeesV2 .ComText h3, .committeesV2 .ComText .serviceBox .srvText .h3, .serviceBox .srvText .committeesV2 .ComText .h3, .committeesV2 .ComText .serviceBox .detailsHidden h4, .serviceBox .detailsHidden .committeesV2 .ComText h4, .committeesV2 .ComText .serviceBox .detailsHidden .h4, .serviceBox .detailsHidden .committeesV2 .ComText .h4, .committeesV2 .ComText .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .committeesV2 .ComText h3, .committeesV2 .ComText .servicesPageTwo .redirectServ .h3, .servicesPageTwo .redirectServ .committeesV2 .ComText .h3, .committeesV2 .ComText .SearchResults .resultBox li h3 a, .SearchResults .resultBox li h3 .committeesV2 .ComText a, .committeesV2 .ComText .SearchResults .resultBox li .h3 a, .SearchResults .resultBox li .h3 .committeesV2 .ComText a, .serviceBox .srvText h3, .serviceBox .srvText .h3, .TermsConditions .textHeading h1, .TermsConditions .textHeading .h1,
+  .customTitle {
+    font-size: 22px;
+  }
+  .servicesPageTwo .redirectServ .btnWithArrow span {
+    font-size: 23px;
+  }
+  .BGInnerNew .col-md-12 .font30bold, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 h3, .BGInnerNew .col-md-12 .endowmentHeader .endowmentBox li .h3, .endowmentHeader .endowmentBox li .BGInnerNew .col-md-12 .h3, .BGInnerNew .col-md-12 .downloadBook a strong, .downloadBook a .BGInnerNew .col-md-12 strong, .servicesPageTwo .boxServ2 .testSR h2, .servicesPageTwo .boxServ2 .testSR .h2 {
+    font-size: 20px;
+  }
+  .servicesPageTwo .redirectServ h3, .servicesPageTwo .redirectServ .h3, .bgGallery .galleryBox .GLtitle h2, .bgGallery .galleryBox .GLtitle .h2, .board-members .list-card .content-box h4, .board-members .list-card .content-box .h4, .committeesV1 .boxCommitteeAwqaf .AQtext h3, .committeesV1 .boxCommitteeAwqaf .AQtext .h3 {
+    font-size: 18px;
+  }
+  .pragh17regular2, .endowmentContent .contentBox p, .chartDevEndowment ul li p,
+  .downloadFile span,
+  .Suggestions .bgWhite .inputg label,
+  .SearchResults .resultBox li p,
+  footer .last-footer a, .committeesV2 .ComText .pragh17regular, .committeesV2 .ComText .BGInnerNew .contentNews p, .BGInnerNew .contentNews .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .heading p, .servicesPageTwo .heading .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB .committeesV2 .ComText p, .committeesV2 .ComText .servicesPageTwo .boxServ2 .testSR p, .servicesPageTwo .boxServ2 .testSR .committeesV2 .ComText p, .committeesV2 .ComText .textHeading p, .textHeading .committeesV2 .ComText p, .committeesV2 .ComText .TermsConditions .boxDesc p, .TermsConditions .boxDesc .committeesV2 .ComText p,
+  .committeesV2 .ComText .PrivacyPolicy .boxDesc p, .PrivacyPolicy .boxDesc .committeesV2 .ComText p,
+  .board-members .list-card .content-box p,
+  .contactUsBg .contactBox .brief15Bold,
+  .contactUsBg .contactBox .UsList li a .greenFont,
+  .FAQParent .tab-content .accordion-item .accordion-body .contentFaq p,
+  .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews span,
+  .committeesV1 .boxCommitteeAwqaf .AQtext p {
+    font-size: 14px;
+  }
+  .pragh17regular, .BGInnerNew .contentNews p, .servicesPageTwo .heading p, .servicesPageTwo .wrapperBox .whiteBoxServ .textB p, .servicesPageTwo .boxServ2 .testSR p, .textHeading p, .TermsConditions .boxDesc p,
+  .PrivacyPolicy .boxDesc p {
+    font-size: 15px;
+  }
+  .channelCard .chCardBox p,
+  .cardNews .cardText .heading20 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .cardNews .cardText .date,
+  .Suggestions .bgW2 .hintUpload span,
+  .breadcrumb-area ul.breadcrumb li {
+    font-size: 12px;
+  }
+  .committeesV1 .boxCommitteeAwqaf .AQtext .redMoreNews img {
+    width: 25px;
+  }
+  .endowmentContent .contentBox p {
+    line-height: 1.8;
+  }
+  .SearchResults .resultBox li h3 a, .SearchResults .resultBox li .h3 a {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .cardNews .cardText .redMoreNews img {
+    max-width: 30px;
+  }
+  .cardNews,
+  .cardNews:hover .CardImg,
+  .cardNews:hover .cardText,
+  .cardNews .cardText {
+    height: auto;
+  }
+  .downloadBook {
+    padding: 0;
+  }
+  .BGInnerNew .dateOfNews .dateNS span {
+    line-height: normal;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .readableBox .RText h3, .readableBox .RText .h3 {
+    height: 55px;
+  }
+  .readableBox .RText h3::before, .readableBox .RText .h3::before {
+    top: 95%;
   }
 }
 
