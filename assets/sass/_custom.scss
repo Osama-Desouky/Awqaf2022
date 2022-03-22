@@ -838,9 +838,9 @@ img{
   display: flex;
   flex-direction: row;
   margin-bottom: 45px;
-  &:last-child{
-    margin-bottom: 0;
-  }
+  // &:last-child{
+  //   margin-bottom: 0;
+  // }
   .img-box{
     flex: 0 0 46px;
     margin-#{$end-direction}: 15px;
@@ -2591,6 +2591,7 @@ service-center
     position: absolute;
     top: 88%;
     #{$start-direction}:50%;
+    transform: translateX(50%);
     .owl-dot {
       span{
         background-color: transparent;
@@ -2796,6 +2797,7 @@ service-center
           margin-bottom: 0;
           line-height: 26px;
           height: calc(26px * 2);
+          overflow: hidden;
           text-align: center;
         }
       }
@@ -2873,9 +2875,9 @@ service-center
   .top-section{
     // margin-bottom: 65px;
     h2{
-      font-size: 40px;
-      font-weight: $w-bold;
-      color: $green-bg1;
+      // font-size: 40px;
+      // font-weight: $w-bold;
+      // color: $green-bg1;
       margin-bottom: 25px;
       text-align: center;
     }
@@ -2896,6 +2898,7 @@ service-center
       height: 440px;
       // background-color: #fff;
       filter: drop-shadow(0 3px 25px rgba($color: #000, $alpha: 0.1));
+      overflow: hidden;
       // padding: 60px 22px;
       .SrvLogo{
         width: 143px;
@@ -2979,8 +2982,8 @@ service-center
   .top-section{
     margin-bottom: 70px;
     h2{
-      font-size: 40px;
-      font-weight: $w-bold;
+      // font-size: 40px;
+      // font-weight: $w-bold;
       color: #fff;
       margin-bottom: 25px;
       text-align: center;
@@ -3057,18 +3060,18 @@ service-center
   position: relative;
   margin-bottom: 100px;
   h2{
-    font-size: 40px;
-    font-weight: $w-bold;
-    color: $green-bg1;
+    // font-size: 40px;
+    // font-weight: $w-bold;
+    // color: $green-bg1;
     margin-bottom: 65px;
     text-align: center;
   }
   .item{
-    .img-box{
-      img{
+    // .img-box{
+    //   img{
 
-      }
-    }
+    //   }
+    // }
     .content-box{
       display: flex;
       flex-direction: column;
@@ -3145,9 +3148,9 @@ service-center
   margin-top: 100px;
   margin-bottom: 90px;
   h2{
-    font-size: 40px;
-    font-weight: $w-bold;
-    color: $green-bg1;
+    // font-size: 40px;
+    // font-weight: $w-bold;
+    // color: $green-bg1;
     margin-bottom: 50px;
     text-align: center;
   }
