@@ -17832,6 +17832,18 @@ body .dotsCustom .owl-dot.active {
 /* start responsive media */
 /* tab */
 @media (max-width: 992px) {
+  .main-navbar .nav-item .dropdown-menu::before {
+    top: 38px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
+    width: 40%;
+  }
+  .main-navbar .nav-item .dropdown-menu {
+    font-size: 14px;
+  }
+  .main-navbar .nav-item .dropdown-menu li a {
+    padding: 5px;
+  }
   .breadcrumb-area .functions-sec {
     display: none;
   }
@@ -18033,9 +18045,6 @@ body .dotsCustom .owl-dot.active {
     padding-left: 10px;
     margin-left: 10px;
     border-left: 1px solid #12783F;
-  }
-  .main-navbar .nav-item .dropdown-menu::before {
-    top: 38px;
   }
   .committeesV2 .ComText {
     margin-top: 25px;

@@ -19,8 +19,8 @@ var calculateOffset = function (el) {
 $(function () {
   // breakpoint and up
   // main-nav dropdown toggle onhover
-  if (window.innerWidth > 992) {
-
+  if (window.innerWidth >= 1200) {
+    // console.log("555");
     document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
   
       everyitem.addEventListener('mouseover', function(e){
