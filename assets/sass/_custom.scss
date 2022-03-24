@@ -519,6 +519,11 @@ footer{
     padding-top: 50px;
     padding-bottom: 70px;
     background-color: $green-bg1;
+    .colorGold {
+      font-size: 20px;
+      font-weight: $w-bold;
+      color: $light-orange;
+    }
     .footer-logo{
       margin-bottom: 24px;   
     }
@@ -536,6 +541,7 @@ footer{
     }
     .social-media{
       display: flex;
+
       a{
         display: flex;
         // width: 30px;
@@ -553,6 +559,7 @@ footer{
           // max-width: 22px;
           // filter: opacity(.4);
           transition: 300ms;
+          filter: brightness(0) invert(1);
         }
         &:hover{
           // background-color: #fff;
@@ -606,7 +613,7 @@ footer{
       margin-bottom: 30px;
 
       h5{
-        margin-#{$end-direction}:45px ;
+        margin-#{$end-direction}:15px ;
         position: relative;
         padding-#{$end-direction}: 76px;
         span{
@@ -616,6 +623,7 @@ footer{
           margin-#{$start-direction}:10px ;
           position: absolute;
           top: 50%;
+          display: none;
         }
       }
       .android{
@@ -914,10 +922,11 @@ index
     }
     .caption{
       position: absolute;
-      top: 0;
+      margin-#{$start-direction}: 55px;
+      bottom: 40px;
       // #{$start-direction}:0;
       padding-top: 70px;
-      background-image: url(../images/site-shape.svg);
+      background-image: url(../images/site-shape-gold.png);
       background-repeat: no-repeat;
       background-position: right 70px;
       background-size: 25px;
@@ -979,8 +988,9 @@ index
       position: absolute;
       bottom: 0%;
       #{$start-direction}:0;
-      width: 665px;
-      height: 428px;
+      width: 900px;
+      height: 600px;
+      background-size: cover;
       background-image: url(../images/green-shape.svg);
       background-repeat: no-repeat;
       z-index: 9;
@@ -1221,10 +1231,10 @@ index
     background-color: rgba($color: #8FA498, $alpha: 0.25);
     border-radius: 33px;
     padding: 0;
-    margin: 0 50px;
+    margin: 0 0px;
     margin-bottom: 50px;
     li{
-      width: 350px;
+      width: 320px;
       height: 60px;
       border-radius: 33px;
       margin-#{$end-direction}: 20px;
@@ -1242,7 +1252,7 @@ index
         transition: 300ms;
         border-radius: 33px;
         &.active{
-          background-color: $green-bg2;
+          background-color: $green-bg3;
           color: #fff;
         }
       }
@@ -1297,10 +1307,11 @@ index
   // Birth-and-founding
   
   .Birth-and-founding{
-    background-color: rgba($color: $color2, $alpha: 0.60);
-    background-image: url(../images/leaf.svg);
+    // background-color: rgba($color: $color2, $alpha: 0.60);
+    background-color: #F0F2EE;
+    background-image: url(../images/ArtShape0.svg);
     background-repeat: no-repeat;
-    background-position: center #{$end-direction};
+    background-position: bottom  #{$end-direction};
     border-radius: 12px;
     padding: 40px;
     h2.main-h2{
@@ -1331,7 +1342,7 @@ index
         span.date{
           width: 65px;
           height: 80px;
-          background-image: url(../images/shape-123.svg);
+          background-image: url(../images/shape-12300000.svg);
           background-repeat: no-repeat;
           background-size: contain;
           margin-#{$end-direction}: 25px;
@@ -1348,11 +1359,11 @@ index
             position: absolute;
             width: 2px;
             height: 100%;
-            background-color: $golden-color;
+            background-color: $green-bg3;
             #{$start-direction}:50%;
             top: 80%;
             transform: translateX(50%);
-            z-index: -1;
+            z-index: 1;
           }
         }
         &:last-child{
@@ -1430,6 +1441,25 @@ index
 // board-members 
 
 .board-members{
+  position: relative;
+  &::after , &::before{
+    position: absolute;
+    content: '';
+    // width: 100%;
+    // height: 100%;
+    width: 260px;
+    height: 595px;
+    top: 95px;
+  }
+  &::before {
+    background: url(../images/membersArtShape1.svg) no-repeat;
+    #{$start-direction}: 0
+  }
+  &::after {
+    background: url(../images/membersArtShape2.svg) no-repeat;
+    #{$end-direction}: 0;
+    top: 230px;
+  }
   .main-card{
     margin-top: 50px;
   }
@@ -1735,8 +1765,8 @@ service-center
       list-style: none;
       li{
         display: inline-block;
-        margin-#{$end-direction}:30px ;
-        font-size: 15px;
+        margin-#{$end-direction}:20px ;
+        font-size: 14px;
         font-weight: $w-bold;
         color: $green-bg2;
         &:last-child{

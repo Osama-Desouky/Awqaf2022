@@ -11791,6 +11791,12 @@ footer .top-footer {
   background-color: #1C614E;
 }
 
+footer .top-footer .colorGold {
+  font-size: 20px;
+  font-weight: 700;
+  color: #D6BD81;
+}
+
 footer .top-footer .footer-logo {
   margin-bottom: 24px;
 }
@@ -11848,6 +11854,8 @@ footer .top-footer .social-media a:last-child {
 footer .top-footer .social-media a img {
   -webkit-transition: 300ms;
   transition: 300ms;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 footer .top-footer .social-media a:hover img {
@@ -11908,7 +11916,7 @@ footer .top-footer .apps {
 }
 
 footer .top-footer .apps h5, footer .top-footer .apps .h5 {
-  margin-left: 45px;
+  margin-left: 15px;
   position: relative;
   padding-left: 76px;
 }
@@ -11920,6 +11928,7 @@ footer .top-footer .apps h5 span, footer .top-footer .apps .h5 span {
   margin-right: 10px;
   position: absolute;
   top: 50%;
+  display: none;
 }
 
 footer .top-footer .apps .android {
@@ -12263,9 +12272,10 @@ index
 
 .main-slider .item .caption {
   position: absolute;
-  top: 0;
+  margin-right: 55px;
+  bottom: 40px;
   padding-top: 70px;
-  background-image: url(../images/site-shape.svg);
+  background-image: url(../images/site-shape-gold.png);
   background-repeat: no-repeat;
   background-position: right 70px;
   background-size: 25px;
@@ -12336,8 +12346,9 @@ index
   position: absolute;
   bottom: 0%;
   right: 0;
-  width: 665px;
-  height: 428px;
+  width: 900px;
+  height: 600px;
+  background-size: cover;
   background-image: url(../images/green-shape.svg);
   background-repeat: no-repeat;
   z-index: 9;
@@ -12634,12 +12645,12 @@ index
   background-color: rgba(143, 164, 152, 0.25);
   border-radius: 33px;
   padding: 0;
-  margin: 0 50px;
+  margin: 0 0px;
   margin-bottom: 50px;
 }
 
 .about-tabs ul.nav li {
-  width: 350px;
+  width: 320px;
   height: 60px;
   border-radius: 33px;
   margin-left: 20px;
@@ -12662,7 +12673,7 @@ index
 }
 
 .about-tabs ul.nav li button.active {
-  background-color: #00AB7A;
+  background-color: #00846C;
   color: #fff;
 }
 
@@ -12729,10 +12740,10 @@ index
 }
 
 .about-tabs .Birth-and-founding {
-  background-color: rgba(180, 221, 192, 0.6);
-  background-image: url(../images/leaf.svg);
+  background-color: #F0F2EE;
+  background-image: url(../images/ArtShape0.svg);
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: bottom left;
   border-radius: 12px;
   padding: 40px;
 }
@@ -12780,7 +12791,7 @@ index
 .about-tabs .Birth-and-founding ul li span.date {
   width: 65px;
   height: 80px;
-  background-image: url(../images/shape-123.svg);
+  background-image: url(../images/shape-12300000.svg);
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 25px;
@@ -12798,12 +12809,12 @@ index
   position: absolute;
   width: 2px;
   height: 100%;
-  background-color: #C48145;
+  background-color: #00846C;
   right: 50%;
   top: 80%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  z-index: -1;
+  z-index: 1;
 }
 
 .about-tabs .Birth-and-founding ul li:last-child span.date::before {
@@ -12876,6 +12887,29 @@ index
 .about-list-cards .list-card:hover::before {
   -webkit-filter: drop-shadow(0 3px 45px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0 3px 45px rgba(0, 0, 0, 0.1));
+}
+
+.board-members {
+  position: relative;
+}
+
+.board-members::after, .board-members::before {
+  position: absolute;
+  content: '';
+  width: 260px;
+  height: 595px;
+  top: 95px;
+}
+
+.board-members::before {
+  background: url(../images/membersArtShape1.svg) no-repeat;
+  right: 0;
+}
+
+.board-members::after {
+  background: url(../images/membersArtShape2.svg) no-repeat;
+  left: 0;
+  top: 230px;
 }
 
 .board-members .main-card {
@@ -13244,8 +13278,8 @@ service-center
 
 .branches .branches-details ul.contact-det li {
   display: inline-block;
-  margin-left: 30px;
-  font-size: 15px;
+  margin-left: 20px;
+  font-size: 14px;
   font-weight: 700;
   color: #00AB7A;
 }
@@ -15004,6 +15038,10 @@ service-center
 }
 
 /* AO start global fields */
+p {
+  text-align: justify;
+}
+
 .click {
   pointer-events: none;
 }
@@ -15011,10 +15049,16 @@ service-center
 input[type="email"],
 textarea,
 input[type="text"] {
-  border: 3px solid #00AB7A;
+  border: 2px solid #cbddd6;
   padding: 0 17px;
   border-radius: 6px;
   min-height: 48px;
+}
+
+input[type="email"]:focus,
+textarea:focus,
+input[type="text"]:focus {
+  border: 2px solid #00AB7A;
 }
 
 .filepond--credits {
@@ -15383,12 +15427,16 @@ select::-ms-expand {
 select {
   min-width: 110px;
   min-height: 36px;
-  border: 3px solid #00AB7A;
+  border: 2px solid #cbddd6;
   padding: 0 15px;
   border-radius: 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: #fff url(../images/news/ArrowSelect.svg) no-repeat 13px 12px;
+}
+
+select:focus {
+  border: 2px solid #00AB7A;
 }
 
 /* AO end global fields */
@@ -15718,7 +15766,6 @@ select {
 .searchNews input {
   min-width: 195px;
   min-height: 36px;
-  border: 3px solid #00AB7A;
   padding: 0 15px;
   border-radius: 6px;
   background: #fff url(../images/news/searchIcon.svg) no-repeat 13px 7px;
@@ -15995,7 +16042,7 @@ select {
 }
 
 .BGInnerNew {
-  padding-bottom: 205px;
+  padding-bottom: 65px;
 }
 
 .BGInnerNew .font30bold, .BGInnerNew .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .BGInnerNew h3, .BGInnerNew .endowmentHeader .endowmentBox li .h3, .endowmentHeader .endowmentBox li .BGInnerNew .h3, .BGInnerNew .downloadBook a strong, .downloadBook a .BGInnerNew strong {
@@ -16103,6 +16150,10 @@ body .dotsCustom .owl-dot.active {
   background-color: #1C614E;
 }
 
+.snipptNews .customTitle {
+  margin-bottom: 34px;
+}
+
 /* AO end news page */
 /* AO start endowment page */
 .endowmentHeader {
@@ -16135,26 +16186,26 @@ body .dotsCustom .owl-dot.active {
 }
 
 .endowmentHeader .owl-carousel .owl-nav button.owl-prev {
-  left: 5px;
+  left: 20px;
 }
 
 .endowmentHeader .owl-carousel .owl-nav button.owl-next {
-  right: 5px;
+  right: 20px;
 }
 
 .endowmentHeader .endowmentBox {
   height: 560px;
   border-radius: 12px;
-  padding: 92px 45px;
+  padding: 80px 45px;
   text-align: center;
   list-style: none;
-  background: url(../images/endowment/Pattern01.svg) no-repeat 50% 0px;
-  background-color: rgba(180, 221, 192, 0.5);
+  background: url(../images/global/related-items.svg) no-repeat 50% 0px;
+  background-size: cover;
 }
 
 .endowmentHeader .endowmentBox li {
   margin-bottom: 20px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid transparent;
 }
 
 .endowmentHeader .endowmentBox li:last-of-type {
@@ -16164,16 +16215,28 @@ body .dotsCustom .owl-dot.active {
 
 .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .h3 {
   margin-bottom: 0;
+  color: #fff;
   line-height: normal;
+}
+
+.endowmentHeader .endowmentBox li h3 span, .endowmentHeader .endowmentBox li .h3 span {
+  font-size: 20px;
 }
 
 .endowmentHeader .endowmentBox li p {
   margin-bottom: 15px;
   color: #00AB7A;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
 }
 
 .endowmentContent .contentBox .customTitle {
   margin: 33px 0;
+}
+
+.endowmentContent .contentBox p {
+  text-align: center;
 }
 
 .endowmentContent .contentBox .row {
@@ -16366,6 +16429,7 @@ body .dotsCustom .owl-dot.active {
           box-shadow: unset;
   border-radius: 8px;
   margin-bottom: 15px;
+  text-align: right;
 }
 
 .FAQParent .tab-content .accordion-item .accordion-header button::after {
@@ -16582,6 +16646,8 @@ body .dotsCustom .owl-dot.active {
   font-size: 15px;
   font-weight: bold;
   color: #00AB7A;
+  direction: ltr;
+  display: inline-block;
 }
 
 .contactUsBg .bgMap {
@@ -16705,6 +16771,10 @@ body .dotsCustom .owl-dot.active {
   transition: 0.4s;
 }
 
+.channelCard .chCardBox:last-of-type {
+  margin-left: 0px;
+}
+
 .channelCard .chCardBox p {
   font-size: 18px;
   font-weight: 600;
@@ -16758,6 +16828,20 @@ body .dotsCustom .owl-dot.active {
   margin-top: 43px;
 }
 
+.committeesV2 .BoxBgQwqaflogo img {
+  -webkit-transform: unset;
+          transform: unset;
+  border-radius: 15px;
+}
+
+.boardSnippet::after, .boardSnippet::before {
+  display: none;
+}
+
+.boardSnippet .d-flex.justify-content-center .list-card {
+  max-width: 326px;
+}
+
 .clearPadding {
   margin-bottom: 100px;
 }
@@ -16797,11 +16881,14 @@ body .dotsCustom .owl-dot.active {
   height: 100%;
   width: 100%;
   right: 0;
+  display: none;
 }
 
 .BoxBgQwqaflogo img {
-  width: 100%;
+  width: 101%;
   height: 100%;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .boxCommittee {
@@ -16842,6 +16929,7 @@ body .dotsCustom .owl-dot.active {
   height: 88px;
   margin: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 .committeesV1 {
@@ -17317,7 +17405,7 @@ body .dotsCustom .owl-dot.active {
 
 .servicesPageTwo .boxServ2 .testSR .ulIcons li {
   width: 210px;
-  padding-left: 63px;
+  padding-left: 45px;
   text-align: center;
   position: relative;
   z-index: 9;
@@ -17347,6 +17435,7 @@ body .dotsCustom .owl-dot.active {
   overflow: hidden;
   margin-bottom: 0;
   margin-top: 31px;
+  text-align: center;
 }
 
 .servicesPageTwo .boxServ2 .testSR .actionsDownload {
@@ -17830,8 +17919,133 @@ body .dotsCustom .owl-dot.active {
 }
 
 /* start responsive media */
+@media (max-width: 1700px) {
+  .main-slider .item .caption {
+    bottom: 20px;
+    margin-right: 30px;
+  }
+  .main-slider.social-section .awqaaf-shape {
+    width: 700px;
+    height: 460px;
+  }
+  .main-slider .item .caption.white h2, .main-slider .item .caption.white .h2 {
+    font-size: 35px;
+  }
+  .main-slider .item .caption p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+/* end print style */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .chartDevEndowment ul li:last-of-type::before,
+  .chartDevEndowment ul li::after {
+    display: none;
+  }
+  .chartDevEndowment ul li:nth-of-type(5) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .chartDevEndowment ul li:nth-of-type(6) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .servicesPageTwo .boxServ2 .testSR .ulIcons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .servicesPageTwo .redirectServ {
+    padding: 30px 24px 35px;
+  }
+  .servicesPageTwo .redirectServ .btnWithArrow {
+    height: 50px;
+  }
+  .snipptNews .col-md-3 {
+    width: 33.33333%;
+  }
+  .bgGallery .forDirction .col-md-3 {
+    width: 33.33333%;
+  }
+  .bgGallery .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  .displayHandlerCompenet:not(.displayRow) .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  .displayHandlerCompenet2:not(.displayRow2) .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  .readableBox .RText h3, .readableBox .RText .h3 {
+    font-size: 15px;
+  }
+  .bgNews .filterDate label {
+    font-size: 15px;
+  }
+  .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .h3 {
+    font-size: 22px;
+  }
+  .endowmentHeader .endowmentBox li p {
+    font-size: 15px;
+  }
+  .endowmentHeader .col-md-9 {
+    width: 65%;
+  }
+  .endowmentHeader .col-md-3 {
+    width: 35%;
+  }
+}
+
 /* tab */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .chartDevEndowment ul li {
+    max-width: 260px;
+  }
+  .chartDevEndowment ul li::after {
+    right: 166px;
+  }
+  .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .h3 {
+    font-size: 25px;
+  }
+  .about-tabs .Birth-and-founding {
+    background-size: 35%;
+  }
+  .displayRow .cardNews .cardText .praghCard {
+    line-height: normal;
+  }
+  .channelCard .chCardBox {
+    width: 260px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  .boardSnippet .list-cards .list-card:hover .content-box {
+    padding: 15px 15px !important;
+  }
+  .boardSnippet .list-card .content-box a,
+  .boardSnippet .list-card:hover .content-box .hidden-details {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
+  .boardSnippet .list-cards .list-card:hover .content-box {
+    padding: 15px 15px !important;
+  }
+  .boardSnippet .list-card .content-box a,
+  .boardSnippet .list-card:hover .content-box .hidden-details {
+    display: none;
+  }
   .main-navbar .nav-item .dropdown-menu::before {
     top: 38px;
   }
@@ -17934,7 +18148,10 @@ body .dotsCustom .owl-dot.active {
             transform: scaleX(-1) translateY(-50%);
   }
   .endowmentHeader .endowmentBox li h3, .endowmentHeader .endowmentBox li .h3 {
-    font-size: 23px;
+    font-size: 20px;
+  }
+  .endowmentHeader .endowmentBox li p {
+    font-size: 16px;
   }
   .chartDevEndowment ul li:last-of-type::before,
   .chartDevEndowment ul li::after {
@@ -18044,7 +18261,7 @@ body .dotsCustom .owl-dot.active {
   .top-nav .top-links a.waqfi {
     padding-left: 10px;
     margin-left: 10px;
-    border-left: 1px solid #12783F;
+    border-left: 1px solid #12783f;
   }
   .committeesV2 .ComText {
     margin-top: 25px;
@@ -18144,11 +18361,26 @@ body .dotsCustom .owl-dot.active {
     width: 100%;
   }
   .endowmentHeader .endowmentBox {
-    padding: 92px 20px 25px 20px;
+    padding: 50px 20px 60px 20px;
     height: auto;
+    background-size: contain;
+  }
+  .arrowNews .owl-carousel .owl-nav button {
+    width: 35px;
+    height: 35px;
+    background-size: 9px !important;
+  }
+  .endowmentHeader .owl-carousel .owl-nav button.owl-next {
+    right: 10px;
+  }
+  .endowmentHeader .owl-carousel .owl-nav button.owl-prev {
+    left: 10px;
   }
   .endowmentHeader .owl-item img {
     height: 350px;
+  }
+  .endowmentHeader .endowmentBox li {
+    margin-bottom: 0;
   }
   .downloadBook a strong {
     font-size: 20px;
@@ -18313,9 +18545,11 @@ body .dotsCustom .owl-dot.active {
   .hintUpload img {
     padding-top: 7px;
   }
-  footer .top-footer h5, footer .top-footer .h5, footer .top-footer .h5 {
+  footer .top-footer h5, footer .top-footer .h5,
+  footer .top-footer .h5 {
     font-size: 16px;
   }
+  footer .top-footer .colorGold,
   footer .top-footer ul li {
     font-size: 14px;
   }
@@ -18344,6 +18578,54 @@ body .dotsCustom .owl-dot.active {
   }
   .RegulationsV2 .textHeading {
     margin-top: 0px;
+  }
+  body .main-slider .item {
+    min-height: calc(100vh - 153px);
+  }
+  body .main-slider.social-section .awqaaf-shape {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    -webkit-clip-path: unset;
+            clip-path: unset;
+  }
+  body .main-slider .item .caption.white h2, body .main-slider .item .caption.white .h2 {
+    font-size: 25px;
+    padding-left: 40%;
+  }
+  body .main-slider .item .caption {
+    bottom: 15px;
+    margin-right: 10px;
+  }
+  body .main-slider .item .caption p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 20%;
+    display: none;
+  }
+  body .main-slider .item .caption h2 span.bold, body .main-slider .item .caption .h2 span.bold {
+    margin-bottom: 0;
+  }
+  body .main-slider .item .caption a.more {
+    font-size: 14px;
+  }
+  body .main-slider .item .caption.white a img {
+    width: 30px;
+  }
+  body .main-slider .owl-dots .owl-dot span {
+    background-color: white;
+  }
+  body .main-slider .owl-dots {
+    top: 94%;
+    right: unset;
+    left: 15px;
+  }
+  .board-members::after, .board-members::before {
+    width: 100px;
+    z-index: -1;
+  }
+  .branches .branches-details ul.contact-det {
+    margin-bottom: 20px;
   }
 }
 
@@ -18463,12 +18745,12 @@ body .dotsCustom .owl-dot.active {
   }
   .innerpages .table > thead > tr > th {
     -webkit-print-color-adjust: exact !important;
-    background: #228B5E !important;
+    background: #228b5e !important;
     color: #fff !important;
   }
   .innerpages .table > tbody > tr > th {
     -webkit-print-color-adjust: exact !important;
-    background: #228B5E !important;
+    background: #228b5e !important;
     color: #fff !important;
   }
   .innerpages .table > tbody > tr > td {
@@ -18477,7 +18759,7 @@ body .dotsCustom .owl-dot.active {
   }
   .innerpages .table > tbody > tr:nth-child(odd) {
     -webkit-print-color-adjust: exact !important;
-    background: #F3F3F3 !important;
+    background: #f3f3f3 !important;
   }
   .innerpages .table > tbody > tr:nth-child(even) {
     -webkit-print-color-adjust: exact !important;
@@ -18485,12 +18767,12 @@ body .dotsCustom .owl-dot.active {
   }
   .innerpages .grid > thead > tr > th {
     -webkit-print-color-adjust: exact !important;
-    background: #228B5E !important;
+    background: #228b5e !important;
     color: #fff !important;
   }
   .innerpages .grid > tbody > tr > th {
     -webkit-print-color-adjust: exact !important;
-    background: #228B5E !important;
+    background: #228b5e !important;
     color: #fff !important;
   }
   .innerpages .grid > tbody > tr > td {
@@ -18499,7 +18781,7 @@ body .dotsCustom .owl-dot.active {
   }
   .innerpages .grid > tbody > tr:nth-child(odd) {
     -webkit-print-color-adjust: exact !important;
-    background: #F3F3F3 !important;
+    background: #f3f3f3 !important;
   }
   .innerpages .grid > tbody > tr:nth-child(even) {
     -webkit-print-color-adjust: exact !important;
@@ -18507,7 +18789,6 @@ body .dotsCustom .owl-dot.active {
   }
 }
 
-/* end print style */
 /*
 this UI is made desktop first.
 */
@@ -19567,8 +19848,8 @@ this UI is made desktop first.
     height: 10px;
   }
   .main-slider .scroll-mouse {
-    top: 65%;
-    left: 40px;
+    top: 80%;
+    left: 20x;
   }
   .main-h2 {
     font-size: 25px;
