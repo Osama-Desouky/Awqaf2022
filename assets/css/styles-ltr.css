@@ -11748,6 +11748,12 @@ footer .footer-slider .item .caption a {
   font-size: inherit;
   font-weight: inherit;
   display: inline-block;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+footer .footer-slider .item .caption a:hover {
+  background-color: #b7a16e;
 }
 
 footer .footer-slider .owl-nav {
@@ -11890,6 +11896,12 @@ footer .top-footer ul li a {
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+footer .top-footer ul li a:hover {
+  color: #B4DDC0;
 }
 
 footer .top-footer ul li.bordered-top {
@@ -12287,12 +12299,20 @@ index
   font-weight: 400;
   margin-bottom: 12px;
   margin-top: 35px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 1.1s ease;
+  transition: 1.1s ease;
 }
 
 .main-slider .item .caption h2 span.bold, .main-slider .item .caption .h2 span.bold {
   font-weight: 700;
   display: block;
   margin-bottom: 8px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .main-slider .item .caption p {
@@ -12301,6 +12321,12 @@ index
   font-weight: 500;
   margin-bottom: 30px;
   max-width: 415px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: 1.2s ease;
+  transition: 1.2s ease;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .main-slider .item .caption a.more {
@@ -12310,12 +12336,21 @@ index
   font-weight: 600;
   line-height: 26px;
   display: inline-block;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .main-slider .item .caption a.more img {
   display: inline-block;
   width: auto;
   margin-left: 12px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.main-slider .item .caption a.more:hover img {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .main-slider .item .caption.white h2, .main-slider .item .caption.white .h2 {
@@ -12333,6 +12368,28 @@ index
 .main-slider .item .caption.white a img {
   -webkit-filter: brightness(50);
           filter: brightness(50);
+}
+
+.main-slider .active .item .img-box img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 30s ease;
+  transition: 30s ease;
+}
+
+.main-slider .active .item .caption h2, .main-slider .active .item .caption .h2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.main-slider .active .item .caption h2 span, .main-slider .active .item .caption .h2 span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.main-slider .active .item .caption p {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .main-slider .awqaaf-shape {
@@ -12443,10 +12500,19 @@ index
   font-size: 17px;
   font-weight: 400;
   color: #00AB7A;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .home-about .content-box a img {
   margin-left: 15px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.home-about .content-box a:hover img {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .home-about .img-box {
@@ -14767,10 +14833,19 @@ service-center
   font-size: 18px;
   font-weight: 400;
   color: #00846C;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .services-slider .all-services a img {
   margin-left: 7px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.services-slider .all-services a:hover img {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .hayaa-numbers {
@@ -14929,12 +15004,21 @@ service-center
   font-weight: 400;
   color: #00AB7A;
   min-width: 100px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .news-slider .item .content-box a.more img {
   display: inline-block;
   max-width: 8px;
   margin-left: 10px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.news-slider .item .content-box a.more:hover img {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .news-slider .owl-nav {

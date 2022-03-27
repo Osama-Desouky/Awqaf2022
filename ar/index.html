@@ -982,58 +982,7 @@
               </div>
             </div>
 
-                 <!-- item1 -->
-                 <div class="item">
-                  <div class="sites-card">
-                    <div class="img-box">
-                      <img src="../assets/images/sites-waqfi_Logo-01.svg" alt="">
-                    </div>
-                    <div class="content-box">
-                      <h4>
-                        منصة وقفي
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <!-- item 2 -->
-                <div class="item">
-                  <div class="sites-card">
-                    <div class="img-box">
-                      <img src="../assets/images/sites-logo_T2.svg" alt="">
-                    </div>
-                    <div class="content-box">
-                      <h4>
-                        برنامج استدامة وتمكين
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <!-- item 3 -->
-                <div class="item">
-                  <div class="sites-card">
-                    <div class="img-box">
-                      <img src="../assets/images/sites-Awqaf-Comp-logo.svg" alt="">
-                    </div>
-                    <div class="content-box">
-                      <h4>
-                        شركة اوقاف
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <!-- item 4 -->
-                <div class="item">
-                  <div class="sites-card">
-                    <div class="img-box">
-                      <img src="../assets/images/sites-ryada.svg" alt="">
-                    </div>
-                    <div class="content-box">
-                      <h4>
-                        مركز الريادة الوقفي
-                      </h4>
-                    </div>
-                  </div>
-                </div>
+
             
           </div>
         </div>
@@ -1373,10 +1322,10 @@
         nav: false,
         items: 1,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         rtl: true,
-        // autoplayTimeout: 7500,
-        // autoplayHoverPause:true
+        autoplayTimeout: 7500,
+        autoplayHoverPause:true
       });
 
 
@@ -1452,7 +1401,7 @@
       newsSlider.owlCarousel({
         nav: true,
         items: 1,
-        dots: false,
+        dots: true,
         autoplay: false,
         rtl: true,
       });
@@ -1461,16 +1410,16 @@
         // sites
         var sitesSlider = $('.Affiliate-sites .owl-carousel');
         sitesSlider.owlCarousel({
-        loop: true,
+        loop: false,
         nav: false,
         items: 4,
         margin:21,
         dots: true,
         dotsEach: 1,
-        autoplay: true,
+        // autoplay: true,
         rtl: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause:true,
+        // autoplayTimeout: 3000,
+        // autoplayHoverPause:true,
         responsive: {
           0: {
             items: 1
