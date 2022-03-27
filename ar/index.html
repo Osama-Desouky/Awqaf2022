@@ -667,7 +667,7 @@
 
     <!-- hayaa-numbers -->
 
-    <section class="hayaa-numbers">
+    <section class="hayaa-numbers" >
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -689,12 +689,12 @@
             <div class="owl-carousel owl-theme">
               <!-- item -->
               <div class="item">
-                <div class="numbers-card">
+                <div class="numbers-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="img-box">
                     <img src="../assets/images/numbers-icon1.svg" alt="">
                   </div>
                   <div class="content-box">
-                    <h4>
+                    <h4 class="counter">
                       3500+
                     </h4>
                     <p>
@@ -705,12 +705,12 @@
               </div>
               <!-- item -->
               <div class="item">
-                <div class="numbers-card">
+                <div class="numbers-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="img-box">
                     <img src="../assets/images/numbers-icon2.svg" alt="">
                   </div>
                   <div class="content-box">
-                    <h4>
+                    <h4 class="counter">
                       385+
                     </h4>
                     <p>
@@ -721,12 +721,12 @@
               </div>
               <!-- item -->
               <div class="item">
-                <div class="numbers-card">
+                <div class="numbers-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="img-box">
                     <img src="../assets/images/numbers-icon3.svg" alt="">
                   </div>
                   <div class="content-box">
-                    <h4>
+                    <h4 class="counter">
                       345+
                     </h4>
                     <p>
@@ -737,12 +737,12 @@
               </div>
               <!-- item -->
               <div class="item">
-                <div class="numbers-card">
+                <div class="numbers-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="img-box">
                     <img src="../assets/images/numbers-icon4.svg" alt="">
                   </div>
                   <div class="content-box">
-                    <h4>
+                    <h4 class="counter">
                       5000+
                     </h4>
                     <p>
@@ -753,12 +753,12 @@
               </div>
 
               <div class="item">
-                <div class="numbers-card">
+                <div class="numbers-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="img-box">
                     <img src="../assets/images/numbers-icon1.svg" alt="">
                   </div>
                   <div class="content-box">
-                    <h4>
+                    <h4 class="counter">
                       3500+
                     </h4>
                     <p>
@@ -769,12 +769,12 @@
               </div>
               <!-- item -->
               <div class="item">
-                <div class="numbers-card">
+                <div class="numbers-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="img-box">
                     <img src="../assets/images/numbers-icon2.svg" alt="">
                   </div>
                   <div class="content-box">
-                    <h4>
+                    <h4 class="counter">
                       385+
                     </h4>
                     <p>
@@ -1325,6 +1325,41 @@
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- counter -->
+
+<script src="../assets/js/jquery.counterup.min.js"></script>
+
+<script>
+
+  jQuery(function ($) {
+    "use strict";
+    
+    var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
+    
+    var $counters = $(".counter");
+    
+    
+    
+    /* Start counting, do this on DOM ready or with Waypoints. */
+    $counters.each(function (ignore, counter) {
+      var waypoint = new Waypoint({
+        element: $(this),
+        handler: function () {
+          counterUp(counter, {
+                  duration: 2000,
+                  delay: 10
+                });
+                // this.destroy();
+              },
+              offset: 'bottom-in-view',
+            });
+          });
+          
+        });
+</script>
+
+
   <!-- owl carousel -->
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 

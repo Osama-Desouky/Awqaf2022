@@ -12721,22 +12721,57 @@ index
 }
 
 .about-tabs .tab-content .about-list .download-link {
-  width: 100%;
-  height: 100%;
+  max-width: 420px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-image: url(../images/about-mask.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #E3ECE6;
+  border-radius: 12px;
+  padding-top: 58px;
+}
+
+.about-tabs .tab-content .about-list .download-link h5, .about-tabs .tab-content .about-list .download-link .h5 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #1C614E;
+  text-align: center;
+}
+
+.about-tabs .tab-content .about-list .download-link h3, .about-tabs .tab-content .about-list .download-link .h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1C614E;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .about-tabs .tab-content .about-list .download-link a {
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   display: inline-block;
+  max-width: 63px;
+  max-height: 63px;
+  margin: 0 auto;
+}
+
+.about-tabs .tab-content .about-list .download-link a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-tabs .Birth-and-founding {
@@ -13360,20 +13395,13 @@ service-center
   -webkit-transition: 300ms;
   transition: 300ms;
   overflow: hidden;
+  text-align: right;
 }
 
 .service-list.inner-serv-list .service-card:hover {
   background-color: #fff;
   -webkit-filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
           filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
-}
-
-.service-list.inner-serv-list .service-card:hover .content-box h4, .service-list.inner-serv-list .service-card:hover .content-box .h4 {
-  -webkit-text-stroke: 1px #707070;
-}
-
-.service-list.inner-serv-list .service-card:hover .content-box p {
-  -webkit-text-stroke: 1px #707070;
 }
 
 /**********************  tenders-list   **************************/
@@ -15035,6 +15063,13 @@ service-center
 
 .darkMood .Affiliate-sites .item .sites-card {
   background-color: #000;
+}
+
+.counter {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 /* AO start global fields */
@@ -18906,7 +18941,6 @@ body .dotsCustom .owl-dot.active {
   }
 }
 
-/* end print style */
 /**********************************  general forms style *************************************/
 .service-form .input-group {
   margin-bottom: 25px;
@@ -19074,7 +19108,7 @@ body .dotsCustom .owl-dot.active {
   padding: 45px 70px;
 }
 
-/********************************** sign-in *************************************/
+/********************************** edit-profile*************************************/
 .edit-profile {
   max-width: 730px;
   margin: 0 auto;
@@ -19087,6 +19121,7 @@ body .dotsCustom .owl-dot.active {
   margin-bottom: 100px;
 }
 
+/********************************** .communication-details *************************************/
 .communication-details {
   margin-top: 10px;
 }
