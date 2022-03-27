@@ -91,7 +91,6 @@
         "../sass/_rules.scss",
         "../sass/_custom.scss",
         "../sass/_AO.scss",
-        "../sass/_services.scss",
         "../sass/_media.scss"
     ],
     "names": [],

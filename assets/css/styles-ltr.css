@@ -16494,6 +16494,12 @@ body .dotsCustom .owl-dot.active {
   border-right: 3px solid #00ab7aa3;
 }
 
+@media (min-width: 1650px) {
+  .endowmentHeader .endowmentBox {
+    background-size: 95%;
+  }
+}
+
 /* AO End endowment page */
 .tabsBtns {
   margin: 50px 0 42px;
@@ -16624,13 +16630,39 @@ body .dotsCustom .owl-dot.active {
   margin-right: 18px;
 }
 
+.FAQParent .tab-content .accordion-item .accordion-body .contentFaq .actionFaqs .ActionBtn button.yesFaq:hover {
+  background-color: #00846C;
+  color: #fff;
+}
+
 .FAQParent .tab-content .accordion-item .accordion-body .contentFaq .actionFaqs .ActionBtn button.noFaq {
   color: #C48145;
+}
+
+.FAQParent .tab-content .accordion-item .accordion-body .contentFaq .actionFaqs .ActionBtn button.noFaq:hover {
+  background-color: #C48145;
+  color: #fff;
 }
 
 .FAQParent .redMoreCenter {
   padding-bottom: 124px;
   text-align: center;
+}
+
+.slider-wrapper .item .serviceBox:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* ao start gallery page */
@@ -18265,15 +18297,19 @@ body .dotsCustom .owl-dot.active {
   }
   .main-navbar .nav-item .dropdown-menu::before {
     top: 38px;
+    display: none;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     width: 40%;
   }
   .main-navbar .nav-item .dropdown-menu {
     font-size: 14px;
+    background: #195847;
+    padding: 5px 15px 20px;
+    border-radius: 0;
   }
   .main-navbar .nav-item .dropdown-menu li a {
-    padding: 5px;
+    padding: 10px;
   }
   .breadcrumb-area .functions-sec {
     display: none;
@@ -18461,7 +18497,21 @@ body .dotsCustom .owl-dot.active {
 /* mob */
 @media (max-width: 767px) {
   body .main-navbar .navbar-toggler {
-    top: 100px;
+    top: 95px;
+    background: #D6BD81;
+  }
+  body .main-navbar .navbar-toggler:focus {
+    border: unset;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .main-navbar .nav-item .dropdown-menu li a:hover {
+    background-color: #00ab7a;
+    border-radius: 0;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/global/menuSpan.svg);
   }
   body .main-navbar #navbarSupportedContent {
     top: 155px;
@@ -18844,6 +18894,10 @@ body .dotsCustom .owl-dot.active {
   .branches .branches-details ul.contact-det {
     margin-bottom: 20px;
   }
+  body .main-slider .item .caption.white h2, body .main-slider .item .caption.white .h2 {
+    padding-right: 0 !important;
+    margin-bottom: 23px !important;
+  }
 }
 
 /* end mob 767 */
@@ -19023,232 +19077,6 @@ body .dotsCustom .owl-dot.active {
     -webkit-print-color-adjust: exact !important;
     background: #fff !important;
   }
-}
-
-/**********************************  general forms style *************************************/
-.service-form .input-group {
-  margin-bottom: 25px;
-}
-
-.service-form .input-group .input-group-text {
-  min-height: 48px;
-  border: 2px solid #CBDDD6;
-  border-right: 0;
-  border-top-left-radius: 6px !important;
-  border-bottom-left-radius: 6px !important;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  background-color: #fff;
-}
-
-.service-form .input-group .form-control {
-  color: #1D1D1B;
-  font-weight: 400;
-  font-size: 16px;
-  min-height: 48px;
-  padding: 0;
-  padding-right: 20px;
-  padding-left: 5px;
-  border: 2px solid #CBDDD6;
-  border-left: 0;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border-top-right-radius: 6px !important;
-  border-bottom-right-radius: 6px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-.service-form .input-group .form-control::-webkit-input-placeholder {
-  /* Edge */
-  color: #1D1D1B;
-}
-
-.service-form .input-group .form-control:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #1D1D1B;
-}
-
-.service-form .input-group .form-control::-ms-input-placeholder {
-  color: #1D1D1B;
-}
-
-.service-form .input-group .form-control::placeholder {
-  color: #1D1D1B;
-}
-
-.service-form .submit-btn {
-  color: #fff;
-  background-color: #00846C;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: 16px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 17px;
-  width: 100%;
-  height: 52px;
-  margin-top: 10px;
-}
-
-.service-form .submit-btn img {
-  margin-left: 15px;
-}
-
-.service-form .submit-btn:hover {
-  background-color: #1C614E;
-}
-
-.service-form .usage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.service-form .usage img {
-  margin-right: 10px;
-}
-
-.service-form .usage span {
-  color: #0B261F;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.service-form .usage span a {
-  color: #00846C;
-  text-decoration: underline;
-}
-
-/********************************** sign-in section *************************************/
-.sign-in-sec {
-  background-color: #F1F3F2;
-  border-radius: 8px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  overflow: hidden;
-}
-
-.sign-in-sec .sign-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 137px 130px;
-}
-
-.sign-in-sec .sign-form .recaptcha {
-  margin-bottom: 25px;
-}
-
-.sign-in-sec .nafaz {
-  background-color: #def1ea;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 80px;
-  height: 100%;
-  position: relative;
-  padding-top: 65px;
-}
-
-.sign-in-sec .nafaz .nafaz-sign {
-  width: 100%;
-  height: 120px;
-  background-color: #fff;
-  border-radius: 24px;
-  -webkit-filter: drop-shadow(0 3px 25px rgba(6, 62, 32, 0.15));
-          filter: drop-shadow(0 3px 25px rgba(6, 62, 32, 0.15));
-  display: inline-block;
-  margin: 27px 0 36px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #00846C;
-  padding: 45px 70px;
-}
-
-/********************************** edit-profile*************************************/
-.edit-profile {
-  max-width: 730px;
-  margin: 0 auto;
-  padding: 70px 130px 50px;
-  background-color: #F1F3F2;
-  border-radius: 8px;
-  -webkit-filter: drop-shadow(0 3px 45px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(0 3px 45px rgba(0, 0, 0, 0.05));
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-/********************************** .communication-details *************************************/
-.communication-details {
-  margin-top: 10px;
-}
-
-.communication-details div {
-  margin-bottom: 20px;
-}
-
-.communication-details div:last-child {
-  margin-bottom: 0;
-}
-
-.communication-details div a {
-  display: inline-block;
-}
-
-.communication-details div a img {
-  margin-right: 11px;
-}
-
-.communication-details div a span.text {
-  font-size: 16px;
-  font-weight: 400;
-  color: #0F3329;
-  margin-right: 15px;
-}
-
-.communication-details div a span.number {
-  font-size: 15px;
-  font-weight: 700;
-  color: #00846C;
-}
-
-.communication-details div a.contact {
-  background-color: #fff;
-  color: #00AB7A;
-  padding: 8.5px 16.5px;
-  font-size: 17px;
-  font-weight: 700;
-  -webkit-filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.05));
-  border-radius: 6px;
-  margin-left: 10px;
 }
 
 /*
@@ -19764,6 +19592,8 @@ this UI is made desktop first.
     padding-bottom: 20px;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
+    background: #1C614E;
+    padding-bottom: 0;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     margin: auto !important;
@@ -19793,7 +19623,14 @@ this UI is made desktop first.
     right: 10px;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .nav-link {
-    font-size: 14px;
+    font-size: 16px !important;
+    color: #fff;
+    border-bottom: 1px solid #0d6e5a;
+    padding: 15px 0;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .nav-link::after {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .search-toggle {
     display: none;
@@ -19807,7 +19644,7 @@ this UI is made desktop first.
   }
   .main-navbar .navbar-toggler {
     position: absolute;
-    right: 50px;
+    right: 20px;
     top: 100px;
     width: 54px;
     min-width: auto;
@@ -19833,6 +19670,9 @@ this UI is made desktop first.
   }
   .main-navbar .top-nav .nav-item .nav-link {
     font-size: 12px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item:last-of-type .nav-link {
+    border-bottom: 0px solid #0d6e5a;
   }
   footer {
     padding-top: 30px !important;
@@ -19942,11 +19782,6 @@ this UI is made desktop first.
   .about-tabs .tab-content .about-list ul li h4, .about-tabs .tab-content .about-list ul li .h4 {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  .about-tabs .tab-content .about-list .download-link {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .about-tabs .Birth-and-founding ul li {
     margin-bottom: 15px;
@@ -20132,8 +19967,9 @@ this UI is made desktop first.
   }
   .main-navbar .navbar .navbar-brand {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 90px;
-            flex: 0 0 90px;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px;
+    margin-top: -22px;
   }
   .main-slider .scroll-mouse {
     right: 20px;
