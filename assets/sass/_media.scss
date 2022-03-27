@@ -790,6 +790,7 @@ this UI is made desktop first.
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(lg) {
   .main-navbar {
+
     #navbarSupportedContent {
       position: absolute;
       width: 100%;
@@ -801,6 +802,8 @@ this UI is made desktop first.
         box-shadow: 0 80px 65px rgba($color: #000, $alpha: 0.20);
         padding-bottom: 20px;
         padding-inline-start: 0;
+        background: $green-bg1;
+        padding-bottom: 0;
         > .nav-item {
           margin: auto !important;
           display: flex;
@@ -824,8 +827,13 @@ this UI is made desktop first.
 
           }
           .nav-link{
-            font-size: 14px;
-
+            font-size: 16px !important;
+            color: #fff;
+            border-bottom: 1px solid #0d6e5a;
+            padding: 15px 0;
+            &::after {
+              filter: brightness(100);
+            }
           }
           .search-toggle{
             display: none;
@@ -844,7 +852,7 @@ this UI is made desktop first.
     }
     .navbar-toggler {
       position: absolute;
-      #{$end-direction}: 50px;
+      #{$end-direction}: 20px;
       top: 100px;
       width: 54px;
       min-width: auto;
@@ -869,7 +877,9 @@ this UI is made desktop first.
   .main-navbar .top-nav .nav-item .nav-link {
     font-size: 12px;
   }
-
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item:last-of-type .nav-link {
+    border-bottom: 0px solid #0d6e5a;
+  }
 
   // footer
   footer{
@@ -1005,7 +1015,7 @@ this UI is made desktop first.
           }
         }
         .download-link{
-          justify-content: center;
+          // justify-content: center;
         }
       }
     }
@@ -1253,7 +1263,8 @@ this UI is made desktop first.
   .main-navbar {
     .navbar {
       .navbar-brand{
-        flex: 0 0 90px;
+        flex: 0 0 140px;
+        margin-top: -22px;
       }
     }
   }

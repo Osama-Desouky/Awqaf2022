@@ -1097,6 +1097,11 @@ body {
     }
   }
 }
+@media(min-width:1650px) {
+  .endowmentHeader .endowmentBox {
+    background-size: 95%;
+  }
+}
 /* AO End endowment page */
 .tabsBtns {
   margin: 50px 0 42px;
@@ -1196,9 +1201,17 @@ body {
                 &.yesFaq {
                   color: $green-bg3;
                   margin-#{$end-direction}: 18px;
+                  &:hover {
+                    background-color: $green-bg3;
+                    color: #fff;
+                  }
                 }
                 &.noFaq {
                   color: $golden-color;
+                  &:hover {
+                    background-color: $golden-color;
+                    color: #fff;
+                  }
                 }
               }
             }
@@ -1212,7 +1225,18 @@ body {
     text-align: center;
   }
 }
-
+.slider-wrapper {
+  .item {
+    .serviceBox {
+     &:hover {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+    }
+  }
+}
 /* ao start gallery page */
 .bgGallery {
   background-color: $bgf7f7f7;
@@ -2562,15 +2586,19 @@ body {
   }
   .main-navbar .nav-item .dropdown-menu::before {
     top: 38px;
+    display: none;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     width: 40%;
   }
   .main-navbar .nav-item .dropdown-menu {
     font-size: 14px;
+    background: #195847;
+    padding: 5px 15px 20px;
+    border-radius: 0;
   }
   .main-navbar .nav-item .dropdown-menu li a {
-    padding: 5px;
+    padding: 10px;
   }
   .breadcrumb-area .functions-sec {
     display: none;
@@ -2747,6 +2775,7 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
+
   // -----------------------------------
 }
 /* end tab 992 */
@@ -2754,7 +2783,20 @@ body {
 /* mob */
 @media (max-width: 767px) {
   body .main-navbar .navbar-toggler {
-    top: 100px;
+    top: 95px;
+    background: $light-orange;
+  }
+  body .main-navbar .navbar-toggler:focus {
+    border: unset;
+    outline: none;
+    box-shadow: none;
+  }
+  .main-navbar .nav-item .dropdown-menu li a:hover {
+    background-color: #00ab7a;
+    border-radius: 0;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image:url(../images/global/menuSpan.svg)
   }
   body .main-navbar #navbarSupportedContent {
     top: 155px;
@@ -3127,6 +3169,10 @@ body {
   }
   .branches .branches-details ul.contact-det {
     margin-bottom: 20px;
+  }
+  body .main-slider .item .caption.white h2 {
+    padding-#{$end-direction}: 0 !important;
+    margin-bottom: 23px !important
   }
 }
 /* end mob 767 */

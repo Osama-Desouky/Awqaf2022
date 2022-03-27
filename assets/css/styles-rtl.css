@@ -16375,6 +16375,12 @@ body .dotsCustom .owl-dot.active {
   border-left: 3px solid #00ab7aa3;
 }
 
+@media (min-width: 1650px) {
+  .endowmentHeader .endowmentBox {
+    background-size: 95%;
+  }
+}
+
 /* AO End endowment page */
 .tabsBtns {
   margin: 50px 0 42px;
@@ -16505,13 +16511,39 @@ body .dotsCustom .owl-dot.active {
   margin-left: 18px;
 }
 
+.FAQParent .tab-content .accordion-item .accordion-body .contentFaq .actionFaqs .ActionBtn button.yesFaq:hover {
+  background-color: #00846C;
+  color: #fff;
+}
+
 .FAQParent .tab-content .accordion-item .accordion-body .contentFaq .actionFaqs .ActionBtn button.noFaq {
   color: #C48145;
+}
+
+.FAQParent .tab-content .accordion-item .accordion-body .contentFaq .actionFaqs .ActionBtn button.noFaq:hover {
+  background-color: #C48145;
+  color: #fff;
 }
 
 .FAQParent .redMoreCenter {
   padding-bottom: 124px;
   text-align: center;
+}
+
+.slider-wrapper .item .serviceBox:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* ao start gallery page */
@@ -18146,15 +18178,19 @@ body .dotsCustom .owl-dot.active {
   }
   .main-navbar .nav-item .dropdown-menu::before {
     top: 38px;
+    display: none;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     width: 40%;
   }
   .main-navbar .nav-item .dropdown-menu {
     font-size: 14px;
+    background: #195847;
+    padding: 5px 15px 20px;
+    border-radius: 0;
   }
   .main-navbar .nav-item .dropdown-menu li a {
-    padding: 5px;
+    padding: 10px;
   }
   .breadcrumb-area .functions-sec {
     display: none;
@@ -18342,7 +18378,21 @@ body .dotsCustom .owl-dot.active {
 /* mob */
 @media (max-width: 767px) {
   body .main-navbar .navbar-toggler {
-    top: 100px;
+    top: 95px;
+    background: #D6BD81;
+  }
+  body .main-navbar .navbar-toggler:focus {
+    border: unset;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .main-navbar .nav-item .dropdown-menu li a:hover {
+    background-color: #00ab7a;
+    border-radius: 0;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/global/menuSpan.svg);
   }
   body .main-navbar #navbarSupportedContent {
     top: 155px;
@@ -18724,6 +18774,10 @@ body .dotsCustom .owl-dot.active {
   }
   .branches .branches-details ul.contact-det {
     margin-bottom: 20px;
+  }
+  body .main-slider .item .caption.white h2, body .main-slider .item .caption.white .h2 {
+    padding-left: 0 !important;
+    margin-bottom: 23px !important;
   }
 }
 
@@ -19419,6 +19473,8 @@ this UI is made desktop first.
     padding-bottom: 20px;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
+    background: #1C614E;
+    padding-bottom: 0;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     margin: auto !important;
@@ -19448,7 +19504,14 @@ this UI is made desktop first.
     left: 10px;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .nav-link {
-    font-size: 14px;
+    font-size: 16px !important;
+    color: #fff;
+    border-bottom: 1px solid #0d6e5a;
+    padding: 15px 0;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .nav-link::after {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .search-toggle {
     display: none;
@@ -19462,7 +19525,7 @@ this UI is made desktop first.
   }
   .main-navbar .navbar-toggler {
     position: absolute;
-    left: 50px;
+    left: 20px;
     top: 100px;
     width: 54px;
     min-width: auto;
@@ -19488,6 +19551,9 @@ this UI is made desktop first.
   }
   .main-navbar .top-nav .nav-item .nav-link {
     font-size: 12px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item:last-of-type .nav-link {
+    border-bottom: 0px solid #0d6e5a;
   }
   footer {
     padding-top: 30px !important;
@@ -19597,11 +19663,6 @@ this UI is made desktop first.
   .about-tabs .tab-content .about-list ul li h4, .about-tabs .tab-content .about-list ul li .h4 {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  .about-tabs .tab-content .about-list .download-link {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .about-tabs .Birth-and-founding ul li {
     margin-bottom: 15px;
@@ -19787,8 +19848,9 @@ this UI is made desktop first.
   }
   .main-navbar .navbar .navbar-brand {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 90px;
-            flex: 0 0 90px;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px;
+    margin-top: -22px;
   }
   .main-slider .scroll-mouse {
     left: 20px;
