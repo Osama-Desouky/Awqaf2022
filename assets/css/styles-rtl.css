@@ -12721,22 +12721,57 @@ index
 }
 
 .about-tabs .tab-content .about-list .download-link {
-  width: 100%;
-  height: 100%;
+  max-width: 420px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-image: url(../images/about-mask.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #E3ECE6;
+  border-radius: 12px;
+  padding-top: 58px;
+}
+
+.about-tabs .tab-content .about-list .download-link h5, .about-tabs .tab-content .about-list .download-link .h5 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #1C614E;
+  text-align: center;
+}
+
+.about-tabs .tab-content .about-list .download-link h3, .about-tabs .tab-content .about-list .download-link .h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1C614E;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .about-tabs .tab-content .about-list .download-link a {
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   display: inline-block;
+  max-width: 63px;
+  max-height: 63px;
+  margin: 0 auto;
+}
+
+.about-tabs .tab-content .about-list .download-link a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-tabs .Birth-and-founding {
@@ -13360,20 +13395,13 @@ service-center
   -webkit-transition: 300ms;
   transition: 300ms;
   overflow: hidden;
+  text-align: right;
 }
 
 .service-list.inner-serv-list .service-card:hover {
   background-color: #fff;
   -webkit-filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
           filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
-}
-
-.service-list.inner-serv-list .service-card:hover .content-box h4, .service-list.inner-serv-list .service-card:hover .content-box .h4 {
-  -webkit-text-stroke: 1px #707070;
-}
-
-.service-list.inner-serv-list .service-card:hover .content-box p {
-  -webkit-text-stroke: 1px #707070;
 }
 
 /**********************  tenders-list   **************************/
@@ -15035,6 +15063,13 @@ service-center
 
 .darkMood .Affiliate-sites .item .sites-card {
   background-color: #000;
+}
+
+.counter {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 /* AO start global fields */
@@ -18958,6 +18993,232 @@ body .dotsCustom .owl-dot.active {
     -webkit-print-color-adjust: exact !important;
     background: #fff !important;
   }
+}
+
+/**********************************  general forms style *************************************/
+.service-form .input-group {
+  margin-bottom: 25px;
+}
+
+.service-form .input-group .input-group-text {
+  min-height: 48px;
+  border: 2px solid #CBDDD6;
+  border-left: 0;
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  background-color: #fff;
+}
+
+.service-form .input-group .form-control {
+  color: #1D1D1B;
+  font-weight: 400;
+  font-size: 16px;
+  min-height: 48px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 5px;
+  border: 2px solid #CBDDD6;
+  border-right: 0;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.service-form .input-group .form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: #1D1D1B;
+}
+
+.service-form .input-group .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #1D1D1B;
+}
+
+.service-form .input-group .form-control::-ms-input-placeholder {
+  color: #1D1D1B;
+}
+
+.service-form .input-group .form-control::placeholder {
+  color: #1D1D1B;
+}
+
+.service-form .submit-btn {
+  color: #fff;
+  background-color: #00846C;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  width: 100%;
+  height: 52px;
+  margin-top: 10px;
+}
+
+.service-form .submit-btn img {
+  margin-right: 15px;
+}
+
+.service-form .submit-btn:hover {
+  background-color: #1C614E;
+}
+
+.service-form .usage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-form .usage img {
+  margin-left: 10px;
+}
+
+.service-form .usage span {
+  color: #0B261F;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.service-form .usage span a {
+  color: #00846C;
+  text-decoration: underline;
+}
+
+/********************************** sign-in section *************************************/
+.sign-in-sec {
+  background-color: #F1F3F2;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.sign-in-sec .sign-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 137px 130px;
+}
+
+.sign-in-sec .sign-form .recaptcha {
+  margin-bottom: 25px;
+}
+
+.sign-in-sec .nafaz {
+  background-color: #def1ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 80px;
+  height: 100%;
+  position: relative;
+  padding-top: 65px;
+}
+
+.sign-in-sec .nafaz .nafaz-sign {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 24px;
+  -webkit-filter: drop-shadow(0 3px 25px rgba(6, 62, 32, 0.15));
+          filter: drop-shadow(0 3px 25px rgba(6, 62, 32, 0.15));
+  display: inline-block;
+  margin: 27px 0 36px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #00846C;
+  padding: 45px 70px;
+}
+
+/********************************** edit-profile*************************************/
+.edit-profile {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 70px 130px 50px;
+  background-color: #F1F3F2;
+  border-radius: 8px;
+  -webkit-filter: drop-shadow(0 3px 45px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0 3px 45px rgba(0, 0, 0, 0.05));
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/********************************** .communication-details *************************************/
+.communication-details {
+  margin-top: 10px;
+}
+
+.communication-details div {
+  margin-bottom: 20px;
+}
+
+.communication-details div:last-child {
+  margin-bottom: 0;
+}
+
+.communication-details div a {
+  display: inline-block;
+}
+
+.communication-details div a img {
+  margin-left: 11px;
+}
+
+.communication-details div a span.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F3329;
+  margin-left: 15px;
+}
+
+.communication-details div a span.number {
+  font-size: 15px;
+  font-weight: 700;
+  color: #00846C;
+}
+
+.communication-details div a.contact {
+  background-color: #fff;
+  color: #00AB7A;
+  padding: 8.5px 16.5px;
+  font-size: 17px;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.05));
+  border-radius: 6px;
+  margin-right: 10px;
 }
 
 /*
