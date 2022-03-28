@@ -312,11 +312,14 @@ this UI is made desktop first.
           }
         }
       }
-      .owl-nav {
-        margin-top: 0 !important;
-        button{
+      .btns-swiper {
+        // margin-top: 0 !important;
+        div{
           width: 35px;
           height: 35px;
+          &.swiper-button-prev{
+            #{$end-direction}:42px
+          }
         }
       }
     }
@@ -970,16 +973,14 @@ this UI is made desktop first.
   }
   .news-slider {
     margin-bottom: 50px;
-    .item{
       .content-box{
         padding-#{$start-direction}: 0;
         h4{
           margin-top: 10px;
         }
       }
-    }
-    .owl-nav{
-      top: 100%;
+    .btns-swiper {
+      top: 92%;
     }
   }
   .Affiliate-sites{
