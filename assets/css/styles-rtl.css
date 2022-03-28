@@ -12458,6 +12458,59 @@ index
   border: none;
 }
 
+.awqaaf-shape2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 860px;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/green-shape.svg);
+  background-repeat: no-repeat;
+  z-index: 9;
+  padding-bottom: 46px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-clip-path: polygon(21% 60%, 100% 0, 100% 100%, 4% 100%);
+          clip-path: polygon(21% 60%, 100% 0, 100% 100%, 4% 100%);
+}
+
+.awqaaf-shape2 .caption {
+  position: relative;
+  padding-right: 35px;
+  width: 60%;
+}
+
+.awqaaf-shape2 .caption::after {
+  position: absolute;
+  top: -35px;
+  background-image: url(../images/site-shape-gold.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  content: '';
+  width: 30px;
+  height: 20px;
+  padding: 0;
+}
+
+.awqaaf-shape2 h2 .bold, .awqaaf-shape2 .h2 .bold {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 33px;
+  display: inline-block;
+}
+
+.awqaaf-shape2 p {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
 .home-about {
   padding-top: 50px;
   padding-bottom: 85px;
@@ -13873,9 +13926,7 @@ service-center
   height: 100%;
   top: 0;
   right: 0;
-  background: #0b261f;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 38, 31, 0.501838)), color-stop(65%, rgba(238, 251, 246, 0.952819)));
-  background: linear-gradient(90deg, rgba(11, 38, 31, 0.501838) 0%, rgba(238, 251, 246, 0.952819) 65%);
+  background-color: rgba(28, 97, 78, 0.2);
 }
 
 .reyadah-main .img-box img {
@@ -13886,7 +13937,7 @@ service-center
 
 .reyadah-main .logo-box {
   position: absolute;
-  top: 185px;
+  bottom: 50px;
   left: 85px;
   z-index: -1;
   width: 330px;
@@ -13920,7 +13971,7 @@ service-center
 }
 
 .reyadah-inner {
-  margin-top: 170px;
+  margin-top: 77px;
 }
 
 .reyadah-inner h2, .reyadah-inner .h2 {
@@ -14146,6 +14197,8 @@ service-center
 
 .the-values {
   margin-top: 70px;
+  background-color: #fff;
+  padding: 60px 0;
 }
 
 .the-values .optimize-col-padding {
@@ -15414,6 +15467,25 @@ textarea {
           filter: brightness(0) invert(1);
 }
 
+.backgroundCurved {
+  position: relative;
+}
+
+.backgroundCurved::after {
+  background-image: url(../images/crvBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -145px 0;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+
 .fancybox-skin {
   padding: 0px !important;
   -webkit-box-shadow: none !important;
@@ -16354,7 +16426,7 @@ body .dotsCustom .owl-dot.active {
   margin: 33px 0;
 }
 
-.endowmentContent .contentBox p {
+.endowmentContent .contentBox .textServ p {
   text-align: center;
 }
 
@@ -17325,6 +17397,39 @@ body .dotsCustom .owl-dot.active {
 }
 
 /* end ReadableLibrary page*/
+.GovernanceBoxWrpper {
+  margin: 50px 0 150px;
+}
+
+.GovernanceBoxWrpper .govBox {
+  background-color: #fff;
+  min-height: 306px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  border-radius: 16px;
+}
+
+.GovernanceBoxWrpper .govBox h2, .GovernanceBoxWrpper .govBox .h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1C614E;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
 /* start services page */
 .FAQParent .tabsBtns .nav-item button {
   min-width: 190px;
@@ -17790,6 +17895,12 @@ body .dotsCustom .owl-dot.active {
   background-color: #f7f7f7;
 }
 
+.TermsConditions .textHeading,
+.PrivacyPolicy .textHeading {
+  position: relative;
+  z-index: 1;
+}
+
 .TermsConditions .textHeading h1, .TermsConditions .textHeading .h1,
 .PrivacyPolicy .textHeading h1,
 .PrivacyPolicy .textHeading .h1 {
@@ -17815,6 +17926,21 @@ body .dotsCustom .owl-dot.active {
 .PrivacyPolicy .boxDesc p {
   margin-bottom: 0;
   line-height: 34px;
+}
+
+.TermsConditions .imgHeaing,
+.PrivacyPolicy .imgHeaing {
+  position: relative;
+  z-index: 1;
+}
+
+.TermsConditions::after,
+.PrivacyPolicy::after {
+  top: 87px;
+  width: 80%;
+  height: 500px;
+  z-index: unset;
+  opacity: .8;
 }
 
 /*Search Results*/
@@ -18491,6 +18617,39 @@ body .dotsCustom .owl-dot.active {
     width: 100%;
     margin-bottom: 20px;
   }
+  .GovernanceBoxWrpper {
+    margin: 40px 0 50px;
+  }
+  .GovernanceBoxWrpper .govBox {
+    min-height: 240px;
+  }
+  .GovernanceBoxWrpper .govBox h2, .GovernanceBoxWrpper .govBox .h2 {
+    font-size: 20px;
+  }
+  .reyadah-main {
+    height: 300px;
+  }
+  .awqaaf-shape2 {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 25px;
+  }
+  .awqaaf-shape2 h2 .bold, .awqaaf-shape2 .h2 .bold {
+    font-size: 23px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+  .awqaaf-shape2 .caption::after {
+    background-size: 20px;
+    top: -22px;
+    width: 20px;
+  }
+  .awqaaf-shape2 .caption {
+    padding-right: 20px;
+  }
+  .awqaaf-shape2 .caption p {
+    display: none;
+  }
 }
 
 /* end tab 992 */
@@ -18898,6 +19057,14 @@ body .dotsCustom .owl-dot.active {
     padding-left: 0 !important;
     margin-bottom: 23px !important;
   }
+  .awqaaf-shape2 {
+    width: 60%;
+    height: 135px;
+  }
+  .awqaaf-shape2 .caption {
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
+  }
 }
 
 /* end mob 767 */
@@ -18912,6 +19079,9 @@ body .dotsCustom .owl-dot.active {
 }
 
 @media (max-width: 500px) {
+  .backgroundCurved::after {
+    display: none;
+  }
   .main-slider.social-section.career-slider2 .awqaaf-shape {
     width: 100% !important;
     height: 80% !important;
@@ -20120,6 +20290,7 @@ this UI is made desktop first.
     margin-top: 20px;
   }
   .reyadah-main .logo-box {
+    top: 62%;
     width: 260px;
     left: 40px;
   }
@@ -20333,9 +20504,9 @@ this UI is made desktop first.
     font-size: 14px !important;
   }
   .reyadah-main .logo-box {
-    top: 65%;
-    left: 20px;
-    width: 200px;
+    top: 75%;
+    left: 10px;
+    width: 170px;
   }
   .latest-tenders .send-cri .mail-input {
     width: 290px;

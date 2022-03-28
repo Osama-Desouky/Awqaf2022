@@ -1087,7 +1087,51 @@ index
     
 
 }
-
+.awqaaf-shape2{
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  #{$start-direction}:0;
+  width: 860px;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/green-shape.svg);
+  background-repeat: no-repeat;
+  z-index: 9;
+  padding-bottom: 46px;
+  align-items: flex-end;
+  clip-path: polygon(21% 60%, 100% 0, 100% 100%, 4% 100%);
+  .caption {
+    position: relative;
+    padding-#{$start-direction}: 35px;
+    width: 60%;
+    &::after {
+      position: absolute;
+      top: -35px;
+      background-image: url(../images/site-shape-gold.png);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      content: '';
+      width: 30px;
+      height: 20px;
+      padding: 0;
+    }
+  }
+  h2 {
+    .bold {
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 33px;
+      display: inline-block;
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+  }
+}
 // home-about
 
 .home-about{
@@ -2233,6 +2277,7 @@ service-center
       margin-bottom: 0;
     }
   }
+
 }
 .Governance-full{
   margin-top: 35px;
@@ -2273,8 +2318,9 @@ service-center
       height: 100%;
       top: 0;
       #{$start-direction}: 0;
-      background: rgb(11,38,31);
-      background: linear-gradient(90deg, rgba(11,38,31,0.5018382352941176) 0%, rgba(238,251,246,0.9528186274509804) 65%);
+      // background: rgb(11,38,31);
+      // background: linear-gradient(90deg, rgba(11,38,31,0.5018382352941176) 0%, rgba(238,251,246,0.9528186274509804) 65%);
+      background-color: rgba(28,97,78,.2);
     }
     img{
       height: 100%;
@@ -2283,7 +2329,7 @@ service-center
   }
   .logo-box{
     position: absolute;
-    top: 185px;
+    bottom: 50px;
     #{$end-direction}: 85px;
     z-index: -1;
     width: 330px;
@@ -2310,7 +2356,7 @@ service-center
 }
 
 .reyadah-inner{
-  margin-top: 170px;
+  margin-top: 77px;
   h2{
     font-size: 35px;
     font-weight: $w-bold;
@@ -2483,6 +2529,8 @@ service-center
 
 .the-values{
   margin-top: 70px;
+  background-color: #fff;
+  padding: 60px 0;
   .optimize-col-padding{
     padding-#{$start-direction}:5px ;
     padding-#{$end-direction}:5px ;
