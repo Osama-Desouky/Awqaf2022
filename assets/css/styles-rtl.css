@@ -13998,7 +13998,7 @@ service-center
   background-color: #fff;
   padding: 55px;
   border-radius: 8px;
-  margin-top: 50px;
+  margin-top: 115px;
 }
 
 .reyadah-inner .the-msg .content-box {
@@ -14045,7 +14045,7 @@ service-center
 }
 
 .reyadah-inner .our-roles {
-  margin-top: 50px;
+  margin-top: 115px;
   margin-bottom: 30px;
 }
 
@@ -14156,7 +14156,7 @@ service-center
   background-color: #fff;
   padding: 55px;
   border-radius: 8px;
-  margin-top: 70px;
+  margin-top: 130px;
 }
 
 .the-pilings h3, .the-pilings .h3 {
@@ -14196,7 +14196,7 @@ service-center
 }
 
 .the-values {
-  margin-top: 70px;
+  margin-top: 155px;
   background-color: #fff;
   padding: 60px 0;
 }
@@ -17430,6 +17430,25 @@ body .dotsCustom .owl-dot.active {
   text-align: center;
 }
 
+.reyadah-inner .backgroundReyad {
+  position: relative;
+}
+
+.reyadah-inner .backgroundReyad::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% + 90px);
+  background-image: url(../images/global/base.svg);
+  z-index: -1;
+  left: 0;
+  top: -44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+}
+
 /* start services page */
 .FAQParent .tabsBtns .nav-item button {
   min-width: 190px;
@@ -19064,6 +19083,13 @@ body .dotsCustom .owl-dot.active {
   .awqaaf-shape2 .caption {
     -webkit-transform: translateY(35px);
             transform: translateY(35px);
+  }
+  .the-values {
+    margin-top: 100px;
+  }
+  .reyadah-inner .our-roles,
+  .the-pilings {
+    margin-top: 50px;
   }
 }
 

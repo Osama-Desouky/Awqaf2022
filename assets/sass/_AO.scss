@@ -1783,6 +1783,23 @@ body {
     }
   }
 }
+.reyadah-inner .backgroundReyad {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% + 90px);
+    background-image: url(../images/global/base.svg);
+    z-index: -1;
+    left: 0;
+    top: -44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: contain;
+  }
+}
 /* start services page */
 .FAQParent {
   .tabsBtns {
@@ -3270,6 +3287,13 @@ body {
   }
   .awqaaf-shape2 .caption {
     transform: translateY(35px);
+  }
+  .the-values {
+    margin-top: 100px;
+  }
+  .reyadah-inner .our-roles,
+  .the-pilings {
+    margin-top: 50px;
   }
 }
 /* end mob 767 */
