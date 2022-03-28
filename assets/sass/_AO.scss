@@ -174,6 +174,23 @@ textarea {
     }
   }
 }
+.backgroundCurved {
+  position: relative;
+  &::after {
+    background-image: url(../images/crvBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -145px 0;
+    position: absolute;
+    content: '';
+    top: 0;
+    #{$end-direction}: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+  }
+}
 .fancybox-skin {
   padding: 0px !important;
   -webkit-box-shadow: none !important;
@@ -968,14 +985,18 @@ body {
     }
   }
 }
+
 .endowmentContent {
   .contentBox {
     .customTitle {
       margin: 33px 0;
     }
+    .textServ {
+      p {text-align: center;}
+    }
     p {
       @extend .pragh17regular2;
-      text-align: center;
+      
     }
     .row {
       justify-content: center;
@@ -1740,6 +1761,28 @@ body {
   }
 }
 /* end ReadableLibrary page*/
+.GovernanceBoxWrpper {
+  margin: 50px 0 150px;
+  .govBox {
+    background-color: #fff;
+    min-height: 306px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    // box-shadow:  rgba(0, 0, 0, 0.05);
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+      color: $green-bg1;
+      margin: 20px 0 0;
+      text-align: center;
+    }
+  }
+}
 /* start services page */
 .FAQParent {
   .tabsBtns {
@@ -2120,6 +2163,8 @@ body {
   padding-top: 40px;
   background-color: $bgf7f7f7;
   .textHeading {
+    position: relative;
+    z-index: 1;
     h1 {
       width: 100%;
       color: $green-bg1;
@@ -2139,6 +2184,17 @@ body {
       margin-bottom: 0;
       line-height: 34px;
     }
+  }
+  .imgHeaing {
+    position: relative;
+    z-index: 1;
+  }
+  &::after{
+    top: 87px;
+    width: 80%;
+    height: 500px;
+    z-index: unset;
+    opacity: .8;
   }
 }
 /*Search Results*/
@@ -2775,6 +2831,39 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
+  .GovernanceBoxWrpper {
+    margin: 40px 0 50px;
+  }
+  .GovernanceBoxWrpper .govBox {
+    min-height: 240px;
+  }
+  .GovernanceBoxWrpper .govBox h2{
+    font-size: 20px;
+  }
+  .reyadah-main {
+    height: 300px;
+  }
+  .awqaaf-shape2 {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 25px;
+  }
+  .awqaaf-shape2 h2 .bold {
+    font-size: 23px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+  .awqaaf-shape2 .caption::after {
+    background-size: 20px;
+    top: -22px;
+    width: 20px;
+  }
+  .awqaaf-shape2 .caption {
+    padding-right: 20px;
+  }
+  .awqaaf-shape2 .caption  p {
+    display: none;
+  }
 
   // -----------------------------------
 }
@@ -3174,6 +3263,14 @@ body {
     padding-#{$end-direction}: 0 !important;
     margin-bottom: 23px !important
   }
+  .awqaaf-shape2 {
+    width: 60%;
+    height: 135px;
+
+  }
+  .awqaaf-shape2 .caption {
+    transform: translateY(35px);
+  }
 }
 /* end mob 767 */
 
@@ -3187,6 +3284,9 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .backgroundCurved::after {
+    display: none;
+  }
   .main-slider.social-section.career-slider2 .awqaaf-shape {
     width: 100% !important;
     height: 80% !important;

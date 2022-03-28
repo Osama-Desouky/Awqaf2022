@@ -1166,6 +1166,7 @@ this UI is made desktop first.
   // ryada
   .reyadah-main {
     .logo-box{
+      top: 62%;
       width: 260px;
       #{$end-direction}:40px;
     }
@@ -1469,9 +1470,9 @@ this UI is made desktop first.
       // ryada
   .reyadah-main {
     .logo-box{
-      top: 65%;
-      #{$end-direction}: 20px;
-      width: 200px;
+      top: 75%;
+      #{$end-direction}: 10px;
+      width: 170px;
     }
   }
 

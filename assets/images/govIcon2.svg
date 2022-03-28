@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82">
+  <g id="govIcon2" transform="translate(-1507 -1458)">
+    <circle id="Ellipse_11171" data-name="Ellipse 11171" cx="41" cy="41" r="41" transform="translate(1507 1458)" fill="#4cc0ad" opacity="0.15"/>
+    <g id="Group_56746" data-name="Group 56746" transform="translate(8026.529 23310.525)">
+      <path id="Path_126373" data-name="Path 126373" d="M598.2,586.4l12.79-5.549a3,3,0,1,1,2.3,5.544l-13.254,6.365a7.5,7.5,0,0,1-2.926.594H584.9a2.993,2.993,0,0,0-1.521.414l-3.535,2.078m8.293-9.243,8.992-.005a3,3,0,1,0,0-5.995H585.457a6.75,6.75,0,0,0-3.394.915l-8.2,4.767m3.768,12.318,3-1.5-7.5-12-4.5,2.245" transform="translate(-7070.164 -22385.686)" fill="rgba(0,0,0,0)" stroke="#1c614e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <g id="Group_56733" data-name="Group 56733" transform="translate(-6485.094 -21836.525)">
+        <path id="Path_126374" data-name="Path 126374" d="M-6406.5-21585.227s-3.686-5.059-8.036-6-9.365,2.246-9.365,2.246" transform="translate(6428.274 21613.404)" fill="none" stroke="#1c614e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_126375" data-name="Path 126375" d="M-6448.9-21765.291v-15.1a7.949,7.949,0,0,0-1.7-3.943,8.447,8.447,0,0,0-5.291-2.807,15.246,15.246,0,0,0-6.055.426s-.564,7.059,3.767,8.682,9.281-.193,9.281-.193" transform="translate(6461.969 21787.301)" fill="none" stroke="#1c614e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_126376" data-name="Path 126376" d="M-6343.871-21698.193a10.228,10.228,0,0,0,4.916.9c2.342-.316,3.55-.951,4.413-1.918a4.49,4.49,0,0,0,1.389-2.861,10.912,10.912,0,0,0,0-3.033,51.652,51.652,0,0,0-6.5,0,4.578,4.578,0,0,0-2.839,1.52,8.764,8.764,0,0,0-1.376,2.617" transform="translate(6356.942 21715.203)" fill="none" stroke="#1c614e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
